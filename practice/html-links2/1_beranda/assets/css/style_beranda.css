@@ -1,0 +1,169 @@
+html, body{
+	margin: 50;
+	padding: 50;
+	font: normal 100% "Helvetica";
+	background-color: #f1f1f1;
+}
+
+.header{
+	padding: 0px;
+	margin: 0px;
+	background-color: #fff;
+	width: 100%;
+	height: 90px;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	position: fixed;
+	box-shadow: 1px 2px 15px rgba(0,0,0,0.2);
+}
+.header a{
+	float: right;
+	color: #888;
+	margin: 10px;
+	padding: 5px;
+	padding-top: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+}
+.header a:hover{
+	color: green;
+  	text-decoration: underline;
+
+
+}
+.header-container{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 44px;
+    padding-left: 1px;
+    margin-left: -22px;
+    padding-top: 2px;
+}
+
+.menu-list-active{
+	width: 100%;
+	background-color: black;
+	height: 150px;
+	padding-left: 0px;
+	padding-right: 10px;
+	padding-top: 110px;
+	padding-bottom: 50px;
+
+}
+.active{
+	background-color: rgb(54, 185, 0);
+	width: 82.7%;
+	padding: 20px;
+	margin: 26px;
+	cursor: pointer;
+
+}
+ul{
+	width: 100%;
+	list-style-type: none;
+	font-family: sans-serif;
+	cursor: pointer;
+}
+li{
+	float: left;
+
+}
+
+li a{
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	padding: 0px;
+	padding-right: 5px;
+	border: 6px solid black;
+	text-align: center;
+	font-weight: bold;
+}
+
+li a:hover{
+	background-color: #198900;
+
+}
+
+.descript-1 h2, p, a{
+	padding-left: 30px;
+	padding-right: 30px; 
+
+}
+.descript-2 h2, p, a{
+
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.descript-3 h2, p, a{
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+.descript-4 h2, p, a{
+	padding-left: 30px;
+
+}
+.box-card{
+	padding: 0 0 0 10px;
+	margin: 0px;
+	width: 60%;
+}
+.card{
+	float: left;
+	background: #fff;
+	height: auto;
+
+}
+p{
+	text-align: justify;
+	color: #3f3f3f;\
+	padding: 30px;
+}
+.my-heading, h4{
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+.column {
+  float: left;
+  width: 29%;
+  padding: 0 60px;
+  height: 200px;
+  position: relative;
+}
+
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row h3 p{
+	text-align: center;
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.card {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0);
+  padding: 0 20px;
+  text-align: center;
+  background-color: #fff;
+  height: auto;
+}

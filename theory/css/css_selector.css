@@ -1,0 +1,33 @@
+CSS SELECTOR
+--
+
+1. Class
+.value-class{
+  color: #fff;
+}
+
+2. Id
+#value-id{
+  color: #fff;
+}
+
+3. Element
+h1 {
+  color: #fff;
+}
+
+4. Universal Selector
+* {
+  box-sizing: border-box; 
+}
+
+5. Attribute
+[attribute-name] {
+  color: #000;
+}
+
+[attribute-name="value-attribute"] {
+  color: #000;
+}
+
+/*==============================================*/

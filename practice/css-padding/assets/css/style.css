@@ -1,0 +1,47 @@
+img{
+	max-width: 100%;
+}
+
+html, body{
+	margin: 0 20px;
+	color: #fff;
+}
+
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+div{
+	margin: 50px 20px;
+}
+.black-monk{
+	background-color: #7E0E60;
+	margin: 40px auto;
+}
+.site-content{
+	padding: 20px 20px;
+}
+
+p{
+	margin: 20px 0px;
+	line-height: 32px;
+}
+.hyperlaps{
+	background-color: #336971;
+	margin: 50px auto;
+	line-height: 28px;
+}
+
+.hitam{
+	padding: 40px;
+	background-color: #222;
+}
+.salmon{
+	padding: 40px;
+	background-color: red;
+}
+.purple{
+	padding: 40px;
+	background-color: purple;
+}

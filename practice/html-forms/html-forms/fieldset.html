@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="assets/css/style.css"/>
+	<title>Fieldset HTML</title>
+</head>
+<body>
+	<main>
+		<form action="#" method="get">
+			<fieldset>
+				<legend>Informasi Akun</legend>
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username"/>
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password"/>
+			</fieldset>
+			<fieldset>
+				<legend>Informasi Data Diri</legend>
+				<label for="gender">Jenis Kelamin:</label>
+				<select name="gender" id="gender">
+					<option value="1">Pria</option>
+					<option value="2">Wanita</option>
+					<option value="3">Lainnya</option>
+				</select>
+				<label for="agama">Agama</label>
+				<select name="agama" id="agama">
+					<option value="1">Islam</option>
+					<option value="2">Kristen</option>
+					<option value="3">Katholik</option>
+					<option value="4">Hindu</option>
+					<option value="5">Buddha</option>
+					<option value="6">Kong Hu Cu</option>
+				</select>
+			</fieldset>
+			<div class="button">
+				<button type="submit" value="submit">Submit</button>
+				<button type="reset" value="reset">Reset</button>
+			</div>
+		</form>
+	</main>
+</body>
+</html>

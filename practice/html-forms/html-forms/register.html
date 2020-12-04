@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Register</title>
+	<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+	<main>
+		<form action="#" method="GET" class="register">
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Name</td>
+						<td>
+							<input type="text" id="name" name="name"/>
+						</td>
+					</tr>
+					<tr>
+						<td>Sex</td>
+						<td>
+							<input type="radio" id="male" name="sex" value="male"/>
+							<label for="male">Male</label>
+							<input type="radio" id="female" name="sex" value="female"/>
+							<label for="female">Female</label>
+						</td>
+					</tr>
+					<tr>
+						<td>Eye Color</td>
+						<td>
+							<select name="eyeColor" id="eyeColor">
+								<option value="1">Green</option>
+								<option value="2">Black</option>
+								<option value="3">Brown</option>
+								<option value="4">Blue</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Check All That Apply</td>
+						<td>
+							<input type="checkbox" id="check1" name="checkbox" value="1"/>
+							<label for="check1">Over 6 feet tall</label>
+							<input type="checkbox" id="check2" name="checkbox" value="2"/>
+								<label for="check2">Over 200 pounds</label>
+							</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label for="abillity">Describe your Athletic Abillity:</label>
+							<textarea name="abillity"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="button">
+							<button type="submit" value="submit">Enter My Information</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</main>
+</body>
+</html>

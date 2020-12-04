@@ -1,0 +1,32 @@
+CSS Colors
+--
+.class{
+  color: color-code;
+}
+
+Color code
+--
+1. Color name 
+  : red, blue, green, gold dll
+
+2. Hex Color
+  : 0-9 & a-f (6 digit) 
+  = #e2f43e;
+
+3. RGB Color
+  : rgb(red, green, blue), (0-255, 0-255, 0-255)
+  = rgb(255, 5, 0);
+
+4. RGBA Color
+  : rgba (red, green, blue, alpha), (0-255, 0-255, 0-1)
+  = rgba(255, 5, 0, 0.1);
+
+5. HSL Color
+  : HSL (Hue, Saturation, Lighness)
+  = HSL (0-360, 0%-100%, 0%-100%) = hsl(60, 20%, 30%)
+
+5. HSLA Color
+  : HSLA (Hue, Saturation, Lighness, Alpha)
+  = HSLA (0-360, 0%-100%, 0%-100%, 0-1) = hsla(60, 20%, 30%, .3)
+
+/*==============================================*/

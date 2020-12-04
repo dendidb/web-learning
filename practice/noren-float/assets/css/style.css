@@ -1,0 +1,299 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: roboto;
+	box-sizing: border-box;
+}
+
+.header-area{
+	height: 828px;
+	background-color: #6246E4;
+}
+
+.aside-image-area{
+	height: 200px;
+	position: absolute;
+}
+.aside-image{
+	position: absolute;
+	z-index: 22;
+	width: 116px;
+	height: 828px;
+}
+.container{
+	margin: 0px 130px;
+}
+
+.navigasi{
+	width: 100%;
+	padding: 20px 20px;
+	background-color: transparent;
+
+}
+.brand-logo{
+	margin-left: 60px;
+	margin-top: 15px;
+}
+
+/*==================*/
+
+ul{
+	list-style-type: none;
+	float: right;
+	margin-top: 20px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 900;
+	style: normal;
+	line-height: 21px;
+	padding: 5px 20px;
+	transition: .3s;
+}
+ul li a:hover{
+	border-bottom: solid 1px #fff;
+
+}
+/*==================*/
+
+.banner-content-area{
+	float: left;
+	width: auto;
+	padding: 10px;
+	margin-left: 70px;
+	height: 405px;
+	padding: 147px 0px;
+	
+}
+
+.illustrations-image-area{
+	float: right;
+	width: 50%;
+	/*padding: 30px;*/
+	height: auto;
+	padding: 147px 0px;
+}
+.illustrations-image{
+	position: absolute;
+	width: 652px;
+	height: 579.15px;
+	padding-left: 15px;
+	top: 139px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+.banner-title{
+	width: 443px;
+	font-size: 70px;
+	color: #fff;
+	letter-spacing: -1.12px;
+}
+
+.banner-description{
+	width: 416px;
+	font-size: 16px;
+	color: #fff;
+	margin: 32px 0px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.button-primary{
+	padding: 17px 47px;
+	margin: 44px 0px;
+	width: 216px;
+	display: inline-block;
+	background-color: #fff;
+	border-radius: 29.5px;
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+	font-weight: 400;
+}
+/*==================*/
+
+/* Hero Image */
+.hero-image{
+	display: table-cell;
+}
+.hero-image img{
+	width: 40px;
+	height: 40px;
+}
+/*==================*/
+
+/* Brand Section */
+.brand-area{
+	width: 100%;
+	background: #F7FAFD;
+	padding: 50px;
+	text-align: center;
+}
+
+
+.col-brand-image{
+	box-sizing: border-box;
+	padding: 15px;
+	margin: 0px 60px 0px 0px;
+	width: 130px;
+	display: inline-block;
+	box-sizing: border-box;
+	align-items: middle;
+}
+.col-brand-image img{
+	width: 100px;
+	align-items: center;
+}
+
+/*==================*/
+
+/* Features Area Start*/
+
+.features-area{
+	margin-top: 50px;
+	height: 470px;
+	background-color: #f2f2f2;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.feature-col {
+	float: left;
+	width: 25%;
+	padding: 0 10px;
+	margin: 0px 40px;
+}
+
+.card {
+	margin-top: 97px;
+	margin-right: 90px;
+	padding: 20px;
+	width: 259px;
+	height: 345px;
+	border-radius: 30px;
+	text-align: center;
+	background-color: #F7FAFD;
+}
+
+.feature-image{
+	margin: 46px 20px;
+	width: 80px;
+	height: 70px;
+}
+
+.feature-title{
+	font-weight: 700;
+	style: normal;
+	font-size: 26px;
+	text-align: left;
+}
+
+
+.feature-description{
+	font-size: 14px;
+	text-align: left;
+	font-weight: 400;
+	style: normal;
+	line-height: 20px;
+	margin: 4px 0px;
+
+}
+/* ==================== */
+
+
+.service-area{
+	margin-top: 98px;
+	height: 729px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.service-img {
+	float: left;
+	width: 50%;
+	padding: 10px;
+	height: auto;
+	background: #fff;
+}
+.service-text-col {
+	float: right;
+	width: 50%;
+	padding: 10px;
+	height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.illustration-image2{
+	width: 500px;
+	height: 690px;
+}
+.service-title{
+	font-weight: 700;
+	style: normal;
+	font-size: 60px;
+	line-height: 62px;
+	letter-spacing: -0.96px;
+}
+
+.service-description{
+	margin: 30px 0px;
+	font-weight: 400px;
+	style: normal;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.service-area ul{
+	width: 500px;
+	list-style-type: none;
+	margin-left: 40px;
+}
+.service-area ul li{
+	margin-bottom: 40px;
+	font-weight: bold;
+
+}
+.service-area ul li{
+	color: #222;
+}
+.service-area ul span{
+	font-weight: 500;
+	color: #222;
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-right: 30px;
+	width: 300px;
+	position: relative;
+	height: 20px;
+	border-radius: 10%;
+	padding: 10px 16px;
+	text-align: left;
+
+}
+.service-area .service-text-col ul .rounded-1{
+	background-color: #F4DDA0;
+}
+.service-area .service-text-col ul .rounded-2{
+	background-color: #BCD5FC;
+}
+.service-area .service-text-col ul .rounded-3{
+	background-color: #FAC2CF;
+}

@@ -1,0 +1,14 @@
+CSS Opacity
+--
+
+.selector-class{
+	opacity: 0 - 1;
+	/*this work in IE 8 & 9*/
+	filter: alpha(opacity=0-100);
+	/* Older than Firefox 0.9*/
+	-moz-opacity: 0 - 1;
+	/*Safari 1.x (pre webkit*/
+	-khmtl-opacity: 0 - 1;
+}
+
+/*==============================================*/

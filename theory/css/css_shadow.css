@@ -1,0 +1,10 @@
+CSS Shadow
+--
+
+.selector-class{
+	text-shadow: x-units y-uints blur color-code;
+	box-shadow: x-units y-uints blur color-code inset;
+	box-shadow: x-units y-uints blur spread color-code inset;
+}
+
+/*==============================================*/

@@ -1,0 +1,61 @@
+XHTML
+--
+
+Extensible HyperText Markup Language
+: Support di browser utama
+
+1. Version HTMl
+ : <!doctype html>
+
+2. Use lowercase elements names
+ bad : <p>Lorem ipsum, dolor sit amet.</p>
+ good : <p>lorem ipsum, dolor sit amet.</p>
+
+3. Close all HTMl Elements
+ bad : <img src="assets/img/buah.jpg" alt="buah">
+ good : <img src="assets/img/buah.jpg" alt="buah"/>
+
+4. Use lowercase attribute names
+  bad : <img src="assets/img/buah.jpg" ALT="buah"/>
+  good : <img src="assets/img/buah.jpg" alt="buah"/>
+
+5. Always Quote attribute values
+  bad : <img src=assets/img/buah.jpg ALT=buah/>
+  good : <img src="assets/img/buah.jpg" alt="buah"/>
+
+6. Always Specify "alt" for images
+  bad : <img src="assets/img/buah.jpg"/>
+  good : <img src="assets/img/buah.jpg" alt="buah"/>
+
+7. Spaces and equal signs
+  bad : <img src= "assets/img/buah.jpg" alt= "buah"/>
+  good : <img src="assets/img/buah.jpg" alt="buah"/>
+
+8. Never Skip the <title> elements
+
+9. Omitting <html>, <head> and <body>
+
+10. Add the "lang" Attribute in HTMl Element
+
+11. Meta Data (charset, viewport)
+
+12. The xmlns attribute in <html> is mandatory
+  <html xmlns="http://www.web.org/1999/xhtml" lang="id"></html>
+
+13. Element must akways be properly nested
+  wrong :
+  <p><i><u>Text<</p>/i></u> 
+
+  correct :
+  <p><i><u>Text</u></i></p>
+
+14. Attribute minimization is forhiben
+  wrong :
+  <input type="text" required=/>
+  <input type="checbox" value="1" checked/>
+
+  correct :
+  <input type="text" required="required"/>
+  <input type="checbox" value="1" checked="checked"/>
+
+<!-- ================================================================================= -->

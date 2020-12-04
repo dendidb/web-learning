@@ -1,0 +1,56 @@
+html, body{
+	margin: 50px;	
+	background: #191919;;
+	padding: 100px;
+	text-align: justify;
+	font-size: 16.6px;
+	font-family:arial;
+}
+
+.box-card{
+;
+	padding: 20px;
+	margin: -100px;
+}
+.card{
+	float: center;
+	background: #ffffe0;
+	box-shadow: 0 0 25px 5px rgba(0, 0, 0,10);
+	height: 900px;
+}
+
+
+.description{
+	padding: 35px;
+	margin: 15px;
+	font-family: calibri;
+
+}
+
+
+h1{
+	font-family: Arial;
+}
+
+h2, h3{
+
+
+}
+
+
+.p {
+	padding-top: 5px;
+	font-family: calibri;
+	color: #a0a0a0;
+
+}
+
+
+address{
+
+	padding-top: 150px;
+	font-size: 16px;
+	float: right;
+	text-align: right;
+
+}

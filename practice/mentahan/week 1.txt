@@ -1,0 +1,94 @@
+Front-end Developer
+--
+
+Cross Browser
+- Google Chrome
+- Firefox
+- Safari
+- Opera
+- Internet Explorer
+- Microsoft Edge
+
+
+
+- Google Chrome min v30
+- Firefox min v20
+- Safari min v8
+- Opera min v10
+- Internet Explorer min v9
+- Microsoft Edge min v12
+
+
+Tech Stack
+--
+Basic
+- HTML
+- CSS
+- JS
+
+Intermedite
+- HTML + HTML5 + XHTML
+- CSS + CSS3 => Framework (Bootstrap, Foundation)
+- JS + Framework JS (jQuery)
+
+Advanced
+- HTML + HTML5 + XHTML => PUG
+- CSS + CSS3 => SCSS/LESS
+- JS + Framework JS (jQuery) => Framework JS (AngularJS, ReactJS, VueJS)
+
+
+
+HTML
+--
+
+1. HTML Editor
+  - Sublime
+  - VSCode
+  - Notepad
+  - Atom
+
+
+  HTML Editor Recommendation
+  - Notepad
+
+2. HTML Basic
+  <!DOCTYPE html> <!-- versi HTML5 -->
+  <html> <!-- root -->
+    <head>
+      <title>Judul</title>
+      <meta name="keywords" content="berita, hoaks"/>
+    </head>
+    <body>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, distinctio.</p>
+    </body>
+  </html>
+
+3. HTML Tag
+  a. start dan close tag
+    ex:
+    <p>text</p>
+    <html></html>
+    <body></body>
+  b. single tag
+    <!DOCTYPE html>
+    <meta>
+    <meta/>
+    <br/>
+    <hr/>
+    <img src="" alt=""/>
+
+4. HTML Attribute
+  <p class="merah">text</p>
+  attribute: class
+  value dari attribute class: merah
+
+  <meta name="keywords" content="berita, hoaks"/>
+  <meta name="description" content="Kuningan dalam "bahaya"/>
+  attribute: name, content
+  value dari attribute name: keywords
+  value dari attribute content: berita, hoaks
+
+  <img src="bunga.jpg" alt="Bunga"/>
+  attribute: src, alt
+  value dari attribute src: bunga.jpg
+  value dari attribute alt: Bunga

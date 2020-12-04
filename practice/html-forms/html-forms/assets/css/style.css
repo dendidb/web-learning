@@ -1,0 +1,234 @@
+/*button{
+	cursor: pointer;
+}
+*/
+/*=====================  Fieldset  ==========================*/
+fieldset label{
+	display: block;
+	margin-bottom: 10px;
+}
+.button{
+	margin-top: 10px;
+}
+
+/*=====================  End  ==========================*/
+
+/*=====================  Form  ==========================*/
+.main{
+	margin: 10px;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+.login{
+	text-align: left;
+	margin: 20px;
+}
+.login label{
+	display: block;
+	margin-bottom: 10px;
+}
+.login input{
+	background-color: #999;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	float: right;
+	margin-right: 78%;
+}
+.login .button{
+	padding-top: 20px;
+}
+.login .button button{
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	font-size: 14px;
+	background-color: #999;
+	border: none;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+/*=====================  End  ==========================*/
+
+/*=====================  Login1  ==========================*/
+.login1{
+	font-family: sans-serif;
+	width: 600px;
+	height: 385px;
+	align-items: center;
+	justify-content: center;
+	margin: 100px 500px auto;
+}
+.login1 h1{
+	font-size: 48px;
+}
+.login1 p{
+	color: #8B9BAA;
+	font-size: 20px;
+}
+.login1 form{
+	padding: 20px 0;
+}
+.login1 input[type = "text"], input[type = "password"]{
+	width: 180px;
+	padding: 14px 200px 14px 14px;
+	border-radius: 5px;
+	border: 2px solid #8B9BAA;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+.login1 input[type = "text"]::-webkit-input-placeholder, input[type = "password"]::-webkit-input-placeholder{
+	color: #8B9BAA;
+}
+.login1 label{
+	color: #8B9BAA;
+	font-size: 16px;
+}
+.login1 input[type = "checkbox"]{
+	color: #8B9BAA;
+	line-height: 20px;
+	height: 16px;
+	width: 20px;
+}
+
+.login1 form a{
+	padding-left: 114px;
+	color: #6B19E9;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	display: inline;
+}
+.login1 button{
+	display: block;
+	width: 400px;
+	height: 50px;
+	cursor: pointer;
+	margin-top: 20px;
+	color: #fff;
+	border: none;
+	font-size: 16px;
+	border-radius: 5px;
+	background: linear-gradient(to right, #5458ED, #6B19E9)
+}
+/*=====================  End  ==========================*/
+
+/*=====================  Login2  ==========================*/
+.login2{
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+	width: 600px;
+	height: 385px;
+	margin: 50px 500px auto;
+}
+.login2 h1{
+	color: #284A7A;
+	font-size: 36px;
+	display: inline;
+}
+.login2 h2{
+	color: #284A7A;
+}
+.login2 form{
+	padding: 20px 0;
+}
+.login2 input[type = "text"]{
+	width: 180px;
+	padding: 14px 200px 14px 14px;
+	border-radius: 5px;
+	border: 2px solid #D9D9D9;
+	display: block;
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-family: sans-serif;
+	}
+.login2 input[type = "text"]::-webkit-input-placeholder{
+	color: #D9D9D9;
+	}
+.login2 label{
+	color: #D9D9D9;
+	font-size: 16px;
+	}
+.login2 input[type = "checkbox"]{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	color: #D9D9D9;
+	}
+.login2 button{
+	font-size: 16px;
+	color: #fff;
+	margin-top: 20px;
+	display: block;
+	width: 400px;
+	height: 50px;
+	border: none;
+	border-radius: 5px;
+	background: #284A7A;
+	cursor: pointer;
+	}
+	/*=====================  End  ==========================*/
+
+	/*=====================  Table Information  ==========================*/
+	.register table{
+		justify-content: center;
+		align-items: center;
+		margin: 125px 500px auto;
+	}
+	.register table, th, td {
+		border: 1px solid #444;
+	}
+	.register table th{
+		background-color: #C4C3FF;
+	}
+	.register table td input[type = "text"]{
+		width: 244px;
+	}
+	.register table td textarea{
+		width: 380px;
+		height: 100px;
+	}
+	.register table .button{
+		text-align: center;
+	}
+	/*=====================  End  ==========================*/
+
+	/*=====================  Order Pizza 2.0  ==========================*/
+	.order table{
+		justify-content: center;
+		align-items: center;
+		margin: 125px 500px auto;
+	}
+	.order table, th, td {
+		border: 1px solid #444;
+	}
+	.order table td input[type = "text"]{
+		width: 270px;
+	}
+	.order table td textarea{
+		width: 380px;
+		height: 100px;
+	}
+
+/*
+
+
+.input-row{
+	margin: 18px 0px;
+}
+
+label{
+	width: 150px;
+	display: inline-block;
+}
+
+input[type="text"]{
+	background-color: #888;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	height: 20px;
+}

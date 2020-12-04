@@ -1,0 +1,388 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: roboto, arial, sans-serif;
+	background-color: #fff;
+}
+
+img{
+	max-width: 100%;
+}
+
+@font-face {
+	font-family: roboto;
+	src: url('../fonts/Roboto-Medium.ttf2') format('ttf2'),
+	url('../Roboto-Medium.ttf') format('ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*================  Utillities Start  ==================*/
+
+.container {
+	width: 1060px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+}
+
+@media (min-width:576px) {
+	.container {
+		max-width: 540px
+	}
+}
+@media (min-width:768px) {
+	.container {
+		max-width: 720px
+	}
+}
+@media (min-width:992px) {
+	.container {
+		max-width: 960px
+	}
+}
+@media (min-width:1200px) {
+	.container {
+		max-width: 1140px
+	}
+}
+
+.button-primary{
+	border: 1px solid #fff;
+	background-color: #fff;
+	text-align: center;
+	text-decoration: none;
+	color: #3b3b3b;
+	padding: 16px 60px;
+	border-radius: 29.5px;
+	font-size: 22px;
+	line-height: 26px;
+	display: inline-block;
+	transition: all .4s ease;
+}
+.button-primary:hover{
+	color: #fff;
+	transform: translateY(-6px);
+	background-color: transparent;
+	border: 1px solid #fff;
+}	
+
+.achievement-content .button-secondary{
+	border: 1px solid #6246E4;
+	background-color: #6246E4;
+	color: #fff;
+	padding: 14px 60px;
+	border-radius: 29.5px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+	transition: .4s ease;
+}
+.button-secondary:hover{
+	border: 1px solid #6246E4;
+	color: #6246E4;
+	background-color: transparent;
+	transform: translateY(-6px;);
+}
+
+/*================ Utillities End  ======================*/
+
+/*================  Header Area Start  ==================*/
+
+.header-area .navigation{
+	background-color: transparent;
+	position: absolute;
+	margin-top: 38px;
+	height: 100px;
+	width: 100%;
+}
+
+.header-area .navigation .navbar-brand{
+	float: left;
+}
+
+.header-area .nav-menu{
+	float: right;
+}
+.header-area .nav-menu li{
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	list-style: none;
+	float: left;
+	margin: 0 20px;
+	letter-spacing: 0px;
+	text-align: left;
+}
+.header-area .nav-menu li .active{
+	color: #FCBC14;
+}
+.header-area .nav-menu li a{
+	text-decoration: none;
+	color: #fff;
+	transition: .4s linear;
+}
+.header-area .nav-menu li a:hover{
+	color: #FCBC14;
+}
+
+/*================  Header Area End ==================*/
+
+/*=============== Banner Area Start ===================*/
+.banner-area{
+	width: 100%;
+	height: 828px;
+	left: 0px;
+	top: 0px;
+	background: url('../img/frames/dot.png') no-repeat #6246e4;
+	background-size: 100px 828px;
+	font-size: 0;
+}
+
+.banner-area .banner-content{
+	display: inline-block;
+	width: 447px;
+	height: 405px;
+	margin-top: 223px;
+	margin-right: 61px;
+}
+.banner-area .banner-content .banner-title{
+	color: #fff;
+	margin-top: 0;
+	font-size: 70px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 70px;
+	letter-spacing: -1.12px;
+	text-align: left;
+}
+.banner-area .banner-content .banner-text{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	padding-bottom: 44px;
+}
+.banner-area .banner-img{
+	margin-top: 139px;
+	position: absolute;
+	display: inline-block;
+	width: 653px;
+	height: 580px;
+}
+/*================ Banner Area End ======================*/
+
+/*================  Brands Area Start  ==================*/
+
+.brands-area{
+	width: 100%;
+	height: 129px;
+	background-color: #f7fafd;
+}
+.brands-area .brand-item{
+	margin: 44px 38px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	width: 126px;
+	transition: all .3s ease-in;
+}
+.brands-area .brand-item:hover{
+	transform: scale(1.2);
+}
+/*================  Brand Area End  ==================*/
+
+/* ===============  Features Area Start ===============*/
+
+.features-area{
+	width: 100%;
+	height: 345px;
+	margin: 50px auto;
+}
+.features-area .card-feature{
+	background: #f7fafd;
+	padding: 46px 20px 41px;
+	margin: 20px 40px;
+	display: inline-block;
+	vertical-align: middle;
+	width: 260px;
+	height: 345px;
+	border-radius: 30px;
+	transition: all .3s ease-out;
+}
+.features-area .card-feature .card-img{
+	padding-bottom: 20px;
+	text-align: center;
+}
+.features-area .card-feature .card-img img{
+	width: 100px;
+	transition: all .3s ease;
+}
+.features-area .card-feature .card-img img:hover{
+	transform: translateY(-8px);
+	box-shadow: rgba(9,9,16,1);
+}
+.features-area .card-feature .card-img .feature-img{
+	width: 140px;
+	height: 100px;
+}
+.features-area .card-feature .card-content .card-title{
+	font-size: 26px;
+	line-height: 35px;
+	margin-bottom: 10px;
+}
+.features-area .card-feature .card-content .card-text{
+	margin: 0;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+/*================  Features Area End ==================*/
+
+/*================ Service Area Start =====================*/
+.service-area{
+	width: 100%;
+	height: 731px;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	background: url('../img/frames/dot.png') no-repeat right;
+	background-size: 100px 600px;
+}
+.service-area .service-img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.service-area .service-img img{
+	width: 486px;
+	height: 690px;
+}
+.service-area .service-content{
+	display: inline-block;
+	vertical-align: middle;
+	width: 500px;
+	height: 690px;
+	margin-left: 100px;
+	position: absolute;
+}
+.service-area .service-content .service-title{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 62px;
+	color: #2d2d2d;
+}
+.service-area .service-content .service-text{
+	font-size: 18px;
+	line-height: 20px;
+	margin: 40px 0;
+}
+.service-area .service-content ul{
+	width: 460px;
+	list-style: none;
+	margin-left: -40px;
+	font-size: 0;
+}
+.service-area .service-content ul li{
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+.service-area .service-content ul li p{
+	display: inline-block;
+	vertical-align: middle;
+	width: 365px; 
+	font-size: 18px;
+	line-height: 25px;
+	margin-left: 14px;
+}
+.service-area .service-content ul li span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 40px;
+	height: 40px;
+	padding: 10px;
+	font-weight: 500;
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+}
+.service-area .service-content ul .ellips-1{
+	background-color: #F4DDA0;
+}
+.service-area .service-content ul .ellips-2{
+	background-color: #BCD5FC;
+}
+.service-area .service-content ul .ellips-3{
+	background-color: #FAC2CF;
+}
+
+/*==================== Service Area End  ==================*/
+
+/*================  Achievemnt Area Start  ==================*/
+
+.achievement-area{
+	height: 500px;
+	background: url('../img/frames/dot.png') no-repeat;
+	background-size: 100px auto;
+	font-size: 0;
+}
+.achievement-area .achievement-content{
+	display: inline-block;
+	vertical-align: middle;
+	width: 450px;
+	height: 345px;
+}
+.achievement-area .achievement-content .achievement-title{
+	font-size: 60px;
+	line-height: 62px;
+	letter-spacing: -0.96px;
+	color: #2d2d2d;
+}
+.achievement-area .achievement-content .achievement-text{
+	font-size: 18px;
+	line-height: 28px;
+	color: #2D2D2D;
+	margin-bottom: 44px;
+}
+.achievement-area .achievement-img{
+	width: 545px;
+	height: 513px;
+	display: inline-block;
+	vertical-align: middle;
+	padding-top: 40px;
+}
+
+/*================  Achievement Area End  ==================*/
+
+/*================  Footer Area Start  ==================*/
+.footer{
+	background: #F7FAFD;
+	margin-top: 50px;
+	width: 100%;
+	height: 110px;
+}
+.footer .footer-items{
+	padding: 40px 0;
+}
+.footer .footer-brand{
+	width: 129px;
+	height: 33px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+}
+.footer .copyright{
+	display: inline-block;
+	color: #2D2E2E;
+	vertical-align: middle;
+	text-align: right;
+	width: 892px;
+	height: 21px;
+}
+/*================  Footer Area End  ==================*/

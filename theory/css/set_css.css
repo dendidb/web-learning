@@ -1,0 +1,17 @@
+Trick Set CSS
+--
+
+1. Insert Reset CSS/Normalize CSS (recomended)
+  Simple Reset CSS
+  *{
+    padding: 0;
+    margin: 0;
+  }
+2. Set Box Sizing(css padding, css border)
+	*{
+		box-sizzing : border-box;
+  }
+3. Set Max Width in image tag
+	img{
+		max-width:100%;
+  }

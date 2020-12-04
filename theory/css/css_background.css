@@ -1,0 +1,35 @@
+CSS Background
+--
+[ initial = kembali ke default ]
+[ inherit = kembali ke parent ]
+
+#Backgound Property
+1. Property detail
+2. Property shorthand
+--
+
+1. Property detail
+
+.selector-class{
+  background-color: #fff;
+  background-image: url(file-name.ext);
+  background-repeat: (default) | no-repeat | repeat-x | repeat-y;
+  background-position: x y;
+    x = left | center | right | units 
+    y = top | center | bottom | units
+
+  background-size: w h | contain(menampilkan gambar full dg mengambil salah satu sisi [w | h]) | cover | initial | inherit;
+    x = units | auto;
+    y = units | auto;
+
+  background-attachment: scroll (default) | fixed;
+  background-origin: padding-box (default) | border-box | content-box | initial;
+  background-clip: padding-box | border-box (default) | content-box;
+}
+
+2. Property shorthand
+
+background: [background-image] [background-position]/[background-size] [background-repeat] 
+            [background-attachment] [background-origin] [background-clip] [background-color]
+
+/*==============================================*/

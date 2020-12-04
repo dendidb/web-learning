@@ -1,0 +1,23 @@
+body{
+margin: 5% 20%;
+padding: 5px 10px;
+font-family: times new roman;
+background: rgba(82, 86, 89);
+
+}
+div.box{
+border: 2px hidden black;
+padding: 10% 13%;
+background: white;
+}
+h1, h2, h3{
+text-align: justify;
+
+}
+
+p{
+text-align: justify;
+word-spacing: 3px;
+color: rgba(82, 86, 89);
+
+}

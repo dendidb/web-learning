@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Order Pizza 2.0</title>
+	<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+	<main>
+		<form action="#" method="GET" class="order">
+			<table>
+				<thead>
+					<tr>
+						<th colspan="2">Pizza Shop 2.0</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Name</td>
+						<td>
+							<input type="text" id="name" name="name"  />
+						</td>
+					</tr>
+					<tr>
+						<td>Pizza Topping</td>
+						<td>
+							<div class="option-input">
+								<input type="radio" id="topping1" name="topping" value="topping1"/>
+								<label for="topping1">Supreme</label>
+							</div>
+							<div class="option-input">
+								<input type="radio" id="topping2" name="topping" value="topping2"/>
+								<label for="topping2">Vegetarian</label>
+							</div>
+							<div class="option-input">
+								<input type="radio" id="topping3" name="topping" value="topping3"/>
+								<label for="topping3">Hawaiian</label>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Pizza Sauce</td>
+						<td>
+							<select name="sauce" id="sauce">
+								<option value="1">Tomato</option>
+								<option value="2">Mozarella</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Optional Extras</td>
+						<td>
+							<input type="checkbox" id="check1" name="checkbox" value="1"/>
+							<label for="check1">Extra Cheese</label>
+							<input type="checkbox" id="check2" name="checkbox" value="2"/>
+							<label for="check2">Gluten Free Base</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<label for="abillity">Delivery Intructions:</label>
+							<textarea id="abillity" name="abillity"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="button">
+							<button type="submit" value="submit">Send My Order</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</main>
+</body>
+</html>
