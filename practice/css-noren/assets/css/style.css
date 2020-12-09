@@ -1,55 +1,34 @@
 *{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 }
 
 body{
-	font-family: roboto, arial, sans-serif;
 	background-color: #fff;
+	font-family: Roboto, sans-serif, arial;
 }
 
-img{
-	max-width: 100%;
-}
+/*================  Utillities Start  ==================*/
 
 @font-face {
-	font-family: roboto;
+	font-family: Roboto;
 	src: url('../fonts/Roboto-Medium.ttf2') format('ttf2'),
 	url('../Roboto-Medium.ttf') format('ttf');
 	font-weight: normal;
 	font-style: normal;
 }
 
-/*================  Utillities Start  ==================*/
+img{
+	max-width: 100%;
+}
 
 .container {
 	width: 1060px;
-	padding-right: 15px;
-	padding-left: 15px;
 	margin: 0 auto;
 }
 
-@media (min-width:576px) {
-	.container {
-		max-width: 540px
-	}
-}
-@media (min-width:768px) {
-	.container {
-		max-width: 720px
-	}
-}
-@media (min-width:992px) {
-	.container {
-		max-width: 960px
-	}
-}
-@media (min-width:1200px) {
-	.container {
-		max-width: 1140px
-	}
-}
 
 .button-primary{
 	border: 1px solid #fff;
@@ -64,11 +43,15 @@ img{
 	display: inline-block;
 	transition: all .4s ease;
 }
+
 .button-primary:hover{
 	color: #fff;
-	transform: translateY(-6px);
 	background-color: transparent;
 	border: 1px solid #fff;
+	-webkit-transform: translateY(-6px);
+	-moz-transform: translateY(-6px);
+	-ms-transform: translateY(-6px);
+	-o-transform: translateY(-6px);
 }	
 
 .achievement-content .button-secondary{
@@ -79,310 +62,468 @@ img{
 	border-radius: 29.5px;
 	text-decoration: none;
 	font-size: 18px;
+	display: inline-block;
 	line-height: 26px;
 	text-align: center;
 	transition: .4s ease;
 }
+
 .button-secondary:hover{
 	border: 1px solid #6246E4;
 	color: #6246E4;
 	background-color: transparent;
-	transform: translateY(-6px;);
+	-webkit-transform: translateY(-6px);
+	-moz-transform: translateY(-6px);
+	-ms-transform: translateY(-6px);
+	-o-transform: translateY(-6px);
 }
 
-/*================ Utillities End  ======================*/
+/*================  Utillities End  =====================*/
 
 /*================  Header Area Start  ==================*/
 
-.header-area .navigation{
+.header-area{
+	position: fixed;
 	background-color: transparent;
-	position: absolute;
-	margin-top: 38px;
-	height: 100px;
+	font-size: 0;
+	top: 0;
 	width: 100%;
+	padding: 20px;
+	z-index: 1;
+	transition: all 0.3s ease-in-out;
 }
 
-.header-area .navigation .navbar-brand{
-	float: left;
+#navbar-brand{
+	display: inline-block;
+	vertical-align: middle;
+	width: 130px;
 }
 
-.header-area .nav-menu{
-	float: right;
+.navbar-menu{
+	display: inline-block;
+	vertical-align: middle;
+	width: 930px;
+	text-align: right;
 }
-.header-area .nav-menu li{
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 500;
-	list-style: none;
-	float: left;
-	margin: 0 20px;
-	letter-spacing: 0px;
+
+.nav-item{
+	display: inline-block;
 	text-align: left;
+	margin-right: 40px;
+	list-style: none;
+	font-size: 18px;
+	line-height: 1.5;
+	font-weight: 500;
 }
-.header-area .nav-menu li .active{
+
+.nav-item:last-child{
+	margin-right: 0;
+}
+
+.nav-item .active{
 	color: #FCBC14;
 }
-.header-area .nav-menu li a{
+
+.nav-links{
 	text-decoration: none;
 	color: #fff;
 	transition: .4s linear;
+	-webkit-transition: .4s linear;
+	-moz-transition: .4s linear;
+	-o-transition: .4s linear;
+	-ms-transition: .4s linear;
 }
-.header-area .nav-menu li a:hover{
+
+.nav-links:hover{
 	color: #FCBC14;
 }
 
-/*================  Header Area End ==================*/
-
-/*=============== Banner Area Start ===================*/
-.banner-area{
-	width: 100%;
-	height: 828px;
-	left: 0px;
-	top: 0px;
-	background: url('../img/frames/dot.png') no-repeat #6246e4;
-	background-size: 100px 828px;
-	font-size: 0;
+.header-area.active{
+	position: fixed;
+	left: 0;
+	padding: 20px;
+	background-color: #6246e4;
+	-webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+	-moz-box-shadow: 0 0 0 8px rgba(0,0,0,.3);
+	-o-box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+	-ms-box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
 }
 
-.banner-area .banner-content{
+
+/*================ Header Area End  ====================*/
+
+/*================ Banner Area Start  ==================*/
+
+.banner-area{
+	width: 100%;
+	height: 100%;
+	padding: 0 0 140px 0;
+	background: url('../img/frames/dot.png') no-repeat #6246e4 left;
+	background-size: 100px 100%;
+}
+
+.banner-item{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
+}
+
+.banner-text{
 	display: inline-block;
 	width: 447px;
 	height: 405px;
-	margin-top: 223px;
-	margin-right: 61px;
+	margin: 223px 64px 0 0;
 }
-.banner-area .banner-content .banner-title{
-	color: #fff;
+
+.banner-title{
 	margin-top: 0;
 	font-size: 70px;
-	font-style: normal;
-	font-weight: normal;
+	font-weight: 400;
 	line-height: 70px;
 	letter-spacing: -1.12px;
 	text-align: left;
+	color: #fff;
 }
-.banner-area .banner-content .banner-text{
-	font-style: normal;
-	font-weight: normal;
+
+.banner-description{
 	font-size: 16px;
+	margin: 0 0 40px;
 	line-height: 20px;
 	color: #fff;
-	padding-bottom: 44px;
 }
-.banner-area .banner-img{
-	margin-top: 139px;
+
+.banner-image{
+	margin-top: 130px;
 	position: absolute;
 	display: inline-block;
-	width: 653px;
+	width: 490px;
 	height: 580px;
 }
-/*================ Banner Area End ======================*/
 
-/*================  Brands Area Start  ==================*/
+.banner-image img{
+	width: 690px;
+	max-width: initial;
+}
+
+
+/*================ Banner Area End  ====================*/
+
+/*================ Brands Area Start  ==================*/
 
 .brands-area{
 	width: 100%;
-	height: 129px;
-	background-color: #f7fafd;
+	padding: 12px 4px;
+	background-color: #F7FAFD;
 }
-.brands-area .brand-item{
-	margin: 44px 38px;
-	text-align: center;
+
+.brand-list-item{
 	display: inline-block;
 	vertical-align: middle;
 	width: 126px;
-	transition: all .3s ease-in;
+	margin: 44px 90px 44px 0;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
 }
-.brands-area .brand-item:hover{
-	transform: scale(1.2);
+
+.brand-list-item:last-child{
+	margin-right: 0;
 }
-/*================  Brand Area End  ==================*/
 
-/* ===============  Features Area Start ===============*/
+.brand-list-item:hover{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+}
 
-.features-area{
+/*================ Brands Area End  ======================*/
+
+/*================ Features Area Start  ==================*/
+
+/*.features-area{
 	width: 100%;
-	height: 345px;
-	margin: 50px auto;
+	height: 100%;
+	margin: 100px 0 0;
 }
-.features-area .card-feature{
-	background: #f7fafd;
-	padding: 46px 20px 41px;
-	margin: 20px 40px;
+
+.features-card{
 	display: inline-block;
 	vertical-align: middle;
 	width: 260px;
 	height: 345px;
+	background: #f7fafd;
 	border-radius: 30px;
-	transition: all .3s ease-out;
+	padding: 46px 20px 41px;
+	margin: 20px 45px;
+	transition: .4s ease;
 }
-.features-area .card-feature .card-img{
-	padding-bottom: 20px;
+
+.features-card:last-child{
+	margin-right: 0;
+}
+
+.card-img{
 	text-align: center;
+	padding-bottom: 20px;
 }
-.features-area .card-feature .card-img img{
+
+.card-img img{
 	width: 100px;
 	transition: all .3s ease;
 }
-.features-area .card-feature .card-img img:hover{
-	transform: translateY(-8px);
-	box-shadow: rgba(9,9,16,1);
+
+.card-img img:hover{
+	-webkit-transform: translateY(-8px);
+	-moz-transform: translateY(-8px);
+	-o-transform: translateY(-8px);
+	-ms-transform: translateY(-8px);
 }
-.features-area .card-feature .card-img .feature-img{
+
+.card-img .feature-img-last{
 	width: 140px;
 	height: 100px;
 }
-.features-area .card-feature .card-content .card-title{
+
+.card-title{
 	font-size: 26px;
-	line-height: 35px;
-	margin-bottom: 10px;
+	line-height: 30px;
+	margin: 20px 0 14px;
 }
-.features-area .card-feature .card-content .card-text{
+
+.card-description{
+	margin: 0;
+	font-size: 14px;
+	line-height: 20px;
+}*/
+
+.features-area{
+	width: 100%;
+	height: 100%;
+	margin: 100px 0 0;
+}
+
+.features-card{
+	display: inline-block;
+	vertical-align: middle;
+	width: 260px;
+	height: 345px;
+	background: red;
+	border-radius: 30px;
+	padding: 46px 20px 41px;
+	margin: 20px 45px;
+	-webkit-transition: .4s ease;
+	-o-transition: .4s ease;
+	transition: .4s ease;
+	transition: .4s ease;
+}
+
+.features-card:last-child{
+	margin-right: 0;
+}
+
+.card-img{
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.card-img img{
+	width: 100px;
+	transition: all .3s ease;
+}
+
+.card-img img:hover{
+	-webkit-transform: translateY(-8px);
+	-moz-transform: translateY(-8px);
+	-o-transform: translateY(-8px);
+	-ms-transform: translateY(-8px);
+}
+
+.card-img .feature-img-last{
+	width: 140px;
+	height: 100px;
+}
+
+.card-title{
+	font-size: 26px;
+	line-height: 30px;
+	margin: 20px 0 14px;
+}
+
+.card-description{
 	margin: 0;
 	font-size: 14px;
 	line-height: 20px;
 }
 
-/*================  Features Area End ==================*/
+/*================ Features Area End  ====================*/
 
-/*================ Service Area Start =====================*/
+/*================ Services Area Start  ==================*/
+
 .service-area{
 	width: 100%;
-	height: 731px;
-	padding-top: 50px;
-	margin-bottom: 50px;
+	height: 700px;
+	margin: 100px 0;
 	background: url('../img/frames/dot.png') no-repeat right;
-	background-size: 100px 600px;
+	background-size: 100px 680px;
 }
+
 .service-area .service-img{
 	display: inline-block;
 	vertical-align: middle;
-}
-.service-area .service-img img{
 	width: 486px;
 	height: 690px;
 }
+
 .service-area .service-content{
 	display: inline-block;
 	vertical-align: middle;
 	width: 500px;
-	height: 690px;
+	height: 680px;
 	margin-left: 100px;
 	position: absolute;
 }
-.service-area .service-content .service-title{
-	font-style: normal;
+
+.service-area .service-title{
 	font-weight: bold;
 	font-size: 60px;
 	line-height: 62px;
 	color: #2d2d2d;
+	margin-bottom: 32px;
 }
-.service-area .service-content .service-text{
+
+.service-area .service-description{
 	font-size: 18px;
-	line-height: 20px;
-	margin: 40px 0;
+	line-height: 25px;
+	margin-bottom: 40px;
+	margin-top: 0;
 }
-.service-area .service-content ul{
-	width: 460px;
+
+.service-area ul{
 	list-style: none;
 	margin-left: -40px;
 	font-size: 0;
 }
-.service-area .service-content ul li{
+
+.service-area ul li p{
+	display: inline-block;
+	vertical-align: middle;
+	width: 400px;
+}
+
+.service-area ul li{
 	margin-bottom: 40px;
 	font-weight: bold;
-}
-.service-area .service-content ul li p{
-	display: inline-block;
-	vertical-align: middle;
-	width: 365px; 
 	font-size: 18px;
 	line-height: 25px;
-	margin-left: 14px;
 }
-.service-area .service-content ul li span{
-	display: inline-block;
-	vertical-align: middle;
-	width: 40px;
-	height: 40px;
-	padding: 10px;
-	font-weight: 500;
-	font-size: 18px;
-	text-align: center;
-	color: #fff;
-	border-radius: 50%;
-}
-.service-area .service-content ul .ellips-1{
+
+.service-area ul li::before{
+	content: "1";
 	background-color: #F4DDA0;
+	display: inline-block;
+	border-radius: 50%;
+	padding: 14px 20px;
+	vertical-align: middle;
+	color: #fff;
+	margin-right:20px;
 }
-.service-area .service-content ul .ellips-2{
+
+.service-area ul li:nth-child(2)::before{
+	content: "2";
 	background-color: #BCD5FC;
+	display: inline-block;
+	border-radius: 50%;
+	padding: 14px 20px;
+	vertical-align: middle;
+	color: #fff;
+	margin-right:20px;
 }
-.service-area .service-content ul .ellips-3{
+
+.service-area ul li:nth-child(3)::before{
+	content: "3";
 	background-color: #FAC2CF;
+	display: inline-block;
+	border-radius: 50%;
+	padding: 14px 20px;
+	vertical-align: middle;
+	color: #fff;
+	margin-right:20px;
 }
 
-/*==================== Service Area End  ==================*/
+/*================  Services Area End  ========================*/
 
-/*================  Achievemnt Area Start  ==================*/
+/*================ Achievement's Area Start  ==================*/
 
 .achievement-area{
-	height: 500px;
-	background: url('../img/frames/dot.png') no-repeat;
-	background-size: 100px auto;
+	background-image: url('../img/frames/dot.png') no-repeat;
 	font-size: 0;
+	height: 500px;
+	background-size: 100px auto;
 }
+
 .achievement-area .achievement-content{
-	display: inline-block;
-	vertical-align: middle;
 	width: 450px;
 	height: 345px;
+	display: inline-block;
+	vertical-align: middle;
 }
-.achievement-area .achievement-content .achievement-title{
+
+.achievement-area .achievement-title{
 	font-size: 60px;
 	line-height: 62px;
 	letter-spacing: -0.96px;
 	color: #2d2d2d;
+	margin: 40px 0;
 }
-.achievement-area .achievement-content .achievement-text{
+
+.achievement-area .achievement-description{
 	font-size: 18px;
 	line-height: 28px;
 	color: #2D2D2D;
-	margin-bottom: 44px;
+	margin: 0 0 40px;
 }
+
 .achievement-area .achievement-img{
-	width: 545px;
-	height: 513px;
 	display: inline-block;
 	vertical-align: middle;
 	padding-top: 40px;
+	width: 545px;
+	height: 513px;
 }
 
-/*================  Achievement Area End  ==================*/
+/*================  Achievemnt's Area End ==================*/
 
-/*================  Footer Area Start  ==================*/
+/*================ Footer Area Start  ======================*/
+
 .footer{
-	background: #F7FAFD;
-	margin-top: 50px;
+	margin-top: 100px;
 	width: 100%;
 	height: 110px;
+	background: #F7FAFD;
 }
-.footer .footer-items{
-	padding: 40px 0;
+
+.footer .footer-item{
+	padding: 32px 0 0;
 }
-.footer .footer-brand{
+
+.footer .logo{
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
 	width: 129px;
 	height: 33px;
-	display: inline-block;
-	text-align: left;
-	vertical-align: middle;
 }
+
 .footer .copyright{
 	display: inline-block;
-	color: #2D2E2E;
 	vertical-align: middle;
 	text-align: right;
 	width: 892px;
 	height: 21px;
+	color: #2D2E2E;
 }
-/*================  Footer Area End  ==================*/
+
+/*================ Footer Area End  ==================*/
