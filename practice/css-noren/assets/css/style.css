@@ -213,7 +213,6 @@ img{
 
 .brands-area{
 	width: 100%;
-	padding: 12px 4px;
 	background-color: #F7FAFD;
 }
 
@@ -300,63 +299,66 @@ img{
 }*/
 
 .features-area{
+	position: relative;
 	width: 100%;
-	height: 100%;
-	margin: 100px 0 0;
+}
+
+.features-item{
+	font-size: 0;
+	margin-right: 0;
+	display: inline-block;
+	vertical-align: top;
+	padding: 40px 0;
 }
 
 .features-card{
 	display: inline-block;
-	vertical-align: middle;
-	width: 260px;
-	height: 345px;
+	vertical-align: top;
+	padding: 40px 0;
+	width: 280px;
 	background: red;
 	border-radius: 30px;
-	padding: 46px 20px 41px;
-	margin: 20px 45px;
-	-webkit-transition: .4s ease;
-	-o-transition: .4s ease;
-	transition: .4s ease;
-	transition: .4s ease;
+	padding: 33px;
+	margin: 0 73px 0 0;
 }
 
 .features-card:last-child{
-	margin-right: 0;
+	margin-right: 0;;
 }
 
-.card-img{
+.card-img {
+	margin-top:46px;
 	text-align: center;
-	padding-bottom: 20px;
+	height: 20sssspx;
 }
-
-.card-img img{
+.card-img img {
 	width: 100px;
-	transition: all .3s ease;
 }
-
-.card-img img:hover{
-	-webkit-transform: translateY(-8px);
-	-moz-transform: translateY(-8px);
-	-o-transform: translateY(-8px);
-	-ms-transform: translateY(-8px);
-}
-
-.card-img .feature-img-last{
-	width: 140px;
-	height: 100px;
+.card-img img.feature-3{
+	width: 160px;
+	margin-left: 40px;
 }
 
 .card-title{
-	font-size: 26px;
-	line-height: 30px;
-	margin: 20px 0 14px;
+	margin: 0 0 20px 0;
+	 font-size: 26px;
+	 font-weight: 700;
 }
 
-.card-description{
-	margin: 0;
+.card-text h2{
+	text-align: left;
+	font-size: 26px;
+	font-weight: 700;
+}
+
+
+.card-description p{
+	margin: 0 0 20px 0;
 	font-size: 14px;
 	line-height: 20px;
+	margin-top: 10px;
 }
+
 
 /*================ Features Area End  ====================*/
 
