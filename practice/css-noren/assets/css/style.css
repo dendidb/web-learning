@@ -128,14 +128,14 @@ body{
   text-align: right;
 }
 
-.navbar-menu .nav-item{
+.nav-item{
   margin: 0 20px 0 0;
   padding: 20px;
   display: inline-block;
   vertical-align: middle;
 }
 
-.navbar-menu .nav-links{
+.nav-links{
   font-weight: 600;
   font-size: 18px;
   color: #fff;
@@ -149,7 +149,6 @@ body{
 .nav-links:hover{
   color: #fcbc14;  
 }
-
 
 .nav-item .active{
   font-weight: 600;
@@ -248,7 +247,7 @@ body{
 /* Features Area */
 .features-area{
   text-align: center;
-  padding: 98px;
+  padding: 98px 0 0 0;
 }
 
 .card-list{
@@ -271,12 +270,20 @@ body{
   margin-right: 0;
 }
 
-.feature-img{
+.features-image{
   display: inline-block;
   margin: 0 0 37px 0;
   width: 122px;
   height: 128px;
   text-align: center;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+}
+
+.features-image:hover{
+  transform: translateY(-8px);
 }
 
 .features-title{
