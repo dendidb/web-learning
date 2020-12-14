@@ -3,14 +3,13 @@
 	-ms-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-o-box-sizing: border-box;
-	box-sizing: border-box;
 }
 
 body {
-	font-family: sans-serif;
-	background-color: #fff;
 	font-weight: normal;
 	font-style: normal;
+	font-family: sans-serif;
+	background-color: #fff;
 	line-height: 1.5;
 }
 
@@ -26,26 +25,27 @@ img {
   font-style: normal;
 }
 
-/*================  component  ==================*/
-
 .container {
 	width: 1200px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 }
 
-/*================  header area  ==================*/
-
+/* Header Area */
+ 
 .header-area {
 	width: 100%;
 	padding: 36px 0;
 	font-size: 0;
 }
 
-.header-area:after {
+.header-area .container:after {
 	content: '';
 	display: block;
-	clear: left;
+	clear: both;
+}
+.logo{
+	float: left;
+	width: 130px;
 }
 
 .nav-left {
@@ -60,7 +60,7 @@ img {
 	padding: 0;
 }
 
-.nav-item {
+.nav-list {
 	float: left;
 	list-style: none;
 	margin-right: 40px;
@@ -72,7 +72,7 @@ img {
 	text-align: left;
 }
 
-.nav-item:last-child {
+.nav-list:last-child {
 	margin-right: 0;
 }
 
@@ -88,11 +88,8 @@ img {
 .nav-link:hover {
 	color: #4F56F1;
 }
-.nav-menu .logo {
-	margin-right: 50px;
-	width: 75px;
-}
-.nav-menu .active {
+
+.nav-link .active {
 	color: #4F56F1;
 }
 
@@ -110,9 +107,9 @@ img {
 	transition: all .3s ease;
 }
 
-/*================  /header area  ==================*/
+/* /Header Area */
 
-/*================  banner area  ==================*/
+/* Banner Area*/
 
 .banner-area {
 	width: 100%;
@@ -175,9 +172,9 @@ img {
 	transition: all .3s ease;
 }
 
-/*================  /banner area  ==================*/
+/* /Banner Area */
 
-/*================  colors  ==================*/
+/* Button Colors */
 
 .home {
 	background-color: #4F56F1;
@@ -229,4 +226,4 @@ img {
 	background-color: transparent;
 }
 
-/*================  /colors  ==================*/
+/* /Button Colors */
