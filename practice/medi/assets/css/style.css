@@ -40,7 +40,7 @@ img {
 
 .header-area .container:after {
 	content: '';
-	display: block;
+	display: table;
 	clear: both;
 }
 .logo{
