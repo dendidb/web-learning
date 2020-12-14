@@ -1,6 +1,4 @@
 *{
-  padding: 0;
-  margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -12,16 +10,18 @@ img{
 }
 
 body{
-  font-family: roboto, sans-serif, aral;
+  font-family: roboto, sans-serif, arial;
   background-color: #fff;
 }
+
 /* Utillities Area */
+
 .btn-primary{
   padding: 18px 38px;
   text-align: center;
   display: inline-block;
   border-radius: 32px;
-  min-width: 217px;
+  min-width: 215px;
   background-color: #fff;
   color: #000;
   font-size: 22px;
@@ -34,7 +34,7 @@ body{
 }
 
 .btn-primary:hover{
-  background-color: #6246E4;
+  background-color: #6246e4;
   color: #fff;
   border: solid 1px #fff;
   -webkit-transform: translateY(-6px);
@@ -49,7 +49,7 @@ body{
   display: inline-block;
   border-radius: 32px;
   min-width: 217px;
-  background-color: #6246E4;
+  background-color: #6246e4;
   color: #fff;
   font-size: 22px;
   font-weight: 700;
@@ -62,13 +62,14 @@ body{
 
 .btn-secondary:hover{
   background-color: #fff;
-  color: #6246E4;
-  border: solid 1px #6246E4;
+  color: #6246e4;
+  border: solid 1px #6246e4;
   -webkit-transform: translateY(-6px);
   -moz-transform: translateY(-6px);
   -o-transform: translateY(-6px);
   -ms-transform: translateY(-6px);
 }
+
 /* /Utillities Area*/
 
 .container{
@@ -103,19 +104,15 @@ body{
 }
 
 .logo{
-  padding: 0;
-  margin: 0;
   width: 130px;
   display: inline-block;
-  vertical-align: top;  
+  vertical-align: middle;  
   margin-right: 0;
 }
 
 .logo img{
-  width: 130px;
-  display: inline-block;
+  display: block;
   vertical-align: middle;
-  padding: 8px 0;
 }
 
 .navbar-menu{
@@ -160,38 +157,36 @@ body{
 
 /* Banner Area*/
 .banner-area{
-  padding: 140px 0 32px 0;
+  padding: 140px 0 70px;
   background: url('../img/frames/dot.png') no-repeat #6246e4 left;
-  background-size: 100px 100%;
+  background-size: auto 100%;
   font-size: 0;
+  color: #fff;
 }
 
 .banner-text{
-  margin-right: 0;
   width: 430px;
   display: inline-block;
   vertical-align: middle;
-  color: #fff;
-  padding: 45px 0 0 0;
 }
 
 .banner-title{
   font-size: 70px;
   font-weight: 400;
-  margin: 0 0 32px 0;
+  margin: 0 0 32px;
 }
 
 .banner-desc{
   font-size: 18px;
   line-height: 1.5;
-  margin: 0 0 45px 0;
+  margin: 0 0 45px;
 }
 
 .banner-image{
-  padding: 12px 52px;
+  padding-left: 58px;   
   width: 630px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .banner-image img{
@@ -209,19 +204,20 @@ body{
 /* Brands Area */
 
 .brands-area{
-  padding: 32px 0;
+  padding: 48px 0;
   text-align: center;
   background-color: #f7fafd;
 }
 
-.brands-items{
+.brands-list{
+  margin: 0;
+  padding: 0;
   list-style: none;
-  display: inline-block;
-  vertical-align: middle;
 }
 
-.brands-list{
-  width: 126px;
+.brands-item{
+  vertical-align: middle;
+  display: inline-block;
   margin: 0 60px 0 0;
 }
 
@@ -245,13 +241,14 @@ body{
 /* /Brands Area*/
 
 /* Features Area */
+
 .features-area{
   text-align: center;
-  padding: 98px 0 0 0;
+  font-size: 0;
 }
 
 .card-list{
-  font-size: 0;
+  padding: 98px 30px;
 }
 
 .card-box{
@@ -260,9 +257,9 @@ body{
   display: inline-block;
   vertical-align: middle;
   width: 260px;
-  text-align: center;
-  color: #2D2D2D;
-  padding: 20px 22px;
+  color: #2d2d2d;
+  border: solid 2px black;
+  padding: 20px 24px;
   margin-right: 90px;
 }
 
@@ -272,10 +269,9 @@ body{
 
 .features-image{
   display: inline-block;
-  margin: 0 0 37px 0;
+  margin: 0 0 37px;
   width: 122px;
-  height: 128px;
-  text-align: center;
+  height: 126px;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -o-transition: all .3s ease;
@@ -290,7 +286,7 @@ body{
   text-align: left;
   font-size: 26px;
   font-weight: 700;
-  margin: 0 0 4px 0;
+  margin: 0 0 4px;
 }
 
 .features-desc{
@@ -299,6 +295,7 @@ body{
   font-weight: 400;
   line-height: 20px;
 }
+
 /* /Features Area*/
 
 /* Service Area*/
@@ -306,72 +303,63 @@ body{
 .services-area{
   background: #fff url(../img/frames/dot-2.png);
   background-position: right;
-  background-size: 100px 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  padding: 110px 0 0 0;
+  padding: 110px 0 80px;
   font-size: 0;
 }
 
 .service-image{
-  padding: 54px 0;
+  background: red;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 576px;
 }
 
 .service-image img{
   display: block;
-  margin-right: 0;
-  width: 485px;
 }
 
 .service-text{
-  padding: 50px 12px;
+  padding-left: 15px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 484px;
-  color: #2D2D2D;
+  color: #2d2d2d;
 }
 
 .service-title{
   font-size: 60px;
   font-weight: 600;
   line-height: 1.2;
-  margin: 0 0 30px 0;
+  margin: 0 0 30px;
 }
+
 .service-desc{
   font-size: 18px;
   font-weight: 400;
   line-height: 1.2;
-  margin: 0 0 48px 0;
+  margin: 0 0 48px;
 }
 
 .service-menu{
+  padding: 0;
+  margin: 0;
   list-style: none;
-  font-size: 0;
 }
 
 .service-menu li{
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0 48px 0;
+  margin: 0 0 48px;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
 }
 
-.service-menu p{
-  width: 370px;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 700;
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .service-menu li::before{
   content: "1";
-  background-color: #F4DDA0;
+  background-color: #f4dda0;
   display: inline-block;
   border-radius: 50%;
   padding: 14px 20px;
@@ -382,7 +370,7 @@ body{
 
 .service-menu li:nth-child(2)::before{
   content: "2";
-  background-color: #BCD5FC;
+  background-color: #bcd5fc;
   display: inline-block;
   border-radius: 50%;
   padding: 14px 20px;
@@ -393,7 +381,7 @@ body{
 
 .service-menu li:nth-child(3)::before{
   content: "3";
-  background-color: #FAC2CF;
+  background-color: #fac2cf;
   display: inline-block;
   border-radius: 50%;
   padding: 14px 20px;
@@ -405,21 +393,22 @@ body{
 /* /Service Area*/
 
 /* Achievement Area */
+
 .achievement-area{
   background: #fff url(../img/frames/dot-2.png);
   background-position: left;
-  background-size: 100px 100%;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   padding: 80px;
-  margin: 0 0 64px 0;
+  margin: 0 0 64px;
 }
 
 .achievement-text{
-  padding: 112px 0 0 0;
+  padding: 115px 0 0;
   font-size: 0;
   display: inline-block;
-  vertical-align: top;
-  width: 460px;
+  vertical-align: middle;
+  width: 462px;
 }
 
 .achievement-title{
@@ -450,34 +439,32 @@ body{
 /* /Achievement Area*/
 
 /* Footer Area */
-.footer{
-  width: 100%;
-  height: 110px;
-  background: #F7FAFD;
-}
 
-.footer-item{
-  padding: 32px 0 0 0;
+.footer{
+  font-size: 0;
+  background-color: #f7fafd;
+  padding: 20px 0;
 }
 
 .footer-logo{
-  padding: 8px 0;
   display: inline-block;
   vertical-align: middle;
-  text-align: left;
-  width: 129px;
-  height: 33px;
+  width: 130px;
+}
+
+.footer-logo img{
+  display: block;
 }
 
 .copyright{
+  width: 930px;
+  margin: 0;
   display: inline-block;
   vertical-align: middle;
-  padding: 20px 0;
   font-size: 18px;
   font-weight: 700;
   text-align: right;
-  width: 892px;
-  height: 21px;
-  color: #2D2E2E;
+  color: #2d2e2e;
 }
+
 /* /Footer Area*/
