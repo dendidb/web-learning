@@ -1,176 +1,232 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Roboto&display=swap');
-
-
-*{
-	padding: 0;
-	margin: 0;
+* {
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.container{
-	width: 2000px;
-	margin: auto;
-	padding: 10px 20px;
+
+body {
+	font-family: sans-serif;
+	background-color: #fff;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.5;
 }
 
-@media (min-width:576px) {
-	.container {
-		max-width: 540px;
-	}
+img {
+	max-width: 100%;
 }
-@media (min-width:768px) {
-	.container {
-		max-width: 720px;
-	}
+
+@font-face {
+  font-family: ramaraja;
+  src: url('../fonts/ramaraja-regular.ttf2') format('ttf2'),
+  url('../fonts/ramaraja-regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
 }
-@media (min-width:992px) {
-	.container {
-		max-width: 960px;
-	}
+
+/*================  component  ==================*/
+
+.container {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
 }
-@media (min-width:1200px) {
-	.container {
-		max-width: 1140px;
-	}
+
+/*================  header area  ==================*/
+
+.header-area {
+	width: 100%;
+	padding: 36px 0;
+	font-size: 0;
 }
-ul, li, a{
-	font-family: roboto, sans-serif;
+
+.header-area:after {
+	content: '';
+	display: block;
+	clear: left;
+}
+
+.nav-left {
+	float: left;
+}
+
+.nav-right {
+	float: right;
+}
+
+.nav-menu {
+	padding: 0;
+}
+
+.nav-item {
+	float: left;
+	list-style: none;
+	margin-right: 40px;
+	text-transform: capitalize;
 	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0px;
+	text-align: left;
+}
+
+.nav-item:last-child {
+	margin-right: 0;
+}
+
+.nav-link {
+	text-decoration: none;
 	color: #1B0A42;
-	text-decoration: none;
-
+	-webkit-transition: .2s linear;
+	-ms-transition: .2s linear;
+	-moz-transition: .2s linear;
+	-o-transition: .2s linear;
+	transition: .2s linear;
 }
-.header-area{
-	width: 100%;
-	background-color: transparent;
-	height: 420px;
-	padding: 10px;
-	position: absolute;
-}
-
-.header-area .navbar{
-	width: 100%;
-	line-height: 50px;
-}
-.header-area .navbar-brand{
-	padding: 25px 15px;
-	float: left;
-}
-
-.header-area .navbar-menu-left{
-	position: relative;
-	margin: 0px 164px;
-
-}
-
-.header-area .navbar-menu-left li{
-	display: inline-block;
-	margin: 20px;
-}
-.header-area .navbar-menu-left li a{
-	text-decoration: none;
-	transition: all .3s ease;
-}
-
-.header-area .navbar-menu-left li a:hover{
+.nav-link:hover {
 	color: #4F56F1;
 }
-.header-area .navbar-menu-left li .active{
+.nav-menu .logo {
+	margin-right: 50px;
+	width: 75px;
+}
+.nav-menu .active {
 	color: #4F56F1;
-	font-weight: bold;
 }
 
-.header-area .navbar-menu-right{
-	position: relative;
-	float: right;
-	margin: 0px 0px 0px 200px;
-}
-
-.header-area .navbar-menu-right li{
-	display: inline-block;
-	margin: 20px;
-	float: left;
-	position: right;
-	margin-top: -68px;
-}
-.header-area .navbar-menu-right li a{
+.button {
+	min-width: 115px;
 	text-decoration: none;
-	transition: all .3s ease;
-}
-.header-area .navbar-menu-right li a:hover{
-	color: #4F56F1;
-}
-.header-area .navbar-menu-right .cta-btn{
-	padding: 18px 31px;
-	background-color: #4F56F1;
+	outline: none;
+	padding: 18px 28px;
 	color: #fff;
 	border-radius: 6px;
-	transition: all .3s;
+	-webkit-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
-.header-area .navbar-menu-right .cta-btn:hover{
-	background: #343CC2;
-	color: #fff;
-}
-/* Header Area End*/
 
-/* Banner Area Start*/
-.banner-area{
+/*================  /header area  ==================*/
+
+/*================  banner area  ==================*/
+
+.banner-area {
 	width: 100%;
-	height: 620px;
-}
-.banner-area .banner-content{
-	padding: 101px 60px 0px 0px;
+	padding: 100px 0;
+	font-size: 0;
 }
 
-.banner-area .banner-text{
-	width: 538px;
-	height: auto;
-	margin: 100px 0px;
+.banner-text {
+	display: inline-block;
+	vertical-align: middle;
+	width: 600px;
+	padding-right: 40px;
 }
-.banner-area .banner-text h1{
-	font-family: ramaraja, sans-serif;
-	font-size: 52px;
+
+.banner-img {
+	display: inline-block;
+	vertical-align: middle;
+	width: 600px;
+}
+
+.banner-img img {
+	display: block;
+}
+
+.banner-title {
+	margin: 0 0 44px;
+	font-family: 'Ramaraja', serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 60px;
+	line-height: 76px;
+	letter-spacing: 0.02em;
 	color: #1B0A42;
 }
 
-.banner-area .banner-text p{
-	font-family: roboto, sans-serif;
-	margin: 20px 0px;
-	width: 538px;
+.banner-desc {
+	font-size: 20px;
 	line-height: 32px;
+	letter-spacing: 0.02em;
 	color: #9A9A9A;
+	margin: 0 0 44px;
 }
 
-.banner-area .cta-btn{
-	padding: 18px 31px;
-	background-color: #4F56F1;
-	color: #fff;
-	border-radius: 6px;
-	transition: all .3s;
-	margin: 40px 0px;
+.banner-btn {
 	display: inline-block;
-}
-
-.banner-area .cta-btn:hover{
-	background: #343CC2;
+	text-decoration: none;
+	outline: none;
+	min-width: 180px;
 	color: #fff;
-
-}
-.banner-area .banner-img{
-	position: absolute;
-	float: right;
-	margin-left: 799px;
-}
-
-.banner-area .banner-img .banner-image{
-	position: absolute;
-	width: 480px;
-	margin-right: 432px;
-	margin-left: -232px;
-	margin-top: -442px;
+	padding: 14px 48px;
+	border-radius: 6px;
+	text-transform: capitalize;
+	font-size: 16px;
+	line-height: 32px;
+	text-align: center;
+	-webkit-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
-/* Banner Area End */
+/*================  /banner area  ==================*/
 
+/*================  colors  ==================*/
 
+.home {
+	background-color: #4F56F1;
+	border: 1px solid #4F56F1;
+}
+
+.home:hover {
+	color: #4F56F1;
+	background-color: transparent;
+}
+
+.about {
+	background-color: #824FF1;
+	border: 1px solid #824FF1;
+}
+
+.about:hover {
+	color: #824FF1;
+	background-color: transparent;
+}
+
+.blog {
+	background-color: #A3DC00;
+	border: 1px solid #A3DC00;
+}
+
+.blog:hover {
+	color: #6F920D;
+	background-color: transparent;
+}
+
+.contact {
+	background-color: #FC569A;
+	border: 1px solid #FC569A;
+}
+
+.contact:hover {
+	color: #FC569A;
+	background-color: transparent;
+}
+
+.sign {
+	background-color: #33A2E0;
+	border: 1px solid #33A2E0;
+}
+
+.sign:hover {
+	color: #33A2E0;
+	background-color: transparent;
+}
+
+/*================  /colors  ==================*/
