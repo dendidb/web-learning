@@ -137,8 +137,8 @@ p{
 }
 
 .input-row input[type=text]:focus,
-.input-row input[type=text]:hover,
-.input-row input[type=password]:hover,
+/*.input-row input[type=text]:hover,
+.input-row input[type=password]:hover,*/
 .input-row input[type=password]:focus{
   border: solid 1px #ee4054;
 }
@@ -418,6 +418,12 @@ p{
   font-size: 0;
   text-align: center;
   padding: 0 240px;
+}
+
+.text-title{
+  color: #000;
+  font-size: 32px;
+  margin: 0 0 30px;
 }
 
 .input-checkbox {
