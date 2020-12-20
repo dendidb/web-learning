@@ -12,3 +12,5 @@ function setChecks(obj) {
     checkCount = checkCount -1
   }
 }
+
+

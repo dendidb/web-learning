@@ -3,6 +3,7 @@
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img{
@@ -10,20 +11,23 @@ img{
 }
 
 body{
-  font-family: roboto, sans-serif, arial;
+  font-family: Roboto, sans-serif, arial;
   background-color: #fff;
 }
 
 /* Utillities Area */
 
 .btn-primary{
+  background-color: #fff;
+  color: #000;
+}
+
+.btn{
   padding: 18px 38px;
   text-align: center;
   display: inline-block;
   border-radius: 32px;
   min-width: 215px;
-  background-color: #fff;
-  color: #000;
   font-size: 22px;
   font-weight: 400;
   text-decoration: none;
@@ -31,6 +35,7 @@ body{
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .btn-primary:hover{
@@ -41,23 +46,12 @@ body{
   -moz-transform: translateY(-6px);
   -o-transform: translateY(-6px);
   -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
 .btn-secondary{
-  padding: 18px 38px;
-  text-align: center;
-  display: inline-block;
-  border-radius: 32px;
-  min-width: 217px;
   background-color: #6246e4;
   color: #fff;
-  font-size: 22px;
-  font-weight: 700;
-  text-decoration: none;
-  -webkit-transition: all 300ms linear;
-  -moz-transition: all 300ms linear;
-  -o-transition: all 300ms linear;
-  -ms-transition: all 300ms linear;
 }
 
 .btn-secondary:hover{
@@ -68,6 +62,7 @@ body{
   -moz-transform: translateY(-6px);
   -o-transform: translateY(-6px);
   -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
 }
 
 /* /Utillities Area*/
@@ -90,6 +85,7 @@ body{
   -moz-transition: all 300ms linear;
   -o-transition: all 300ms linear;
   -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
 }
 
 .header-area.active{
@@ -101,6 +97,7 @@ body{
   -moz-box-shadow: 0 0 0 8px rgba(0,0,0,.3);
   -o-box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
   -ms-box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.3);
 }
 
 a{
@@ -146,6 +143,7 @@ a{
   -moz-transition: all 300ms linear;
   -o-transition: all 300ms linear;
   -ms-transition: all 300ms linear;
+  transition: all 300ms linear;
 }
 
 .nav-links:hover{
@@ -188,17 +186,13 @@ a{
 }
 
 .banner-image{
-  padding-left: 58px;   
+  padding-left: 58px;
   width: 630px;
   display: inline-block;
   vertical-align: middle;
 }
 
 .banner-image img{
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  -o-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
   display: block;
   max-width: initial;
   width: 690px;
@@ -226,6 +220,10 @@ a{
   margin: 0 60px 0 0;
 }
 
+.brands-item:last-child{
+  margin-right: 0;
+}
+
 .brands-list img{
   width: 130px;
   display: block;
@@ -233,7 +231,7 @@ a{
   -moz-transition: all 300ms linear;
   -o-transition: all 300ms linear;
   -ms-transition: all 300ms linear;
-
+  transition: all 300ms linear;
 }
 
 .brands-list img:hover{
@@ -261,7 +259,7 @@ a{
   border-radius: 30px;
   display: inline-block;
   vertical-align: middle;
-  width: 260px;
+  width: 273px;
   color: #2d2d2d;
   padding: 20px 24px;
   margin-right: 90px;
@@ -283,6 +281,10 @@ a{
 }
 
 .features-image:hover{
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  -o-transform: translateY(-8px);
+  -ms-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
@@ -290,7 +292,7 @@ a{
   text-align: left;
   font-size: 26px;
   font-weight: 700;
-  margin: 0 0 4px;
+  margin: 0 0 20px;
 }
 
 .features-desc{
@@ -298,6 +300,7 @@ a{
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
+  margin: 0 0 20px;
 }
 
 /* /Features Area*/
@@ -391,20 +394,19 @@ a{
 /* Achievement Area */
 
 .achievement-area{
+  font-size: 0;
   background: #fff url(../img/frames/dot-2.png);
-  background-position: left;
+  background-position: left center;
   background-size: auto 100%;
   background-repeat: no-repeat;
-  padding: 80px;
+  padding: 80px 0;
   margin: 0 0 64px;
 }
 
 .achievement-text{
-  font-size: 0;
   display: inline-block;
   vertical-align: middle;
   width: 460px;
-  margin-right: 0;
 }
 
 .achievement-title{
@@ -412,20 +414,20 @@ a{
   font-size: 60px;
   font-weight: 700;
   line-height: 62px;
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
 }
 
 .achievement-desc{
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  margin: 0 0 63px 0;
+  margin: 0 0 63px;
 }
 
 .achievement-image{
   display: inline-block;
   vertical-align: middle;
-  width: 596px;
+  width: 560px;
 }
 
 .achievement-image img{
