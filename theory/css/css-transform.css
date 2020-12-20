@@ -1,0 +1,26 @@
+CSS Transform (CSS 3)
+--
+
+2D
+transform-origin: x y
+          default (center center)
+          x: left center right | units
+          x: left center right | units
+transform: value-of-transform;
+-
+translate(secara x doang)
+translate(x-units, y-units)
+translateX(units)
+translateY(units)
+rotate(angle)
+
+scale itu tanpa satuan
+scale = global secara x dan y contoh scale(2)
+scaleX 
+scaleY
+skewX(angle) => artinya kemiringan secara x satuannya deg
+matrix
+
+
+3D
+

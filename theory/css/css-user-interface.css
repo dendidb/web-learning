@@ -1,0 +1,7 @@
+CSS User Interface
+--
+
+selector{
+  outline-offset: units;
+  resize: none (default selain textarea) | both (default textarea) | horizonal | vertical /*ketergantungan sama overflow */
+}
