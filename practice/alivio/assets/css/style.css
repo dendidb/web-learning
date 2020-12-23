@@ -239,7 +239,155 @@ img{
   display: block;
 }
 
-
-
 /* /Steps Area*/
 
+/* Success Story */
+
+.success-story-area{
+  color: #fff;
+  font-size: 0;
+  padding: 120px 60px;
+  background-color: #245852;
+}
+
+.story-text{
+  display: inline-block;
+  vertical-align: middle;
+  width: 540px;
+}
+
+.story-title{
+  margin: 0 0 20px 0;
+  font-family: Georgia;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.story-desc{
+  margin: 0 0 48px 0;
+  font-size: 18px;
+}
+
+.story-image{
+  padding-left: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 660px;
+}
+
+.story-image img{
+  display: block;
+}
+
+/* /Story Success Area*/
+
+/* Our Product Area */
+.our-product-area{
+  padding: 80px 40px 240px;
+}
+
+.our-product-area .container{
+  position: relative;
+}
+
+.image-woman{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 640px;
+  background-color: rgba(1,153,109,0.2);
+}
+
+.image-woman img{
+  margin: 0 auto;
+  width: 420px;
+  display: block;
+}
+
+.product-text{
+  width: 555px;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 40px;
+}
+
+.product-text h5{
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+
+.product-title{
+  margin: 0 0 20px;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: Georgia;
+  color: #01996d;
+}
+
+.product-desc{
+  margin: 0 0 60px;
+  line-height: 32px;
+}
+
+.product-custom{
+  text-align: center;
+  position: absolute;
+  left: -60px;
+  bottom: -140px;
+  min-width: 340px;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 0 32px 0 rgba(0,0,0,.3);
+}
+
+.product-custom img{
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.product-list{
+  text-align: left;
+}
+
+.product-list li{
+  margin: 0 0 20px;
+}
+
+/* /Our Product Area */
+
+/* Footer Area */
+.footer-area{
+  padding: 80px 0;
+  background-color: rgb(36,88,82,1);
+}
+
+.footer-list{
+  padding: 80px 0;
+}
+
+.footer-nav{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-nav h3{
+  margin:  0 0 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer-nav li{
+  margin: 0 0 36px;
+}
+
+.footer-nav a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* /Footer Area */
