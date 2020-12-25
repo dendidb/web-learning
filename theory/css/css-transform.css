@@ -5,7 +5,7 @@ CSS Transform (CSS 3)
 transform-origin: x y
           default (center center)
           x: left center right | units
-          x: left center right | units
+          y: left center right | units
 transform: value-of-transform;
 -
 translate(secara x doang)
@@ -16,11 +16,52 @@ rotate(angle)
 
 scale itu tanpa satuan
 scale = global secara x dan y contoh scale(2)
-scaleX 
-scaleY
+scaleX(x-scale)
+scaleY(y-scale)
 skewX(angle) => artinya kemiringan secara x satuannya deg
-matrix
-
+matrix3d ()
 
 3D
+--
 
+.selector-class{
+  transform: value-of-transform;
+}
+
+value-of-transform
+--
+rotateX(angle)
+rotateY(angle)
+rotateZ(angle)
+
+
+Transform Style
+--
+
+transform-style: flat (default) | preserve 3d;
+perspectve: none (default) | units etc : 100px;
+perspective-origin: x dan y; bisa pake units atau top, bottom, center,
+default (center);
+backspace-visbility: visible (default) | hidden;
+
+.title{
+  line-height: 1.3;
+  position: relative;
+  font-size: 16px;
+}
+
+.title::after{
+  display: block;
+  width: 100%;
+  transition: all .3s ease;
+  border: solid 1px red;
+  content: '';
+  scaleX(0)
+  transform-origin: left center;
+}
+
+
+.title::hover::after{
+  transform: scaleX(1)
+  transform-origin: right center;
+}
