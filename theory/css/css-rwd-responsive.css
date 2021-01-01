@@ -30,31 +30,24 @@ rumusnya 1/12 dibagi 3
   width: 50%;
 }
 .col-7{
-  w
+  width: 58.3333333%;
 }
 .col-8{
-  w
+  width: 66.6666666%
 }
 .col-9{
-  w
+  width: 75.3333333%
 }
 .col-10{
-  w
+  width:  83.3333333%
 }
 .col-11{
-  w
+  width:  91.6666666%
 }
 .col-12{
-  w
+  width:  100.3333333%
 }
 
-
-col-7 58.3333333%
-col-8 66.6666666%
-ol-975.3333333%
-cl-10 83.3333333%
-col-11 91.6666666%
-coll-12 100.3333333%
 
 misal di bawah container
 
@@ -92,10 +85,9 @@ Breakpoints Desktop First
 --
 Large: 1199.98px (iPad atau tablet yang landscape)
 Medium: 991.98px; (iPad atau tablet yang potrait)
-Small: 7.67.98px (Mobile Landscape);
+Small: 767.98px (Mobile Landscape);
 Extra Small: 575.86px (Mobile Potrait)
 Retina 320px (iPhone 5/SE)
-
 
 Breakpoints Mobile First
 --
@@ -107,5 +99,9 @@ Extra Small: 576px (Mobile Potrait)
 Retina 320px (iPhone 5/SE)
 
 
-kao min width and max-width itu digabungin itu dibacanya ngasih batas mniimal dan maximal (diantara screen itu sendiri)
+kalo min width and max-width itu digabungin itu dibacanya ngasih batas minimal dan maximal (diantara screen itu sendiri)
+
+sebaiknya pake satu metode saja, entah itu Mobile First atau Desktop First
+Desktop itu pakenya => max-width: 
+Mobile itu pakenya => min-width: 
 
