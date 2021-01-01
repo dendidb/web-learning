@@ -1,0 +1,25 @@
+CSS Attribute Selector
+--
+
+[attribute] : sesuai attribute
+contoh div {
+
+}
+[attribute="value"] : harus sama dengan value
+[attribute~="value"] tild (~) : mengandung value di awal/akhir dengan single class
+[attribute|="value"] : awali dengan value, atau tanda hubung di awal
+[attribute^="value"] : mengandung value di awal. entah itu pake tanda minus/nggak
+[attribute$="value"] : mengandung value di akhir. entah itu pake tanda minus/nggak
+[attribute*="value"] : semua yang mengandung 
+
+
+
+contoh penulisan
+selector[attribute]:pseudo-class
+selector[attribute]:pseudo-element
+
+
+[class~="box"] class yang mengandung single class
+[data-value^="in"] class yang mengandung single class
+
+

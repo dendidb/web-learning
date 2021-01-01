@@ -1,0 +1,37 @@
+CSS Gradient (CSS 3)
+--
+
+
+secara default nya ke bawah (to bottom)
+
+.selector{
+  /* Linear Gradient */
+  background-image: -webkit-linear-gradient(color1, color2, color3, ...);
+  background-image: -webkit-linear-gradient(color1 0-100%, color2 0-100%, color3 0-100%, ...);
+  background-image: -webkit-repeating-linear-gradient(to top, color1 0-100%, color2 0-100%, color3 0-100%, ...);
+
+  /* Radial Gradient */
+
+  /*direction horizontal : to right, to left,
+  direction vertical : to bottom, to top;
+  direction diagonal : misal to top right, to top left, to bottom right, to to left
+  angle : 0 360deg*/
+
+  background-image: -webkit-linear-gradient(color1, color2, color3, ...);
+  background-image: linear-gradient(30deg, blue, green, yellow);
+  background-image: linear-gradient(-30deg, blue, green, yellow);
+  background-image: linear-gradient(-30deg, blue, green, yellow);
+  background-image: linear-gradient(180deg, blue 0%, blue 50%;)
+}
+
+
+ /* shapenya itu: ellips (default) | circle
+  size: closest-side | farthest-side | closest-corner | farthest-corner*/
+  position: x - y;
+      x : left | center | right | units
+      y : top | center | bottom | units
+      .selector{
+      background-image: -webkit-radial-gradient(shape size at position, color1 0-100%, color2 0-100%, color3 0-100%, ...);
+      background-image: -webkit-repeating-radial-gradient(shape size at position, color1 0-100%, color2 0-100%, color3 0-100%, ...);
+      lihat referensi di website xlprioritas/unduhmyxl
+}
