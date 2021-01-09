@@ -1,14 +1,14 @@
-/*@font-face {
+@font-face {
   font-family: mulish;
   src: url('../fonts/Mulish-Medium.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
-*/}
+}
 
-@font-face {
+/*@font-face {
   font-family: 'Montserrat';
   src: url(../fonts/Montserrat-Medium.ttf);
-}
+}*/
 
 * {
   -webkit-box-sizing: border-box;
@@ -19,7 +19,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mulish', sans-serif;
   background-color: #fff;
   color: #7D7987;
   font-weight: normal;

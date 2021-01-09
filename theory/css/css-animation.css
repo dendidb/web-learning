@@ -1,4 +1,4 @@
-CSS Anmation (CSS 3)
+CSS Animation (CSS 3)
 --
 
 .selector {
@@ -10,13 +10,14 @@ CSS Anmation (CSS 3)
   animation-timing-function: ease (default) | ease-in | ease-out | ease-in-out | linear | cubic-bezier(x1, y1, x2, y2);
   animation-fill-mode: none (default) | forwards | backwards | both; 
   animation-play-state: paused | running (default);
+}
 
 
-  shorhand nya gini :
+  shorthand nya gini :
   animation: [animatoin-name] [animation-duration] [animation-delay] [animation-iteration-content] [animation-direction] [animation-timing-function] [animation-fill-mode] [animation-play-state];
 }
 
-@-webkit-keyframes keyframename {
+@-webkit-keyframes keyframeName {
   from {
     background-color: red;
   }
@@ -26,33 +27,33 @@ CSS Anmation (CSS 3)
   }
 }
 
-@-webkit-keyframes keyframename {
-0%{
-  property : value;
-}
+@-webkit-keyframes keyframeName {
+  0%{
+    property : value;
+  }
 
-50%{
-  transform: translateX(400px);
-  property: value;
-}
+  50%{
+    transform: translateX(400px);
+    property: value;
+  }
 
-@-webkit-keyframes keyframename {
-0%{
-  property : value;
-}
+  @-webkit-keyframes keyframename {
+    0%{
+      property : value;
+    }
 
-25%{
-  transform: translateX(400px);
-  property: value;
-  transform: scale(1.1);
-}
-50%{
-  transform: translateX(400px);
-  transform: scale(1.1);
-}
+    25%{
+      transform: translateX(400px);
+      property: value;
+      transform: scale(1.1);
+    }
+    50%{
+      transform: translateX(400px);
+      transform: scale(1.1);
+    }
 
-75%{
-  transform: translateX(400px);
-}
-
+    75%{
+      transform: translateX(400px);
+    }
+  }
 }

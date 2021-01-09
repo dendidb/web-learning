@@ -1,0 +1,11 @@
+$primary #000;
+
+@mixin transition {
+
+}
+h1 {
+  font-size: 16px;
+  background-color: red;
+  border: solid 2px #fff;
+  color: blue;
+}

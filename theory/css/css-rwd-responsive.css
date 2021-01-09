@@ -3,14 +3,14 @@ RWD Responsive
 
 RWD Viewport
 --
-harus ada tag meta viewport
+harus ada tag meta viewport di HTML
 
 RWD Grid-view
 --
 
 Konsepnya Bootstrap itu menggunakan 12 Columns
 
-rumusnya 1/12 dibagi 3
+untuk mencari nilai width setiap kolom,rumusnya 1/12 dibagi 3
 .col-1{
   width: 8.3333333%;
 }
@@ -77,7 +77,7 @@ Metode RESPONSIVE
 
 kalo pake metode bootstrap, di parent nya jg lupa pake  :
 margin-left: -12px; kalo pake floating
-margin-right: -12px; Kalo pake floating
+margin-right: -12px; kalo pake floating
 
 2. Mobile First (menggunakan min-width)
 
@@ -104,4 +104,3 @@ kalo min width and max-width itu digabungin itu dibacanya ngasih batas minimal d
 sebaiknya pake satu metode saja, entah itu Mobile First atau Desktop First
 Desktop itu pakenya => max-width: 
 Mobile itu pakenya => min-width: 
-
