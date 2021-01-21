@@ -1,0 +1,41 @@
+SCSS (Syntactically Awesome Stylesheet)
+- file ext .scss
+SASS
+- file ext .sass
+
+
+SCSS Variable
+--
+
+$variable-name: #fff;
+$variable-name: 320px;
+
+p {
+  color: $variable-name;
+}
+
+SCSS Partials
+--
+
+- create file name
+  --
+  _file-name.scss
+
+  example:
+  -
+  _header.scss
+  _banner.scss
+  _footer.scss
+
+  join file
+  -
+  @import "file-name"; tanpa '_' & '.scss'
+  @import "folder-name/header";
+
+
+
+
+
+
+
+

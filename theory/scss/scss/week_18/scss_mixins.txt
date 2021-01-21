@@ -1,0 +1,41 @@
+SCSS Mixins
+--
+
+- no parameter mixin
+
+create mixin
+@mixin mixin-name {
+  property: value;
+  .class-selector {
+    property: value;
+  }
+}
+
+Use mixin 
+.class-selector {
+  @include clearfix;
+}
+
+- with parameter (no default)
+
+create mixin
+@mixin mixin-name ($parameter1, $parameter2) or
+@mixin mixin-name ($parameter1: value-parameter1, $parameter2: value-parameter2) {
+  property: $parameter1;
+  property: $parameter2;
+  .class-selector {
+    property: $parameter1;
+    property: $parameter2;
+  }
+}
+
+Use mixin 
+.class-selector() {
+  @include $parameter1, $parameter2;
+}
+OR
+.class-selector() {
+  @include $parameter1(value-parameter1), $parameter2(value-parameter2);
+}
+
+

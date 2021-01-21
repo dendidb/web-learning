@@ -1,0 +1,19 @@
+SCSS Nesting
+--
+
+input :
+.parent-class {
+  color: red;
+  .child-class {
+    color: red;
+  }
+}
+
+output:
+.parent-class .child-class {
+  color: red;
+}
+
+
+
+
