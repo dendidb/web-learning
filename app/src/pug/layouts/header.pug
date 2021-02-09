@@ -1,0 +1,20 @@
+// Header Area
+.header-area
+  .container
+    a.logo(href='index.html')
+      img(src='assets/img/logo.svg' alt='logo')
+    ul.nav-menu.nav-left
+      li.nav-item
+        a.nav-link(href='index.html' class=(menu == 'home' ? 'active' : '')) Home
+      li.nav-item
+        a.nav-link(href='about.html' class=(menu == 'about' ? 'active' : '')) About
+      li.nav-item
+        a.nav-link(href='blog.html' class=(menu == 'blog' ? 'active' : '')) Blog
+      li.nav-item
+        a.nav-link(href='contact.html' class=(menu == 'contact' ? 'active' : '')) Contact
+    ul.nav-menu.nav-right
+      li.nav-item
+        a.nav-link(href='sign.html' class=(menu == 'sign' ? 'active' : '')) Sign In
+      li.nav-item
+        a.nav-btn(href='#' class=signClass) Sign Up
+// end Header area

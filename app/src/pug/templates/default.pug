@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+  head
+    block siteHead
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title 
+      | !{titleWeb} | Medi
+    link(rel='icon' type='image/png' href='assets/img/logo.svg')
+    link(rel='stylesheet' href='assets/css/app.css')
+  body
+    - signClass = btnHeader;
+    include ../layouts/header.pug
+    .main
+      block siteContent

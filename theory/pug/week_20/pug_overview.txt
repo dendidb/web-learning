@@ -1,0 +1,27 @@
+PUG/JADE (Template Engine)
+--
+
+Overview
+--
+Syntax
+--
+.box
+  .card
+    .image
+      img(src="bunga.jpg", alt="bunga")
+    .text
+      h2.title judul
+      p.desc
+        | Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+      a.btn(href="index.html" title="title") Selengkapnya
+      a.btn(href="index.html" title="title") 
+        | Selengkapnya
+
+Strcture folder
+[] src
+  [] pug
+    [] components
+    [] layouts
+    [] pages
+    [] Template
+  [] scss

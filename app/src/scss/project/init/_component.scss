@@ -1,0 +1,64 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: solid 1px;
+  min-width: 180px;
+  color: #fff;
+  padding: 14px 48px;
+  @include border-radius(6px);
+  font-size: $font-size;
+  line-height: 32px;
+  text-align: center;
+  @include transition(all .3s ease);
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.home {
+  background-color: $home;
+  border-color: $home;
+
+  &:hover {
+    color: $home;
+  }
+}
+
+.about {
+  background-color: $about;
+  border-color: $about;
+
+  &:hover {
+    color: $about;
+  }
+}
+
+.blog {
+  background-color: $blog;
+  border-color: $blog;
+
+  &:hover {
+    color: $blog;
+  }
+}
+
+.contact {
+  background-color: $contact;
+  border-color: $contact;
+
+  &:hover {
+    color: $contact;
+  }
+}
+
+.sign {
+  background-color: $sign;
+  border-color: $sign;
+
+  &:hover {
+    color: $sign;
+  }
+}

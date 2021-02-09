@@ -1,0 +1,70 @@
+/*================  header area  ==================*/
+
+.header-area {
+  padding: 36px 0;
+
+  .container:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .logo {
+    display: block;
+    width: 80px;
+    float: left;
+    margin-right: 100px;
+  }
+  .nav-left {
+    float: left;
+  }
+  .nav-right {
+    float: right;
+  }
+  .nav-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    .nav-item {
+      float: left;
+      margin-right: 40px;
+      font-size: $font-size;
+      font-style: normal;
+      font-weight: normal;
+      text-align: left;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      .nav-link {
+        text-decoration: none;
+        color: #1b0a42;
+        @include transition;
+
+        &:hover {
+          color: $home;
+        }
+      }
+      .active {
+        color: $home;
+      }
+    }
+  }
+}
+
+.nav-btn {
+  min-width: 115px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: solid 1px;
+  padding: 18px 28px;
+  color: $white;
+  @include border-radius(6px);
+  @include transition(all .3s ease);
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+/*================  /header area  ==================*/

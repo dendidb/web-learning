@@ -1,0 +1,28 @@
+SCSS Extend/Inheritence
+--
+
+Mengcopy paste semua property selector yang sudah ada ke selector yang lain
+
+.box {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+.item {
+  @extend .box;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+OR [Agar extend yang di copy tidak ditulis di css]
+
+%box {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+.item {
+  @extend %box;
+  margin: 0 auto;
+  padding: 20px;
+}

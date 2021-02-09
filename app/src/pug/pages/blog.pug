@@ -1,0 +1,17 @@
+extends ../templates/default.pug
+
+block siteHead
+  -
+    menu = 'blog'
+    titleWeb = 'Blog'
+    descWeb = 'Blog'
+    btnHeader = 'blog';
+
+block siteContent
+  -
+    title = 'Blog & <br> Work Remotely'
+    desc = 'The key to work-from-home success is to create an enviroment that allows you to focus on the tasks at hand. Whether you are working from home for the first time.'
+    image = 'assets/img/banner-3.png'
+    btnClass = 'blog'
+    alt = 'banner blog';
+  include ../components/banner.pug

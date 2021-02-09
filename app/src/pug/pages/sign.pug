@@ -1,0 +1,17 @@
+extends ../templates/default.pug
+
+block siteHead
+  -
+    menu = 'sign'
+    titleWeb = 'Sign'
+    descWeb = 'Sign'
+    btnHeader = 'sign';
+
+block siteContent
+  -
+    title = 'Sign & <br> Work Remotely'
+    desc = 'The key to work-from-home success is to create an enviroment that allows you to focus on the tasks at hand. Whether you are working from home for the first time.'
+    image = 'assets/img/banner-5.png'
+    btnClass = 'sign'
+    alt = 'banner sign';
+  include ../components/banner.pug

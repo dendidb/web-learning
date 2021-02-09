@@ -1,0 +1,14 @@
+SCSS Operators (+, -, *, /)
+--
+
+// input in scss
+.card {
+  width: 100%/4;
+  width: (320px + 100px) * 100%;
+}
+
+
+// output in css
+.card {
+  width: 25%;
+}

@@ -1,0 +1,38 @@
+/*================  banner area  ==================*/
+
+.banner-area {
+  padding: 100px 0;
+  font-size: 0;
+  @include clearfix;
+  .banner-text {
+    float: left;
+    width: 50%;
+    padding-right: 40px;
+
+    .banner-title {
+      margin: 0 0 44px;
+      font-family: $font-main;
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 76px;
+      letter-spacing: 0.02em;
+      color: #1B0A42;
+    }
+    .banner-desc {
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: 0.02em;
+      color: #9A9A9A;
+      margin: 0 0 44px;
+    }
+  }
+  .banner-img {
+    float: right;
+    width: 50%;
+
+    img {
+      display: block;
+    }
+  }
+}
+/*================  /banner area  ==================*/

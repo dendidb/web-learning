@@ -1,0 +1,59 @@
+PUG Include
+--
+
+1. Include no parameter
+  // create file
+  file-name.PUG
+
+  // in page 
+  Include file-name.PUG
+
+  // create file
+  banner.pug
+
+  // in file
+
+  Include banner.pug
+2. Include with parameter
+
+// in page
+- judul = 'Lorem ipsum dolor sit amet.'
+- desc = 'Lorem ipsum dolor sit amet consectetur.'
+Include banner.pug
+
+// OR
+-
+  judul = 'Lorem ipsum dolor sit amet.'
+  desc = 'Lorem ipsum dolor sit amet consectetur.'
+Include banner.pug
+
+// in banner/component
+// with break
+h2.title
+  | !{judul}
+p.desc
+  | !{desc}
+
+// without break
+h2.title= title
+p.desc= desc
+
+.pug comment
+--
+
+//- single line comment
+//-
+  multi line comment
+  multi line comment
+
+HTML comment output
+--
+
+//- no output
+// with output in html
+= <!-- comment -->
+
+pug break
+--
+
+='\n'
