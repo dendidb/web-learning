@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Document</title>
+</head>
+<body>
+  <div class="main">
+    <div class="input">
+      <h2>Hasil Pembayaran</h2>
+      <form action="#" method="post">
+        <div class="from-group">
+          <label for="hargaBarang">Harga Barang</label>
+          <input type="text" name="hargaBarang" id="hargaBarang"/>
+        </div>
+        <div class="from-group">
+          <label for="hargaDiskon">Harga Diskon</label>
+          <input type="text" name="hargaDiskon" id="hargaDiskon"/>
+        </div>
+        <div class="from-group">
+          <label for="hargaTotal">Harga Total</label>
+          <input type="text" name="hargaTotal" id="hargaTotal"/>
+        </div>
+        <div class="from-group">
+          <button type="button" id="hasilHarga">Hitung</button>
+        </div>
+      </form>
+    </div>
+    <div class="result">
+      <h2 id="totalHarga"></h2>
+      <h2 id="totalDiskon"></h2>
+      <h2 id="total"></h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
