@@ -40,5 +40,4 @@ hasil.onclick = function(even) {
   document.getElementById('totalHarga').innerText = 'Harga' + ' ' + ':' + ' ' + harga.value;
   document.getElementById('totalDiskon').innerText = 'Diskon' + ' ' + ':' + diskon.value;
   document.getElementById('total').innerText = 'Total' + ' ' + ':' + total.value;
-
 }
