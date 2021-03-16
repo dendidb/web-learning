@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  background-color: #bbb;
+  font-size: 16px;
+  padding: 60px 240px;
+  font-family: sans-serif, 'Arial', 'Tahoma';
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.btn {
+  min-width: 180px;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 18px;
+  padding: 14px 28px;
+  border: solid 1px transparent;
+  outline: 0;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row {
+  margin-left: -18px;
+  margin-right: -18px;
+}
+
+form {
+  background-color: #fff;
+  padding: 40px; 
+  border-radius: 8px;
+  width: 100%;
+  min-height: 40vh;
+}
+
+.input-row {
+  margin: 0 0 32px;
+  width: 100%;
+}
+
+.input-row:last-child {
+  margin-bottom: 0;
+}
+
+.input-item {
+  padding: 12px 0;
+  height: 38px;
+  border: none;
+  outline: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  border-bottom: solid 2px #797979;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.input-item:focus {
+  border-bottom: solid 2px green;
+}
+
+.msg {
+  color: red;
+  font-weight: 400;
+  display: block;
+  font-size: 32px;
+}
+
+.button-submit {
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  border: solid 1px green;
+  color: green;
+  background-color: transparent;
+}

@@ -47,5 +47,5 @@ function cleanNumberRp(str){
   return str.split('.').join('').split(' ').join('').replace('Rp','');
 }
 
-var n = cleanNumberRp('Rp. 1.000.000');
-console.log(n);
+var number = cleanNumberRp('Rp. 1.000.000');
+console.log(number);
