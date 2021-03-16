@@ -12,3 +12,4 @@ statement 3: dieksekusi terus menerus
 for (var nomor=1; nomor <= 10; nomor++) {
   consolelog(nomor);
 }
+

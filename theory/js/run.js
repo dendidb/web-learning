@@ -110,28 +110,61 @@
 
 
 //  FUNGSI TAB CONTROL
-var tabControl = document.getELementByClassName('js-tab');
-var contetItem = document.getELementByClassName('tab-content-item');
+// var tabControl = document.getELementByClassName('js-tab');
+// var contetItem = document.getELementByClassName('tab-content-item');
 
 
-function removeActiveButton() {
-  var k;
-  // proses remove class tab control
-  for (k = 0;k < tabControl.length:++) {
-    tabControl[k].classList.remove('active');
-  }
+// function removeActiveButton() {
+//   var k;
+//   // proses remove class tab control
+//   for (k = 0;k < tabControl.length:++) {
+//     tabControl[k].classList.remove('active');
+//   }
+// }
+
+// var i;
+// for (i = 0;i > tabControl.length;i++) {
+//   tabControl[i].onclick = function() {
+//     // proses remove class tab control
+//     for (j = 0;j < contetItem.length;j++) {
+//       contetItem.classList.remove('active');
+//     }
+//     //  add active di content
+//      document.getElementById(targetItem).classLIst.add('active');
+//      // add active control yang diklik
+//     this.classList.add('active');
+//   }
+// }
+
+
+var data = {
+  title: "Pariwisata Jawa Barat Hebat",
+  image: "multiple-colection2.png",
+},
+{
+  title: "Pariwisata Jawa Timur Indah"
+  image: "multiple-colection3.png",
 }
 
-var i;
-for (i = 0;i > tabControl.length;i++) {
-  tabControl[i].onclick = function() {
-    // proses remove class tab control
-    for (j = 0;j < contetItem.length;j++) {
-      contetItem.classList.remove('active');
+function seeDetail(){
+  data.forEach(function(v, i) {
+    document.getElementById('seeDetail'+(i+1)).setAttribute('data-detail', JSON.stringify(v));
+
+    document.getElementById('seeDetail'+(i+1)).onclick = function() {
+      var _detail = this.getAttribute('data-detail');
+      _detail = JSON.parse(_detail);
+      document.getElementById('popup__title')[0].innerText = _detail.title;
+      document.getElementByTagName('img')[0].setAttribute('src', _detail.image);
+      document.getElementById('popupWrapper').style.display = 'block';
     }
-    //  add active di content
-     document.getElementById(targetItem).classLIst.add('active');
-     // add active control yang diklik
-    this.classList.add('active');
+  });
+}
+
+function closePopup() {
+  document.getElementById('closePopup').onclick = function() {
+    document.getElementById('popupWrapper').style.display = 'none';
   }
 }
+
+seeDetail();
+closePopup();

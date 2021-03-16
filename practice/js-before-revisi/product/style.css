@@ -115,7 +115,7 @@ img {
 }
 
 .product-item:hover .product-title {
-  color: #FF383D;
+  color: green;
 }
 
 .product-percent{
@@ -126,7 +126,7 @@ img {
   text-align: center;
   margin: 0 0 8px;
   color: #fff;
-  background: #FF383D;
+  background: green;
   padding: 10px 20px;
   border-bottom-right-radius: 20px;
   -webkit-transition: all .4s ease;
@@ -149,6 +149,6 @@ img {
   vertical-align: middle;
   display: inline-block;
   font-size: 20px;
-  color: #FF383D;
+  color: green;
   margin: 0 16px 0 0;
 }

@@ -43,4 +43,3 @@ function keluarkanData(value, index, array){
 siswa.forEach(keluarkanData);
 
 document.getElementById('dataTable').innerHTML = content;
-
