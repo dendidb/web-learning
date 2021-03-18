@@ -5,11 +5,12 @@
   <meta http-equiv="X-UA Compatible" content="IE-Edge"/> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
   <link rel="stylesheet" href="assets/css/validation-form.css"/>
-  <title>Form Validasi</title>
+  <link rel="stylesheet" href="assets/css/icon.all.min.css"/>
+  <title>Form Daftar Validasi</title>
 </head>
 <body> 
   <!--  Form Start -->
-  <form action="#" autocomplete="off" method="post">
+  <form action="#" autocomplete="off" method="get">
     <h3 class="form-title">Daftar! Ini cepat dan gratis</h3>
     <div class="input__row">
       <input type="text" name="name" id="name" placeholder="Nama Anda" class="input__item"/>
@@ -17,15 +18,15 @@
     </div>
     <div class="input__row">
       <input type="text" name="email" id="email" placeholder="Email Anda" class="input__item"/>
-      <p class="msg email">Format Email Salah</p>
+      <p class="msg email">Format Email tidak valid</p>
     </div>
     <div class="input__row">
       <input type="password" name="password" id="password" placeholder="Password Anda" class="input__item"/>
-      <p class="msg password">Password Anda harus minimal 8 karakter!</p>
+      <p class="msg password">Password harus minimal 8 karakter!</p>
     </div>
     <div class="input__row">
       <input type="text" name="handphone" id="handphone" placeholder="No. Telp Anda" class="input__item"/>
-      <p class="msg handphone">Format No. Handphone Anda tidak sesuai</p>
+      <p class="msg handphone">Format No. Handphone tidak valid</p>
     </div>
     <button type="submit" class="btn daftar" id="kirim">Daftar</button>
   </form>

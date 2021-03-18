@@ -35,6 +35,7 @@ var email = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-
 //   }
 // };
 
+
 nama.onkeyup = function(e) {
   e.preventDefault();
   console.log(e.target.value);
@@ -47,16 +48,13 @@ nama.onkeyup = function(e) {
 
 emailUser.onkeydown = function(e) {
   console.log(this.value);
-  if (
-    emailUser.value == "" ||
+  if (emailUser.value == "" ||
     !/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-      emailUser.value
-    )
-  ) {
+      emailUser.value)) {
     msgEmail.style.display = "block";
-  } else {
-    msgEmail.style.display = "none";
-  }
+} else {
+  msgEmail.style.display = "none";
+}
 };
 
 passwordUser.onkeydown = function(e) {
@@ -68,7 +66,7 @@ passwordUser.onkeydown = function(e) {
 };
 
 handphone.onkeydown = function(e) {
-  var numbers = /^[0-9]+$/;
+  var numbers = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
   if (handphone.value.match(numbers)) {
     msgHandphone.style.display = "none";
   } else {
@@ -76,3 +74,5 @@ handphone.onkeydown = function(e) {
     handphone.value = "";
   }
 };
+
+
