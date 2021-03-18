@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA Compatible" content="IE-Edge"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" href="assets/css/validation-form.css"/>
+  <title>Form Validasi</title>
+</head>
+<body> 
+  <!--  Form Start -->
+  <form action="#" autocomplete="off" method="post">
+    <h3 class="form-title">Daftar! Ini cepat dan gratis</h3>
+    <div class="input__row">
+      <input type="text" name="name" id="name" placeholder="Nama Anda" class="input__item"/>
+      <p class="msg nama">Nama Anda harus diisi!!</p>
+    </div>
+    <div class="input__row">
+      <input type="text" name="email" id="email" placeholder="Email Anda" class="input__item"/>
+      <p class="msg email">Format Email Salah</p>
+    </div>
+    <div class="input__row">
+      <input type="password" name="password" id="password" placeholder="Password Anda" class="input__item"/>
+      <p class="msg password">Password Anda harus minimal 8 karakter!</p>
+    </div>
+    <div class="input__row">
+      <input type="text" name="handphone" id="handphone" placeholder="No. Telp Anda" class="input__item"/>
+      <p class="msg handphone">Format No. Handphone Anda tidak sesuai</p>
+    </div>
+    <button type="submit" class="btn daftar" id="kirim">Daftar</button>
+  </form>
+  <!--  Form End -->
+
+  <script src="assets/js/validation-form.js"></script>
+</body>
+</html>
