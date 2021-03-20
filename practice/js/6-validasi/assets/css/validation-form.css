@@ -1,3 +1,14 @@
+@font-face{
+  font-family:fontawesome;
+  src:url(../fonts/fontawesome-webfont.eot);
+  src:url(../fonts/fontawesome-webfont.eot) format('embedded-opentype'),
+  url(../fonts/fontawesome-webfont.woff2) format('woff2'),
+  url(../fonts/fontawesome-webfont.woff) format('woff'),
+  url(../fonts/fontawesome-webfont.ttf) format('truetype'),
+  url(../fonts/fontawesome-webfont.svg) format('svg');
+  font-weight:400;font-style:normal
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -102,6 +113,14 @@ form {
   margin: 0;
 }
 
+.msg::before {
+  content: '!';
+  color: red;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 4px;
+}
+
 .nama.active, .email.active, .password.active, .handphone.active  {
   display: block;
 }
@@ -110,6 +129,10 @@ form {
   background-color: #570e8f;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
 }
 
 .daftar:hover {
@@ -117,3 +140,34 @@ form {
   color: #570e8f;
   background-color: transparent;
 }
+
+/* success login */
+
+.succes-area {
+  background-color: #bbb;
+  padding: 20px;
+  margin: 0;
+}
+
+.box-success {
+  background-color: #fff;
+  width: 100vh;
+  height: 80vh;
+  padding: 30% 0;
+  text-align: center;
+  line-height: 1.5;
+}
+
+ .success-title {
+  margin: 0 0 20px;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.success-subtitle {
+  margin: 0;
+  font-size: 24px;
+  color: darkblue;
+}
+
+/* /success login */

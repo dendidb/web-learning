@@ -2,7 +2,7 @@ var nama = document.getElementById("name");
 var emailUser = document.getElementById("email");
 var passwordUser = document.getElementById("password");
 var handphone = document.getElementById("handphone");
-var button = document.getElementById("kirim");
+var tombol = document.getElementById("kirim");
 var msgNama = document.querySelector(".nama");
 var msgEmail = document.querySelector(".email");
 var msgPassword = document.querySelector(".password");
@@ -14,7 +14,6 @@ var email = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-
 //   e.preventDefault();
 //   if (nama.value == "") {
 //     msgNama.classList.add("active");
-
 //   }
 //   if (email.value == "") {
 //     msgEmail.classList.add("active");
@@ -34,6 +33,13 @@ var email = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-
 //     msgEmail.classList.add("active");
 //   }
 // };
+
+// tombol.onclick = function(event) {
+//   // alert('');
+//   classList.style.display = 'block';
+// };
+
+// ================ /ketika klik button ============== //
 
 
 nama.onkeyup = function(e) {

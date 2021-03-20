@@ -14,7 +14,7 @@ function formatRupiah(harga, prefix){
   return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah : '');
 }
 
-var siswa = [
+var product = [
   {
     'name' : 'Coca cola',
     'price' : 5000
@@ -31,8 +31,6 @@ var siswa = [
 
 var content = '';
 function keluarkanData(value, index, array){
-  // index >= 0;
-  // index ++
   content += '<tr>' + 
                 '<td>' + (index+1) + '</td>' +
                 '<td>' + value['name'] + '</td>' +
@@ -40,6 +38,6 @@ function keluarkanData(value, index, array){
              '</tr>';
 };
 
-siswa.forEach(keluarkanData);
+product.forEach(keluarkanData);
 
-document.getElementById('dataTable').innerHTML = content;
+document.getElementById('dataTable').innerHTML =content;
