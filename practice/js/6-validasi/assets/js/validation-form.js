@@ -52,7 +52,7 @@ nama.onkeyup = function(e) {
   }
 };
 
-emailUser.onkeydown = function(e) {
+emailUser.onblur = function(e) {
   console.log(this.value);
   if (emailUser.value == "" ||
     !/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
@@ -63,7 +63,7 @@ emailUser.onkeydown = function(e) {
 }
 };
 
-passwordUser.onkeydown = function(e) {
+passwordUser.onkeypress = function(e) {
   if (passwordUser.value.length < 6) {
     msgPassword.style.display = "block";
   } else {
@@ -80,5 +80,6 @@ handphone.onkeydown = function(e) {
     handphone.value = "";
   }
 };
+
 
 

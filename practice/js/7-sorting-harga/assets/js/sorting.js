@@ -50,8 +50,7 @@ function discount(harga, diskon) {
   return resultDiscount;
 }
 
-var content = "";
-function keluarkanData(value) {
+function keluarkanData() {
   // document.getElementById("productList").innerHTML = "jhjhj";
   // var elementDiskon = "";
   // var elementHargaDiskon = "";
@@ -65,26 +64,31 @@ function keluarkanData(value) {
   //     "</del>" +
   //     "</p>";
   // }
-
-  content +=
-  '<div class="col-3">' +
-  '<div class="product-item">' +
-  '<a href="#" class="box-link"></a>' +
-  '<div class="product-image">' +
-  '<img src="' +
-  value["image"] +
-  '" alt="' +
-  value["title"] +
-  '">' +
-  "</div>" +
-  '<div class="product-text">' +
-  '<p class="product-title">' +
-  value.title +
-  '</p>' +
-  formatRupiah(value.harga, "") +
-  '</div>' +
-  '</div>' +
-  '</div>';
+  //
+  //
+  var content = "";
+  dataProduct.forEach(function(value){
+    content +=
+    '<div class="col-3">' +
+    '<div class="product-item">' +
+    '<a href="#" class="box-link"></a>' +
+    '<div class="product-image">' +
+    '<img src="' +
+    value["image"] +
+    '" alt="' +
+    value["title"] +
+    '">' +
+    "</div>" +
+    '<div class="product-text">' +
+    '<p class="product-title">' +
+    value.title +
+    '</p>' +
+    formatRupiah(value.harga, "") +
+    '</div>' +
+    '</div>' +
+    '</div>';
+  });
+  document.getElementById("productList").innerHTML = content;
 }
 
 var urutkanHarga = document.getElementById("sortingList");
@@ -92,16 +96,14 @@ var bissmillahArray;
 urutkanHarga.onchange = function (event) {
   content = "";
   if (this.value == "") {
-    bissmillahArray = dataProduct.map(keluarkanData);
+    bissmillahArray = dataProduct.forEach(keluarkanData);
   } else if (this.value == "lowPrice") {
-    bissmillahArray = dataProduct.sort((a, b) => a.harga - b.harga);
+    dataProduct.sort((a, b) => a.harga - b.harga);
   } else if (this.value == "topPrice") {
-    bissmillahArray = dataProduct.sort((a, b) => b.harga - a.harga);
+    dataProduct.sort((a, b) => b.harga - a.harga);
   }
-  bissmillahArray.forEach(keluarkanData);
-  document.getElementById("productList").innerHTML = content; 
+  keluarkanData();
 };
 
-dataProduct.map(keluarkanData);
+keluarkanData();
 
-document.getElementById("productList").innerHTML = content;

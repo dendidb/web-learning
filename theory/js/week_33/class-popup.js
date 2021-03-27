@@ -74,7 +74,7 @@ contoh js yang penulisan function-nya pake literal
 var popup = {
   handleOpen: () => {
     document.getElementById('openPopup').onclick = funtion() {
-      popUp,setStatusShow(true);
+      popUp.setStatusShow(true);
     }
   },
   handleClose: () => {
