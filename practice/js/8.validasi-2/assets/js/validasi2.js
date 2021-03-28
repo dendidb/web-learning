@@ -42,10 +42,14 @@ var loginForm = {
       }
     }
   },
+
+
   init: function () {
     this.handleOnInput();
     this.handleOnBlur();
   },
 };
+
+//  validasi email
 
 loginForm.init();

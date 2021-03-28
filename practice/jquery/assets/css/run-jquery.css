@@ -1,0 +1,94 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif, 'Arial', 'Tahoma';
+  font-size: 16px;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* show and hide */
+.img-content {
+  background-color: #f6f6f6;
+}
+.button-action {
+  text-align: center;
+  margin: 0 0 20px;
+  padding: 20px 0;
+  background-color: #f2f2f2;
+  box-shadow: 3px 2px 3px 0 rgba(0,0,0,.2);
+}
+.btn {
+  text-align: center;
+  display: inline-block;
+  padding: 8px 32px;
+  background-color: darkblue;
+  cursor: pointer;
+  color: #fff;
+  margin-right: 12px;
+  border: 0;
+  outline: 0;
+}
+
+/* show and hide */
+
+/* carousel */
+
+.js-effect {
+  padding: 20px 0;
+  margin: 160px 0;
+}
+
+.boxxx {
+  white-space: nowrap;
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.boxxx img {
+  width: 240px;
+}
+
+.btn-action {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.slider-btn {
+  margin-right: 8px;
+  border: 0;
+  outline: 0;
+  padding: 12px 32px;
+  cursor: pointer;
+  background-color: #5d1b3b;
+  color: #fff;
+  text-align: center;
+}
+
+.slider-btn:last-child {
+  margin-right: 0;
+}
