@@ -8,7 +8,6 @@
     float: left;
     width: 50%;
     padding-right: 40px;
-
     .banner-title {
       margin: 0 0 44px;
       font-family: $font-main;
@@ -29,7 +28,9 @@
   .banner-img {
     float: right;
     width: 50%;
-
+    @include exta-small {
+      background-position: left;
+    }
     img {
       display: block;
     }

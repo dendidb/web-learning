@@ -21,7 +21,7 @@
     float: right;
   }
   .nav-menu {
-    padding: 0;
+    padding: 0 20px;
     margin: 0;
     list-style: none;
     .nav-item {
@@ -31,7 +31,6 @@
       font-style: normal;
       font-weight: normal;
       text-align: left;
-
       &:last-child {
         margin-right: 0;
       }
