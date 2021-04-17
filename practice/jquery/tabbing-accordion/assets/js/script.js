@@ -32,6 +32,3 @@ var Main = {
 }
 
 Main.init();
-
-// accordion
-
