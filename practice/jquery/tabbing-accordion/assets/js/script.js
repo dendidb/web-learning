@@ -1,45 +1,37 @@
-$accordion = {
+// tabbing
+var Main = {
+  setTabbing: function() {
+    $(document).on('click', '.tab-block-main ul li a', function(e) {
+      var currentTab = $(this).attr('href');
+      $(this).parents('.tab-block-main').find('ul li a').removeClass('active');
+      $(this).addClass('active');
+      $(this).parents('.tab-block-main').find('.tab-content .tab-block').removeClass('active');
+      $(currentTab).addClass('active');
+      e.preventDefault();
+    }); 
+  },
+  setAccordion: function() {
+    $('.acc__title').on('click', function() {
+      var dropDown = $(this).closest('.acc__card').find('.acc__panel');
+      $(this).closest('.acc').find('.acc__panel').not(dropDown).slideUp();
+      if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+      } else {
+        $(this).closest('.acc').find('.acc__title.active').removeClass('active');
+        $(this).addClass('active');
+      }
+      dropDown.stop(false, true).slideToggle();
+      j.preventDefault();
+    });
+  },
 
-    // event function
-    event: function(){
+  init: function() {
+    Main.setTabbing();
+    Main.setAccordion();
+  }
+}
 
-        $('body').on('click','.jsAccordion .accordion-item', function(event) {
-            var _this   = $(this),
-                _target = _this.find('.accordion-body');
+Main.init();
 
-            if (_this.hasClass('expanded')) {
-                _target.slideUp(350).removeClass('show');
-                _this.removeClass('expanded');
-            } else {
-                $('.jsAccordion .accordion-body').slideUp(350).removeClass('show');
-                $('.jsAccordion .accordion-item').removeClass('expanded');
-                _target.slideDown(350).addClass('show');
-                _this.addClass('expanded');
-            }
+// accordion
 
-        });
-
-        $('.jsSeeMoreStoreLocator').on('click', function(event) {
-            var _this   = $(this),
-                _target = _this.prev('.collapse-expand');
-
-            if (_this.hasClass('show')) {
-                _this.removeClass('show').text(_this.attr('data-more'));
-                _target.removeClass('show');
-                $("html, body").animate({scrollTop: _target.offset().top - 160 }, 0);
-            } else {
-                _this.addClass('show').text(_this.attr('data-less'));
-                _target.addClass('show');
-            }
-        });
-
-    },
-    // end event function
-
-    // init function
-    init: function(){
-        $accordion.event();
-    }
-    // end init function
-
-};
