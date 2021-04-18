@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|PT+Sans:400,700');
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Segoe UI, 'Arial', sans-serif;
+  margin: 10px auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Sans", sans-serif;
+  font-weight:700;
+  margin: 0 0 20px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+.container {
+  max-width: 1020px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.dd {
+  background-color: salmon;
+  padding: 120px;
+  margin: 0;
+  display: inline-block;
+}
+
+.ddwn {
+  position: relative;
+}
+
+.js-dd {
+  display: block;
+  background-color: yellow;
+}
+
+button {
+  outline: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: blue;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dd__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  left: 0;
+  top: 40px;
+  display: block;
+  background-color: #222;
+  width: 100%;
+  position: absolute;
+}
+.dd__list li {
+  margin: 0 0 12px;
+}
+
+.dd__list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.show {
+  display: block;
+}
+
+
