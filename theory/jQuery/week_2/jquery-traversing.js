@@ -17,3 +17,16 @@ selector.chldren(); = element satu tingkat di bawah selector
 selector.chldren(selectorChild); = element satu tingkat di bawah selector berdasarkan selectorChild
 selector.find(selectorChild); = child satu tingkat di bawah atau lebuh dari selector
 
+jQuery Traversing - Siblings
+--
+
+selector.siblings(); = semua element dan sesudah selector
+selector.siblings(selectorSiblings) = semua element sebelum dan sesuadh selector
+
+catat di Handphone yaaa
+
+
+
+jQUery filtering
+--
+
