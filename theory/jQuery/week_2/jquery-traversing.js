@@ -7,7 +7,7 @@ jquery Traversing - Ancestors
 selector.parent(); = parentnya satu tingkat di atas selector
 selector.parent(selectorParent); = parent nya satu tingkat di atas
 selector.parents(); = all parents di atas selector
-seletor.parentsUntil(selectorParent); = menyeleksi element di antara selector dan selectorParent
+selector.parentsUntil(selectorParent); = menyeleksi element di antara selector dan selectorParent
 
 
 jquery Descendants
@@ -23,10 +23,26 @@ jQuery Traversing - Siblings
 selector.siblings(); = semua element dan sesudah selector
 selector.siblings(selectorSiblings) = semua element sebelum dan sesuadh selector
 
-catat di Handphone yaaa
+selector.next(); = 1 element setelah element selector
+selector.next(selectorNext); = 1 element setelah element selector sesuai selectorNext
+selector.nextAll(); = semua element setelah element selector
+selector.nextAll(selectornextAll); = semua element setelah element selector sesuai selectornextAll
+selector.nextUntil() = menyeleksi element di antara selector selector terakhir
+selector.nextUntil(selectorNextUntil) = menyeleksi element di antara selector - selectorNextUntil
+
+selector.prev() = 1 element sebelum element selector
+selector.prev(selectorPrev) = 1 element sebelum element selector sesuai selectorPrev
+selector.prevAll() = 1 esemua lement sebelum element selector
+selector.prevAll(selectorPrevAll) = 1 element sebelum element selector sesuai selectorPrevALl
+selector.prevUntil() = menyeleksi element-element di antara selector awal
+selector.prevUntil(selectorPrevUntil) = 1 element sebelum element selector - selectorPrevUntilUntil
 
 
 
 jQUery filtering
 --
-
+selector.first(); = element index 0 sesuai selector
+selector.last(); = element terakhir sesuai selector
+selector.eq(index); = get number index dari seluruh element windows
+selector.filter(selectorFilter); = element sesuai selectorFilter
+selector.not(selectorNot); = element yang bukan selectorNot
