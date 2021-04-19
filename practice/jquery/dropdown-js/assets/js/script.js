@@ -1,27 +1,16 @@
 var dropdown = {
+  
   handleClick: function() {
-    $('body').on('click', function(){
-      dropdown.handleHide();
-    });
     $('.js-dd button').on('click', function(){
       if ($(this).parent().hasClass('show')) {
         $(this).parent().removeClass('show');
       } else {
         $('.js-dd').removeClass('show');
-        $('this').parent().addClass('show');
+        $(this).parent().addClass('show');
       }
-      alert('.js-dd button');
     });
-    $('.js-add').on('click', function(e){
+    $('.js-dd').on('click', function(e){
       e.stopPropagation();
-    });
-  },
-
-  handleKeyup: function() {
-    $(document).on('keyup', function(e){
-      if (e.keycode === 27) {
-        dropdown.handleClick();
-      }
     });
   },
 
@@ -31,9 +20,18 @@ var dropdown = {
     }
   },
 
+  jsHide: function() {
+    $(document).on('click', function(e) {
+      if ($(e.target).is('.popup__box')) {
+        $('.popup__box').fadeOut(300);
+      }
+    });
+  },
+
   init: function() {
     this.handleClick();
-    this.handleKeyup();
+    this.handleHide();
+    this.jsHide();
   }
 }
 

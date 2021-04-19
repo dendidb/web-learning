@@ -71,11 +71,20 @@ button {
   list-style: none;
   left: 0;
   top: 40px;
-  display: block;
+  display: none;
   background-color: #222;
   width: 100%;
   position: absolute;
+  transition: all 3s ease;
+  opacity: 0;
 }
+
+.show .dd__list{
+  display: block;
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
 .dd__list li {
   margin: 0 0 12px;
 }
@@ -84,10 +93,3 @@ button {
   text-decoration: none;
   color: #fff;
 }
-
-
-.show {
-  display: block;
-}
-
-
