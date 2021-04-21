@@ -1,0 +1,39 @@
+body{
+	font-family: sans-serif;
+	background-color: #fff;
+	color: #fff;
+}
+img{
+	max-width: 100%;
+}
+.main{
+	margin: 0 28px;
+}
+.main .item{
+	margin: 32px 0;
+}
+.main .item .background{
+	height: 600px;
+}
+.main .item .background-1{
+	background: url(../img/sea.jpg) no-repeat;
+	background-size: cover;
+}
+.main .item .background-2{
+	background: url(../img/canyon.jpg) no-repeat;
+	background-size: cover;
+}
+.main .item .desc {
+
+	padding: 10px 20px;
+}
+.main .item .desc-1{
+	background-color: #7E0E5F;
+}
+.main .item .desc-2{
+	background-color: #326870;
+}
+.main .item .desc p{
+	line-height: 20px;
+	font-size: 14px;
+}
