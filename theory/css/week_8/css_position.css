@@ -1,0 +1,15 @@
+CSS Position
+--
+
+.selector {
+	position: static (default) | absolute | fixed | relative | sticky;
+	/*tidak berlaku kalau position: static;*/
+	top: auto (default) units ( absolute | fixed | relative | sticky );
+	bottom: auto (default) units ( absolute | fixed | relative );
+	right: auto (default) units ( absolute | fixed | relative  );
+	left: auto (default) units ( absolute | fixed | relative | sticky );
+	z-index: number;
+	/* position: fixed akan jadi seperti position:absolute jika di parentnya ada property trasnsfrom; */
+}
+
+/*==============================================*/

@@ -1,0 +1,87 @@
+HTML Forms
+-- 
+
+<form action="#"></form>
+
+HTML Forms attributte
+-- 
+
+attributte
+*- action: untuk memproses data ke sisi back end 
+  val = [URL/file server side, php, asp, ruby]
+*- method: metode proses (check,proses dan tambah)
+  val = [GET(default), POST]
+- target: seperti html link
+  val = [_self(default), _blank, _parent, _top]
+- autocomplete :
+  val = (on[default] | off)
+- novalidate : by pass validasi form
+  val = (novalidate)
+
+----
+accept-charset
+enctype
+name
+rel
+
+HTML Forms Element
+-- 
+
+
+1. <input/>*
+2. <label></label>*
+3. <select>*
+  4. <option></option>*
+  5. <optgroup>
+      <option></option>
+      <option></option>
+    </optgroup>
+    </select>
+6. <textarea></textarea>*
+7. <button></button>*
+  attribute:
+  - type: button, submit, reset
+8. <fieldset>
+  9. <legend></legend>
+   </fieldset>
+10. <datalist>
+      <option/>
+    </datalist> 
+
+
+HTML Input Type
+--
+
+values of attribute type
+# textbox
+- text | email(html5) | number(html5) | password
+# button
+- submit | reset | button
+# option (need attribute value sebagai value untuk database need attribute "id" untuk value "for" label)
+- radio | checkbox
+# upload file
+- file 
+  > attribute khusus multiple="multiple" untuk memilih file lebih dari satu
+  # hidden (need value) -> back end
+  - hidden
+
+HTML Input Attribute
+--    
+
+- value : freetext
+- readonly : readonly
+- disabled : disabled
+- size : number(text, passsword,search, email, url, tel )
+- maxlength : number(text, passsword, email)
+- min & max : number
+- multiple : multiple(email, file, select)
+- pattern : regex
+- placeholder : freetext (text, passsword,search, email, url, tel, textarea)
+- required: required
+- step : number (number)
+- autofocus : autofocus 
+- width & height : number
+- list : value "id" datalist (text)
+- autocomplete : on | off (text, email)
+- formnovalidate : formnovalidate (submit)
+- name : freetext

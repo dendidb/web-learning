@@ -1,0 +1,49 @@
+CSS Animation (CSS3) need prefixs
+--
+
+.selector-class {
+  animation-name : keyframe | none;
+  animation-duration : time (s|ms);
+  animation-delay : time (s|ms);
+  animation-iteration-count : number | infinite;
+  animation-direction : normal (default) | reverse | alternate | alternate-reverse;
+  animation-timing-function : ease | ease-in | ease-out | ease-in-out | linear | cubic-bezier(x1, y1, x2, y2);
+  animation-fill-mode: none (default) | forwads | backwads | both;
+  animation-play-state: paused | running (default);
+  /*shorthand*/
+  animation: name duration timing-function delay iteration-count direction fill-mode play-state;
+}
+
+@keyframe keyframename {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: red;
+  }j
+}
+
+@keyframe keyframename {
+  0% {
+    property: value;
+  }
+  20% {
+    property: value;
+  }
+  100% {
+    property: value;
+  }
+}
+
+/*prefixs*/
+
+@-webkit-keyframe keyframename {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+

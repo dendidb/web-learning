@@ -1,0 +1,39 @@
+- HTML Responsive
+--
+
+a. Dekstop First
+  <style>
+    .card{
+      width: 33.3333%;
+      float: left;
+    }
+    @media screen and (max-width: 891px){
+      .card{
+      width: 100%
+      float: none;
+    }
+      
+    }
+  </style>
+b. Mobile first
+  <style>
+    .card{
+      width: 100%;
+      float: none;
+    }
+    @media screen and (max-width: 891px){
+      .card{
+      width: 33.3333%;
+      float: left;
+    }
+      
+    }
+  </style>
+
+- in HTML
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+- in CSS
+  @media screen and (max-width: 991px)
+
+<!-- ================================================================== -->

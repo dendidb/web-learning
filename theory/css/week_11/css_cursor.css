@@ -1,0 +1,6 @@
+CSS Cursor 
+--
+
+.selector {
+  cursor: default | auto | pointer | text | url(img.ext), auto | none;
+}

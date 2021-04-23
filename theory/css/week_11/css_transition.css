@@ -1,0 +1,26 @@
+CSS Transition
+--
+
+.selector {
+  transition-property: all | part-of-property;
+  transition-timing-function: linear | ease | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2);
+  transition-duration: timing (ms | s );
+  transition-delay: timing (ms | s );
+  transition: none;
+  
+  /*shorthand*/
+  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+}
+
+link: https://cubic-bezier.com/#.17,.67,.83,.67;
+
+/*Reset Transition*/
+/*In HTML*/
+<body class="hold-transition">
+/*in CSS*/
+.hold-transition {
+  transition: none !important;
+}
+/*In JS
+"after load remove class hold-transition"
+*/

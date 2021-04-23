@@ -1,0 +1,7 @@
+CSS User Interfaces
+--
+
+.selector {
+  outline-offset: units;
+  resize: none (dafult) | both | horizontal | vertical; /*dependences overflow: auto;*/
+}

@@ -1,0 +1,19 @@
+CSS Media Queries
+--
+
+mediatype
+- all
+- print
+- screen
+- spech
+
+CSS
+-
+@media not | only mediatype and (expressions) {
+  css code
+}
+
+HTML
+-
+<link rel="stylesheet" media="mediatype and | not | only (expressions)" href=""print.css>
+

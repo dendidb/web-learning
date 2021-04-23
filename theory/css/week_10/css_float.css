@@ -1,0 +1,41 @@
+CSS Float
+--
+
+.selector {
+  float: none (default) | left | right;
+}
+
+.selector-after-float {
+  clear: none (default) | left | right | both;
+}
+
+/*Clearfix*/
+.selector-parent:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+/*harus ada sesuatu yang di clear setelah float*/
+/*example :
+  In HTML :
+  <div class"float">
+    <div class="float-right" style="float:right">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, optio.</p>
+    </div>
+    <div class="clearfix" style="claer:right/both"></div>
+  <div>
+  In CSS :
+  .float-right {
+    float: right;
+  }
+  ["harus di parent yang di float"]
+  .float:after {
+    content:'';
+    display: block; 
+    clear :both;
+  }
+
+*/
+

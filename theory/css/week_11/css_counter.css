@@ -1,0 +1,11 @@
+CSS Counter
+--
+
+.selector | parent-selector{
+  counter-reset: freetext;
+}
+
+.selector::before {
+  counter-increment: freetext;
+  content: counter(freetext,  list-style-type ['decimal (default)']);
+}

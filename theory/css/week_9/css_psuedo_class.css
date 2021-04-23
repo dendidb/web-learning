@@ -1,0 +1,30 @@
+CSS Psuedo Class
+--
+
+selector:psuedo-class {
+	property: value;
+	property: value;
+}
+
+:psuedo-class
+-
+
+:hover {all element}
+:active {all element}
+:link {link element}
+:visited {link element}
+:checked {form input type checkbox | radia}
+:disabled {form input, select, textarea}
+:read-only {form input, select, textarea}
+:focus {form input textbox}
+:required {form input, select, textarea}
+:valid {form input, select, textarea}
+:target {link has target attribute}
+:not(selector)
+:first-child
+:last-chil
+:nth-child(number|n)
+:nth-last-child(number|n)
+
+
+

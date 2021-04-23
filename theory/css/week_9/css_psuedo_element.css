@@ -1,0 +1,22 @@
+CSS Psuedo Element
+--
+
+selector::psuedo-element {
+	property: value;
+	property: value;
+}
+
+::psuedo-element
+-
+::after -> element has open tag and close tag [need content property]
+::before -> element has open tag and close tag
+::first-latter 
+::last-line 
+::selection -> if mouse block the element
+
+
+
+
+
+
+

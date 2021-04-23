@@ -1,0 +1,25 @@
+CSS Units
+--
+
+Absolute Lenghts (fixed)
+--
+
+cm => 1cm = 37.1917px
+mm => 1mm = 3,77083px
+in => 1in = 96px
+px => base units
+pt => 1pt = 1.33333px
+pc => 1pc = 16px
+
+Relative Lenghts 
+--
+
+em => relative terhadap font size dirinya, jika tidak ada akan tergantung dengan font size parent terdekat
+rem => relative terhadap font size di html (root)
+% => relative parent element 
+vh => height viewport
+vw => width viewport
+vmin
+vmax
+ch
+ex

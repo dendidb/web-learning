@@ -1,8 +1,0 @@
-CSS Object Fit (Image, Video)
---
-
-.selector{
-  object-fit: cover, contain, fill, scale-down, none;
-  object-position: x-coors and y-coors;
-  center center [default]
-}

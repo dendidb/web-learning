@@ -1,0 +1,10 @@
+CSS Box Model
+--
+
+- all layer : content +  : padding + border + outline-offset + outline + margin;
+- calc width : content + padding + border-width;
+  
+- box model layer : content + padding + border + margin;
+- calc width : content + padding + border-width;
+
+/*==============================================*/

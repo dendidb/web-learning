@@ -1,0 +1,24 @@
+CSS Display
+--
+
+.selector-class{
+	display: inline | block | inline-block | none;
+	visibility: visible (default) | hidden | collapse(table);
+	vertical-align: top | bottom | middle 
+}
+perbedaan diplay, visibility & opacity : 
+	display : none = semua hilang & tdk bisa di select, 
+	visbility: hidden = object hilang tdk bisa di select, 
+	opacity: 0 = object hilang tapi bisa di select
+
+cara menghilangkan spasi bawaan inline-block
+1. margin: min( - ) units
+2. pake comments di akhir element
+	{ <div></div><!-- 
+		--><div></div><!-- 
+		--><div></div>
+
+	}
+3. set font-size: 0; di parent elements
+
+/*==============================================*/

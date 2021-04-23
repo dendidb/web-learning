@@ -1,0 +1,21 @@
+CSS Text Effect
+--
+
+.selector {
+  text-align-last: auto (default) | left | right | center | justify | start | end;
+  text-justify: auto | inter-word | inter-character | none;
+  text-overflow: clip (default) | ellipsis;
+  /*need*/
+  white-space: nowrap;
+  overflow: hidden;
+  /*need*/
+
+  word-break: normal (default) | break-all | keep-all | break-word;
+  word-wrap: normal (default) | break-word;
+  writing-mode: horizontal-tb|vertical-rl|vertical-lr;
+}
+
+
+
+
+

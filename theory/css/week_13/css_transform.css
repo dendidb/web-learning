@@ -1,0 +1,48 @@
+CSS Transform (CSS 3) /*nedd prefixs*/
+--
+
+- Transform 2D
+  .selector {
+    transform: value-of-transform;
+  }
+  transform-origin: x y; => awal muncul transform
+      X: left center right | units;
+      Y: top center bottom | units;
+
+  value-of-transform
+  -- translate(x-units, y-units)
+  -- translateX(units)
+  -- translateY(units)
+  -- rotate(angle)
+  -- scale(scala)
+  -- scaleX(scala)
+  -- scaleY(scala)
+  -- skew(x-angle, y-angle)
+  -- skewX(angle)
+  -- skewY(angle)
+  -- matrix(scaleX(),scewY(),scewX(),scaleY(),translateX(),translateY())
+
+- Transform 3D
+  .selector {
+    transform: value-of-transform;
+  }
+  -- rotateX(angle)
+  -- rotateY(angle)
+  -- rotateZ(angle)
+  -- rotate3D(x,y,z,angle)
+  -- translate3D(x-units, y-units, z-units)
+  -- translateX(units)
+  -- translateY(units) 
+  -- translatez(units) 
+  -- scale3d(x-scale, y-scale,z-scale)
+  -- scaleX(scala)
+  -- scaleY(scala)
+  -- matrix(scaleX(),scewY(),scewX(),scaleY(),translateX(),translateY())
+
+- Transform style
+  .selector {
+    transform-style: flat | preserve-3d;
+    perspective: units;
+    perspective-origin: x y;
+    backface-visibility: visible (default) | hidden;
+  }

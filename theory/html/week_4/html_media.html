@@ -1,0 +1,58 @@
+HTML Media
+--
+
+- HTML Video
+
+<video controls autoplay muted loop poster="file-name.ext">
+    <source src="file-name.ext" type="video/ext" />
+exp :
+    <source src="file.mp4" type="video/mp4">
+    <source src="file.ogg" type="video/ogg">
+      <track src="file-name.vtt" kind="subtitles" srclang="EN" lang="english" />
+      <!--   if not support -->
+      Browser anda tidak support untuk memmutar video
+</video>
+
+value of type
+--
+mp4 = video/mp4
+ogg = vdeo/ogg
+webm = video/webm
+
+- HTML audio
+
+<audio controls autoplay muted loop poster="file-name.ext">
+    <source src="file-name.ext" type="audio/ext" />
+exp :
+    <source src="file.mp4" type="audio/mp4">
+    <source src="file.ogg" type="audio/ogg">
+      <!--   if not support -->
+      Browser anda tidak support untuk memmutar video
+</audio>
+
+value of type
+--
+mp3 = audio/mp3
+ogg = vdeo/ogg
+webm = audio/webm
+
+
+HTML YOUTUBE
+--
+
+1 = on
+0 = off
+
+<iframe src="" frameborder="0"></iframe>
+
+Autoplay (1/0) + mute  (1/0)
+
+<iframe src="parameter/embed/kodeyt?autoplay=1&mute=1" frameborder="0"></iframe>
+
+Controls  (1/0)
+
+<iframe src="parameter/embed/kodeyt?autoplay=1&mute=1&controls=0" frameborder="0"></iframe>
+
+Loop  (1/0)
+
+<iframe src="parameter/embed/kodeyt?autoplay=1&mute=1&controls=0&loop=1" frameborder="0"></iframe>

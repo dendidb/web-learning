@@ -1,0 +1,24 @@
+CSS Gradient (CSS3) need prefix
+--
+
+.selector-class {
+  background-image: linear-gradient(colors1, colors2, colors3, ...);
+  /*direction horizontal: to right, to left;
+  direction vertical: to top, to bottom;
+  direction diagonal: to top right, to top left, to bottom right, to bottom left;
+  angle : 0 -360 deg;
+  */
+  background-image: linear-gradient(direction | angle, color1, color2, color3, ...);
+  background-image: linear-gradient(direction | angle, color1 0-100%, color2 0-100%, color3 0-100%, ...);
+  background-image: repeating-linear-gradient(direction | angle, color1 0-100%, color2 0-100%, color3 0-100%, ...);
+  background-image: radial-gradient(shape size at position, color1, color2, color3, ...);
+  background-image: repeating-radial-gradient(shape size at position, color1 0-100%, color2 0-100%, color3 0-100%, ...);
+
+  /*Radial*/
+  /*
+  chape: circle | elipsis (default);
+  size: closest-side | farthest-side | closest-corner | farthest-corner (default);
+  position: x - y;
+  */
+}
+

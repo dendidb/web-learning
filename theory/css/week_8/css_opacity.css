@@ -1,0 +1,15 @@
+CSS Opacity
+--
+
+.selector {
+	/* Good Browser */
+	opacity: 0 -1;
+	/* IE 9*/
+	filter: alpha(opacity=0-100);
+	/* MOZILLA*/
+	-moz-opacity: 0 -1 ;
+	/* SAFARI */
+	-khtml-opacity: 0 -1 ;
+} 
+
+/*==============================================*/

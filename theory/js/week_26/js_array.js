@@ -60,7 +60,7 @@ Array Iteration
 --
 
 array.forEach() : mengeluarkan array sebanyak data array
-array.map() : membuat array baru
+array.map() : membuat data atau membuat array baru
 array.filter() : memfilter value berdasarkan kondisi tertentu
 array.reduce() :
 array.reduceRight() :
@@ -68,6 +68,8 @@ array.every() :
 array.some() :
 array.find() :
 array.findIndex() :
+
+// .forEach()
 
 var x = [100,2,90,75,80];
 x.forEach(function(value, index, array){
@@ -80,9 +82,32 @@ function keluarkanData(value, index, array){
 };
 x.forEach(keluarkanData);
 
-// x.forEach(function(a, b, c){
-// console.log(a)
-// });
+//.map()
+
+var x = [100,2,90,75,80];
+x.map(function(value, index, array){
+  console.log(value)
+});
+
+
+var a = [100,2,90,75,80];
+var b = a.map(function(value, index, array){
+  return value * 3;
+});
+
+// .filter()
+
+var a = [100,2,90,75,80];
+var b = a.filter(function(value, index, array){
+  return value > 10;
+});
+
+
+
+
+
+
+
 
 // Exemple
 var siswa = ['Alan', 'Amin', 'Amir', 'Ahmad'];

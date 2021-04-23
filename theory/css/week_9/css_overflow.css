@@ -1,0 +1,15 @@
+CSS Overflow
+--
+
+selector {
+	overflow-x: visible (default) | hidden | scroll | auto;
+	overflow-y: visible (default) | hidden | scroll | auto;
+	overflow: visible (default) | hidden | scroll | auto;
+}
+
+
+
+
+
+
+

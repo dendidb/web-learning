@@ -1,0 +1,18 @@
+CSS Links
+--
+.selector{
+	/*Default*/
+	text-decoration: underline;
+	color: --webkit-link;
+	cursor: pointer;
+}
+
+psuedo class :
+.selector:link -> a unvisited link
+.selector:visited -> a link has visited
+.selector:hover -> when the user mouse over it
+.selector:active -> when the user moment its is clicked
+
+Notes : must tertib
+
+/*==============================================*/

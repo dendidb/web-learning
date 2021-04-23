@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="box">
+      <form action="#" method="get" autocomplete="off">
+        <h2>Form Validasi</h2>
+        <div class="form-input">
+          <input type="text" name="name" id="name" placeholder="Username"data-target="alertName"/>
+          <p class="alert d-none" id="alertName" data-req="Username harus di isi!"></p>
+        </div>
+        <div class="form-input">
+          <input type="text" name="email" id="email" placeholder="Email" data-target="alertEmail"/>
+          <p class="alert d-none" id="alertEmail" data-req="Email harus di isi!" data-invalid-email="Email anda tidak valid"></p>
+        </div>
+        <div class="form-input">
+          <input type="password" name="password" id="password" placeholder="Password" data-target="alertPassword"/>
+          <p class="alert d-none" id="alertPassword" data-req="Password harus di isi!" data-invalid-password="Password minimal 8 karakter"></p>
+        </div>
+        <div class="form-input">
+          <input type="text" name="phone" id="phone" placeholder="No. telepon" data-target="alertPhone"/>
+          <p class="alert d-none" id="alertPhone" data-req="No. Telp harus di isi!" data-invalid-phone="Telepon tidak valid"></p>
+        </div>
+        <div class="form-input">
+          <button type="submit" id="button">Kirim</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

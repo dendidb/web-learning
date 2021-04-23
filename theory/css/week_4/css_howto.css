@@ -1,0 +1,18 @@
+CSS How To
+--
+
+1. Inline CSS
+  <h1 style="color: red">Lorem, ipsum.</h1>
+2. Internal
+  <style>
+    h1{
+      color: red;
+    }
+  </style>
+3. External
+  file css: style.css (assets/css/style.css)
+  <head>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+/*==============================================*/

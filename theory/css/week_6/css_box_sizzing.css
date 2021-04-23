@@ -1,0 +1,8 @@
+CSS Box Sizing (CSS3)
+--
+
+.selector{
+	box-sizing: content-box (default | border-box);
+}
+
+/*==============================================*/

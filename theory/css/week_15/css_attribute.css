@@ -1,0 +1,16 @@
+CSS Attribute
+--
+
+[attribute] : sesuai attribute;
+[attribute="value"] : sama dengan value;
+[attribute~="value"] : mengandung value di awal & akhir dengan single class;
+[attribute|="value"] : diawali dengan value atau tanda hubung (-);
+[attribute^="value"] : mengnadung value di awal;
+[attribute$="value"] : mengnadung value di akhir;
+[attribute*="value"] : semua yang mengandung value;
+
+p[attribute]
+.class[attribute]
+#id[attribute]
+selector[attribute]:psuedo-class
+selector[attribute]:psuedo-element

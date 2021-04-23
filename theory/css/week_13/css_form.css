@@ -1,0 +1,15 @@
+CSS Forms
+--
+
+selector-input-text-box,
+selector-input-text-button,
+selector-input-selector {
+  border: 0; /*reset*/
+  outline: 0; /*reset*/
+  background-color: transparent /*reset*/;
+}
+
+selector-textarea {
+  resize: none; /*reset*/;
+
+}

@@ -1,4 +1,4 @@
-Struktur project
+Strukter project
 --
 [] Project
   [] component

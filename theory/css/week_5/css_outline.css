@@ -1,0 +1,14 @@
+CSS Outline
+--
+
+.selector-class{
+  outline-width: units;
+  outline-style: solid | dotted | double dll;
+  outline-color: color-code;
+  /*sorthand*/
+  outline: [outline-width] [outline-style] [outline-color];
+
+  outline-offeset: units;
+}
+
+/*==============================================*/

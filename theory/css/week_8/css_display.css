@@ -1,0 +1,12 @@
+CSS Display
+--
+
+.selector {
+	display: block | inline | inline-block | none;
+	visibility: visible (default) | hidden;
+
+	perbedaan opacity : 0; dan visibility : hidden; dan display: none;
+	- opacity masih bisa kena hover sedangkan visibility dan display tidak cuman display sangat kaku kalau hover di display: none;
+}
+
+/*==============================================*/

@@ -1,0 +1,10 @@
+CSS Specificity
+--
+
+~ !important /*Dont use everytime*/
+1. Inline style in html
+2. ID
+3. Classes, attribute and psuedo-class
+4. Element, and psuedo-elements
+5. Universal(*)
+

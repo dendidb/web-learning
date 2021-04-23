@@ -1,0 +1,28 @@
+CSS INTRODUCTION
+--
+
+Syntak
+--
+Selector {
+    property: value; -> declaration
+    property: value; -> declaration
+    property: value; -> declaration
+}
+
+Category Selector
+--
+
+1. Simple selector (class, id, element)
+2. Combinator selector (Relation between elements)
+3. Pseudo-class selector
+4. Pseudo-element Selector
+5. Attribute selector
+
+exp:
+
+h1{
+    color: red;
+    font-size: 20px;
+}
+
+/*==============================================*/

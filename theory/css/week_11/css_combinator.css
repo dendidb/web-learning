@@ -1,0 +1,7 @@
+CSS Combinators
+--
+
+- descenenant selector (space)
+- child selector (>) only first child element of parent element
+- adjacent sibiling selector (+) only next element of after parent element
+- general sibiling selector (~) all next element of after parent element
