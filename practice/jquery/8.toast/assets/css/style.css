@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-size: 16px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.fa {
+  color: #c8af65;
+  font-size: 16px;
+}
+
+.toast-box {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #000;
+  color: #c8af65;
+}
+
+.toast-title {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  padding-right: 24px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  color: #fff;
+  font-size: 24px;
+}
