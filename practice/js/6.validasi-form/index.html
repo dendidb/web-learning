@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Validation</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="stylesheet" href="assets/css/brands.css"/>
+  <link rel="stylesheet" href="assets/font-awesome.min.css"/>
 </head>
 <body>
   <div class="main">
     <div class="box">
       <form action="#" method="get" autocomplete="off">
-        <h2>Form Validasi</h2>
+        <h2>Register <span>Form</span></h2>
+        <p>Silakan daftar untuk melanjutkan</p>
         <div class="form-input">
           <input type="text" name="name" id="name" placeholder="Username"data-target="alertName"/>
           <p class="alert d-none" id="alertName" data-req="Username harus di isi!"></p>
@@ -28,9 +31,23 @@
           <p class="alert d-none" id="alertPhone" data-req="No. Telp harus di isi!" data-invalid-phone="Telepon tidak valid"></p>
         </div>
         <div class="form-input">
-          <button type="submit" id="button">Kirim</button>
+          <button type="submit" id="button">Daftar</button>
         </div>
+        <div class="have">
+          <p>Sudah punya akun? <a href="#">Masuk</a> </p>
+        </div>
+        <div class="option">
+          <p>atau masuk menggunakan</p>
+        </div>
+        <ul class="sosmed-reg">
+          <li><a href="#" class="facebook fab fa-facebook"></a></li>
+          <li><a href="#" class="google fab fa-google"></a></li>
+          <li><a href="#" class="instagram fab fa-instagram"></a></li>
+        </ul>
       </form>
+    </div>
+    <div class="image-login">
+      <img src="assets/img/aa.png" alt="">
     </div>
   </div>
   <script src="assets/js/script.js"></script>

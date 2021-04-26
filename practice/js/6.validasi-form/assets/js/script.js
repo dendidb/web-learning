@@ -68,7 +68,7 @@ var validationForm = {
           if (WHITESPACE.test(_val)) {
             var _errorMessage = _alertElement.getAttribute('data-req');
           }
-          // erro Massage
+          // error Massage
           if (_errorMessage !== undefined) {
             _alertElement.innerText = _errorMessage;
             _alertElement.classList.remove('d-none');
