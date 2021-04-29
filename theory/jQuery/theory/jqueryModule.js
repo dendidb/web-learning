@@ -191,7 +191,7 @@ $('body').on('click', function(e) {
   $(this).parent().remove();
 });
 
-Jquery - CSS Class
+Jquery - CSS Classes
 --
 // Menambah value class
 selector.addClass('class_name');
