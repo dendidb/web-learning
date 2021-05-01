@@ -12,7 +12,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight:700;
   margin: 0 0 20px;
   padding: 0;
-  text-transform: uppercase;
 }
 
 p {
@@ -21,42 +20,57 @@ p {
 
 .main {
   margin: 60px;
+  height: 100vh;
 }
 
-.search {
-  background-color: salmon;
-  padding: 60px;
+form {
+  padding: 16px 0 0;
+  position: relative;
 }
+
 
 .search-form {
   position: relative;
 }
 
 .input-text {
-  border-radius: 4px;
   outline: 0;
-  border: solid 1px #444;
+  border: none;
+  border: solid 1px #999;
+  font-size: 14px;
+  padding: 8px;
+  outline: 0;
   width: 100%;
-  padding: 20px;
-  font-size: 18px;
-  background-origin: #fff;
+  height: 40px;
+  border-radius: 12px;
 }
+
 .error-result,
 .search-result {
+  border-radius: 12px;
   position: absolute;
   background-color: #000;
   left: 0;
-  width: 100%;
+  right: -18px;
   list-style: none;
   margin: 0;
-  padding: 12px;
+  padding: 14px;
   display: none;
+  animation: searchAnimation 600ms ease-in-out forwards;
+  transform-origin: right center;
 }
 
-/* .error-result li,
-.search-result li {
-  
-} */
+@keyframes searchAnimation {
+  0% {
+    transform: scaleY(0)
+  }
+  80% {
+    transform: scaleY(1.1)
+  }
+  100% {
+    transform: scaleY(1)
+  }
+}
 
 .search-result li:last-child {
   margin-bottom: 0;
@@ -69,6 +83,11 @@ p {
   display: block;
   padding: 24px;
   font-size: 16px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .search-result a:hover {
@@ -76,12 +95,5 @@ p {
   display: block;
   background-color: #ddd;
   color: #222;
-
 }
-
-search-result p {
-  display: none;
-}
-
-
 

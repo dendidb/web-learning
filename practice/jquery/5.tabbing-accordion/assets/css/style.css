@@ -33,7 +33,7 @@ body {
   margin: 0 auto;
 }
 
-/*===============  tab  ===============*/
+/* Tabbing */
 
 .nav-tab {
   margin: 0 0 16px;
@@ -119,7 +119,7 @@ body {
   margin: 0 0 20px;
 }
 
-/*===============  accordion  ===============*/
+/* Accordion */
 
 .accordion-item {
   position: relative;
@@ -139,10 +139,6 @@ body {
   transition: all .2s ease;
   color: #fff;
   width: 100%;
-}
-
-.accordion-head.show {
-  /*border-color: #c8af65;*/
 }
 
 .accordion-head.show .accordion-title:after {
@@ -179,31 +175,38 @@ body {
 .accordion-desc {
   margin: 0 0 20px;
   color: #fff;
-  /*transition-delay: 2s;*/
   display: none;
-  transition: all .4s ease;
 }
 
-/*.acoordion-desc.active  {
-  display: block;
-  animation: accordion-desc .4s ease-in-out .2s both;
-}
-
-@keyframes accordion-desc {
-  from {
-    transform: translateY(8px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-*/
 .accordion-body li {
   margin: 0 0 20px;
 }
 
 .accordion-body li:last-child {
   margin-bottom: 0;
+}
+
+.accordion-body .accordion-desc ol li {
+  transition-property: all, background-color;
+  transition-duration: 0.2s, 0.4s;
+}
+
+.accordion-body .accordion-desc ol li:nth-child(1) {
+  transition-delay: 0s, 0s;
+}
+
+.accordion-body .accordion-desc ol li:nth-child(1) {
+  transition-delay: 1s, 0s;
+}
+
+.accordion-body .accordion-desc ol li:nth-child(2) {
+  transition-delay: 2s, 0s;
+}
+
+.accordion-body .accordion-desc ol li:nth-child(3) {
+  transition-delay: 3s, 0s;
+}
+
+.accordion-body .accordion-desc ol li:nth-child(4) {
+  transition-delay: 4s, 0s;
 }

@@ -53,7 +53,7 @@
 
         if(_dataSearch === 0) {
           $('.search-result').hide();
-          $('.error-result').show().html(`<li><p>Data tidak ada</p></li>`);
+          $('.error-result').show().html(`<li><p>Maaf, Data tidak ada</p></li>`);
         }
       });
     },
