@@ -10,9 +10,9 @@
     handleClick: function() {
       $(document).on('click', function(e) {
         if(e.target.classList.contains("input-text")){
-          $('.search-result').show()
+          $('.search-result').show();
         }else{
-          $('.search-result').hide()
+          $('.search-result').hide();
         }
       });
 
@@ -39,8 +39,8 @@
         var _this = $(this),
         _val = _this.val(),
           _dataSearch = 0;
-          $('.search-result').show()
-          $('.error-result').hide()
+          $('.search-result').show();
+          $('.error-result').hide();
 
         _this.parents('.search-form').find('.search-result li').hide();
 
@@ -51,12 +51,10 @@
           }
         });
 
-        if(_dataSearch === 0){
-          $('.search-result').hide()
-          $('.error-result').show().html(`<li><p>Tidak ditemukan</p></li>`);
+        if(_dataSearch === 0) {
+          $('.search-result').hide();
+          $('.error-result').show().html(`<li><p>Data tidak ada</p></li>`);
         }
-
-
       });
     },
 
