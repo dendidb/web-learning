@@ -30,49 +30,49 @@
 
 var Dropdown2 = {
 
-  handleClick: function(){
-    $(document).on('click', function(e){
-      Dropdown2.handleHide(e)
+  handleClick: function() {
+    $(document).on('click', function(e) {
+      Dropdown2.handleHide(e);
     });
 
-    $('.dd-p').on('click', function(){
-      if($(this).siblings().hasClass('dd-d-1')){
-        Dropdown2.handldeRemoveClass('.dd-d-2')
-        Dropdown2.handleCondition($(this))
-      }else if($(this).siblings().hasClass('dd-d-2')){
-        Dropdown2.handldeRemoveClass('.dd-d-1')
-        Dropdown2.handleCondition($(this))
+    $('.dd-p').on('click', function() {
+      if ($(this).siblings().hasClass('dd-d-1')) {
+        Dropdown2.handleRemoveClass('.dd-d-2');
+        Dropdown2.handleCondition($(this));
+      } else if ($(this).siblings().hasClass('dd-d-2')) {
+        Dropdown2.handleRemoveClass('.dd-d-1');
+        Dropdown2.handleCondition($(this));
       }
     })  
     
-    $('.dd-p').on('click', function(e){
+    $('.dd-p').on('click', function(e) {
       e.stopPropagation();
     })
   },
 
-  handldeRemoveClass: function(el){
+  handleRemoveClass: function(el) {
       $(el).removeClass('show');
       $(el).slideUp();
   },
 
-  handleCondition: function(el){
-    if($(el).siblings().hasClass('show')){
-      $(el).siblings().slideUp()
+  handleCondition: function(el) {
+    if ($(el).siblings().hasClass('show')) {
+      $(el).siblings().slideUp();
       $(el).siblings().removeClass('show');
-    }else{
-      $(el).siblings().slideDown()
+    } else {
+      $(el).siblings().slideDown();
       $(el).siblings().addClass('show');
     }
   },
 
-  handleHide: function(e){
-    if($('.drop-d').hasClass('show')){
+  handleHide: function(e) {
+    if ($('.drop-d').hasClass('show')) {
       $('.drop-d').slideUp();
       $('.drop-d').removeClass('show');
     }
   },
 
-  init: function(){
+  init: function() {
     Dropdown2.handleClick();
   }
 }
@@ -81,15 +81,15 @@ var Dropdown2 = {
 var Toast = {
   
   handleShow: function() {
-    $(window).on('load', function(){ 
+    $(window).on('load', function() { 
       setTimeout(() => {
         $('.toast').slideDown(400);
-      } , 1000);
+      }, 1000);
     });
   },
 
   handleHide: function() {
-    $('.btn-cookies').on('click', function(){
+    $('.btn-cookies').on('click', function() {
       $('.toast').slideUp(400);
     });
   },
@@ -99,7 +99,6 @@ var Toast = {
     Toast.handleHide();
   },
 }
-
 
 // Dropdown.init();
 Dropdown2.init();
