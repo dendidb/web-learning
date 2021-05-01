@@ -35,6 +35,7 @@ var Dropdown2 = {
       Dropdown2.handleHide(e)
     });
 
+
     $('.dd-p').on('click', function(){
       if($(this).siblings().hasClass('dd-d-1')){
         Dropdown2.handldeRemoveClass('.dd-d-2')
@@ -93,7 +94,6 @@ var Toast = {
       $('.toast').slideUp(400);
     });
   },
-
   init: function() {
     Toast.handleShow();
     Toast.handleHide();
