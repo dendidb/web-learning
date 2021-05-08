@@ -23,7 +23,6 @@ var handleAccordion = {
       if ($(this).parents('.accordion-item').hasClass("show")) {
         $(this).parents('.accordion-item').removeClass("show").find(".accordion-body").slideUp();
       } else {
-        // $(this).parents('.accordion-item').siblings('.accordion-item').removeClass("show").find(".accordion-body").slideUp();
         $(this).parents('.js-accordion').find('.accordion-item').removeClass("show").find(".accordion-body").slideUp();
         $(this).parents('.accordion-item').addClass("show").find(".accordion-body").slideDown();
       }
