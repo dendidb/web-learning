@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 40px;
+      margin: 120px;
+      background-color: #fff;
+      font-size: 16px;
+      color: #222;
+      font-family: sans-serif, 'Arial', ' Tahoma';
+    }
+    .boxes {
+      padding: 16px;
+      margin: 0 0 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box_wrap">
+    <h1 id="title">Box 1</h1>
+    <h1>Belajar jQuery!!!</h1>
+    <h2>Baris Pertama</h2>
+    <h3>Baris Kedua</h3>
+    <h4>Baris Ketiga</h4>
+    <div class="boxes">This Property</div>
+    <div class="boxes">This Property</div>
+    <div class="boxes">This Property</div>
+    <div class="boxes">This Property</div>
+  </div>
+
+
+  <script src="../jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var title = {
+
+       handleClick: function() {
+        $('#title').on('click', function(){
+          $('#title').css('color', 'red', 'fontWeight', '600');
+        });
+      },
+
+      handleHover: function() {
+
+        $('h2').on('mouseenter', function(){
+          $('h2').css('backgroundColor', 'yellow');
+          $('h2').on('mouseleave', function(){
+          $('h2').css('backgroundColor', 'transparent');
+          });
+        });
+      },
+
+      handleBoxes: function() {
+        $('.boxes').on('mouseenter', function(){
+          // this mengacu ke dirinya sendiri yang di hover
+          $(this).css('color', 'salmon');
+        });
+      },
+
+      init: function() {
+        title.handleClick();
+        title.handleHover();
+        title.handleBoxes();
+      }
+    }
+    title.init();
+
+
+  });
+
+</script>
+
+</body>
+</html>

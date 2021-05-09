@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <style>
+    body {
+      padding: 40px;
+      margin: 120px;
+      background-color: #fff;
+      font-size: 16px;
+      color: #222;
+      font-family: sans-serif, 'Arial', ' Tahoma';
+    }
+    .boxes {
+      padding: 16px;
+      margin: 0 0 12px;
+    }
+  </style>
+</head>
+<body>
+<form>
+  <h1>Kuyyy jQuery</h1>
+  <input type="text" id="inputText"/>
+  <button type="submit">Tekan</button>
+</form>
+
+
+  <script src="../jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var form = {
+        // get and set nilai
+        $('form').on('submit', function(){
+          var tulisan = $('#inputText').val();
+          $('h1').text(tulisan);
+        });
+
+      init: function() {
+        form.handleForm();
+      }
+    }
+    form.init();
+
+  });
+
+</script>
+
+  <script src="./jquery-3.6.0.min.js"></script>
+</body>
+</html>
