@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-    <style>
+  <style>
     body {
       padding: 40px;
       margin: 120px;
@@ -20,33 +20,29 @@
   </style>
 </head>
 <body>
-<form>
-  <h1>Kuyyy jQuery</h1>
-  <input type="text" id="inputText"/>
-  <button type="submit">Tekan</button>
-</form>
-
-
+  <!-- form -->
+  <form action="javascript:alert( 'success!' );">
+    <div>
+      <input type="text">
+      <input type="submit">
+    </div>
+  </form>
+  <!-- /form -->
+  <!-- the jQuery -->
   <script src="../jquery-3.6.0.min.js"></script>
   <script>
     $(document).ready(function(){
-      var form = {
-        // get and set nilai
-        $('form').on('submit', function(){
-          var tulisan = $('#inputText').val();
-          $('h1').text(tulisan);
-        });
+      $( "form" ).submit(function( event ) {
+        if ( $( "input" ).first().val() === "correct" ) {
+          $( "span" ).text( "Validated..." ).show();
+          return;
+        }
 
-      init: function() {
-        form.handleForm();
-      }
-    }
-    form.init();
-
-  });
-
-</script>
-
-  <script src="./jquery-3.6.0.min.js"></script>
+        $( "span" ).text( "Not valid!" ).show().fadeOut( 1000 );
+        event.preventDefault();
+      });
+    });
+  </script>
+  <!-- the jQuery -->
 </body>
 </html>

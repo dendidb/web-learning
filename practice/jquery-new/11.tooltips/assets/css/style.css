@@ -1,0 +1,120 @@
+body {
+  font-family: sans-serif, 'Arial', 'Tahoma';
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.main {
+  position: relative;
+}
+
+.btn-wrapper {
+  text-align: center;
+  width: 100%;
+  padding: 140px 0;
+  margin-left: -16px;
+  margin-right: -16px;
+  position: relative;
+}
+
+.btn-tooltips {
+  padding: 20px;
+  border-radius: 4px;
+  margin: 0 8px 0 0;
+  outline: 0;
+  font-size: 14px;
+  min-width: 120px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  transition: all 300ms ease;
+  position: relative;
+}
+
+.btn-tooltips:last-child {
+  margin-right: 0;
+}
+
+.btn-tooltips::before{
+  position: absolute;
+  content: '';
+  left: 130px;
+  top: 10px;
+  background-color: #000;
+  padding: 12px;
+  height: 12px;
+  opacity: 0;
+  border-radius: 4px;
+  visibility: hidden;
+  min-width: 8  0px;
+  color: #fff;
+  transition: all .3s ease;
+  -webkit-transform: translateX(-3px);
+  -moz-transform: translateX(-3px);
+  -o-transform: translateX(-3px);
+  -ms-transform: translateX(-3px);
+  transform: translateX(-3px);
+}
+
+.btn-tooltips:hover::before {
+  opacity: 1;
+  visibility: visible;
+  content: 'Right';
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -o-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.btn-tooltips::after {
+  display: block;
+  content: '';
+  width: 8px;
+  height: 8px;
+  right: -18px;
+  top: 26px;
+  position: absolute;
+  background-color: #000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-tooltips:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+[data-title="left"] {
+  content: left;
+}
+
+[data-title="bottom"] {
+  content: bottom;
+}
+
+
+[data-placement="left"] {
+  position: absolute;
+  top: 0px;
+}
+
+[data-placement="bottom"] {
+  content: bottom;
+}
+
+[data-placement="right"] {
+  content: right;
+}
+
+[data-placement="top"] {
+  content: top;
+}
