@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Modal jQuery</title>
+</head>
+<body class="hold-transition">
+  <div class="main">
+    <div class="container">
+      <!-- cta button modal -->
+      <h3>Klik tombol di bawah untuk menampilkan modal!</h3>
+      <button type="button" class="btn btn--primary js-show-modal" data-target="modal-1">Modal Login</button>
+      <button type="button" class="btn btn--primary js-show-modal" data-target="modal-2">Modal Agreement</button>
+    </div>
+    <!-- cta button modal -->
+  </div>
+
+  <div class="modal js-modal" data-modal="modal-1">
+    <div class="modal__container">
+      <div class="modal__box">
+        <div class="modal__content">
+          <div class="modal__header">
+            <h2 class="modal__title">Login</h2>
+            <button type="button" class="modal__close js-close-modal"><i class="icon-close"></i></button>
+          </div>
+          <div class="modal__body">
+            <div class="modal__img">
+              <img src="assets/img/login1.png" alt="Modal Image"/>
+            </div>
+            <div class="modal__text">
+              <form action="#" method="POST">
+                <h3>Login kembali untuk menjaga akun Anda tetap aman</h3>
+                <div class="input-row">
+                  <label class="input-label">Username *</label>
+                  <input type="text" class="input-item"autocomplete="off" placeholder="Username" name="username"required="required" />
+                </div>
+                <div class="input-row">
+                  <label class="input-label">Password *</label>
+                  <input class="input-item password" type="text" name="password" placeholder="Password" autocomplete="off" required="required" /><button class="login__password js-show-password" type="button"><i class="icon-close-eye"></i></button>
+                </div>
+                <div class="input-row">
+                  <button type="submit" class="btn btn--submit">Masuk</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal js-modal" data-modal="modal-2">
+    <div class="modal__container">
+      <div class="modal__box">
+        <div class="modal__content">
+          <div class="modal__header">
+            <h2 class="modal__title">Modal Agreement</h2>
+            <button type="button" class="modal__close js-close-modal"><i class="icon-close"></i></button>
+          </div>
+          <div class="modal__body">
+            <div class="modal__agreement__img">
+              <img src="assets/img/login2.png" alt="Modal Image"/>
+            </div>
+            <div class="modal__agreement__text">
+              <p class="modal__second__desc">Apakah Anda yakin akan membeli produk ini?</p>
+              <div class="modal__agreement__button">
+                <button type="button" class="btn btn--agreement cancel js-close-modal">Batal</button>
+                <button type="button" class="btn btn--agreement js-close-modal">Lanjutkan</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="../jquery-3.6.0.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

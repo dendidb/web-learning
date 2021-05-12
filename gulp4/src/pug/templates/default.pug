@@ -1,0 +1,50 @@
+doctype html
+html(lang='id')
+  head
+    block siteHead
+    meta(charset='utf-8')/
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')/
+    head(profile='http://www.w3.org/1999/xhtml/vocab')/
+    meta(http-equiv='X-UA-Compatible' content='IE=Edge')/
+    meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no,minimal-ui')/
+    meta(http-equiv='Content-Type' content='text/html; charset=utf-8')/
+    meta(property='og:locale' content='id_ID')/
+    meta(property='og:image:type' content='image/jpeg')/
+    meta(property='og:image:alt' content='Fas Cosmetics | Toko Pakaian dan Kosmetik Terlengkap')/
+    meta(property='og:type' content='website')/
+    meta(name='twitter:title' content='Fas Cosmetics | Toko Pakaian dan Kosmetik Terlengkap')/
+    meta(name='twitter:image:src' content='http://www.rzfsoftware.com/sites/all/themes/rzfsoftware/assets/images/default/share.jpg')
+    meta(name='twitter:description' content='Fas Cosmetics merupakan toko yang menjual berbagai pakaian wanita dan kosmetik terlengkap')/
+    meta(property='og:image' content='http://www.rzfsoftware.com/sites/all/themes/rzfsoftware/assets/images/default/share.jpg')/
+    meta(property='article:section' content='Main')/
+    meta(name='description' content='Fas Cosmetics merupakan toko yang menjual berbagai pakaian wanita dan kosmetik terlengkap')/
+    meta(name='keywords' content='fascosmetics, toko online, toko kosmetik, fas, toko online, toko kosmetik ciayumajakuning, indonesia')/
+    meta(property='og:title' content='Fas Cosmetics | Toko Pakaian dan Kosmetik Terlengkap')/
+    meta(property='og:description' content='Fas Cosmetics merupakan toko yang menjual berbagai pakaian wanita dan kosmetik terlengkap')/
+    meta(property='article:tag' content='fascosmetics, toko online, toko kosmetik, fas, toko online, toko kosmetik ciayumajakuning, indonesia')/
+    //- FOR SEO 
+    // [1]
+    meta(name='robots' content='index,follow')
+    meta(name='googlebot' content='index,follow')
+    meta(name='webcrawlers' content='index,follow')
+    meta(name='rating' content='general')
+    // [2]
+    meta(name='author' content='rzfsoftware.com')
+    meta(name='copyright' content='RZF Software. All rights reserved')
+    title 
+      |!{titleWeb} | Fas Cosmetics
+    link(rel='shortcut icon' href='assets/images/logo/fas-cosmetics.svg')/
+    link(rel='stylesheet' href='assets/css/font-awesome.min.css')/
+    link(rel='stylesheet' href='assets/css/aos.css')/
+    link(rel='stylesheet' href='assets/css/owl.carousel.min.css')/
+    link(rel='stylesheet' href='assets/css/app.css')/
+    link(rel='shortcut icon' href='assets/images/logo/favicon.png')/
+  body
+    include ../layouts/header.pug
+    .main
+      block siteContent
+    include ../layouts/footer.pug
+  script(src="assets/js/jquery.min.js")
+  script(src="assets/js/aos.js")
+  script(src="assets/js/owl.carousel.min.js")
+  script(src="assets/js/main.js")

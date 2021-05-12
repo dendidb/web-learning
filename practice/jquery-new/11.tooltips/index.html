@@ -6,13 +6,18 @@
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/style.css"/>
 </head>
-<body>
+<body class="hold-transition">
   <!-- /button -->
-  <div class="btn-wrapper">
-    <button type="button" class="btn-tooltips" data-title="left" data-placement="top">Left</button>
-    <button type="button" class="btn-tooltips" data-title="bottom" data-placement="top">Bottom</button>
-    <button type="button" class="btn-tooltips" data-title="top" data-placement="top">Top</button>
-    <button type="button" class="btn-tooltips" data-title="right" data-placement="top">Right</button>
+  <div class="main">
+    <div class="container">
+      <div class="tooltip-title">
+        <h3>Tooltips Placement Pure CSS</h3>
+      </div>
+      <button type="button" class="btn tooltip" data-title="Left" data-placement="left">Left</button>
+      <button type="button" class="btn tooltip" data-title="Top" data-placement="top">Top</button>
+      <button type="button" class="btn tooltip" data-title="Bottom" data-placement="bottom">Bottom</button>
+      <button type="button" class="btn tooltip" data-title="Right" data-placement="right">Right</button>
+    </div>
   </div>
   <!-- /button -->
   <script src="../jquery-3.6.0.min.js"></script>

@@ -1,0 +1,42 @@
+{
+  "name": "samsung-website",
+  "version": "1.0.0",
+  "description": "Samsung Website",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Samsung",
+    "Website",
+    "as",
+    "BRand",
+    "Official"
+  ],
+  "author": "Brogrammers",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/register": "^7.13.16",
+    "ansi-colors": "^4.1.1",
+    "autoprefixer": "^10.2.5",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-error-handle": "^1.0.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-notify": "^4.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-strip-css-comments": "^2.0.0",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.2.14",
+    "postcss-combine-media-query": "^1.0.1",
+    "postcss-scss": "^3.0.5"
+  }
+}

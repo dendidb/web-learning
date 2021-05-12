@@ -1,0 +1,25 @@
+extends ../templates/default.pug
+
+block siteHead
+  -
+    menu = 'beranda'
+    titleWeb = 'Beranda'
+    descWeb = 'Beranda';
+
+
+block siteContent
+  -
+    sub_title = 'Fas Cosmetics'
+    title = 'Make <span>Fresh</span><br/> And <span>Beauty</span>'
+    desc = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industries standard dummy.'
+    btnClass = 'primary'
+    alt = 'banner home';
+  include ../layouts/banner.pug
+  include ../layouts/feature-section.pug
+  include ../layouts/product-collection.pug
+  include ../layouts/offer.pug
+  include ../layouts/hijab-collection.pug
+  include ../layouts/sale.pug
+  include ../layouts/cosmetics-collection.pug
+
+

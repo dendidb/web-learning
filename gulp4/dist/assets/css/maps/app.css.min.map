@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAAA;EACE,8BAAsB;KAAtB,2BAAsB;UAAtB,sBAAsB;EACtB,oCAA4B;EAA5B,+BAA4B;EAA5B,iCAA4B;EAA5B,4BAA4B,EAAA","file":"../app.css","sourcesContent":["* {\n  box-sizing: border-box;\n  transition: all 300ms linear;\n}"]}

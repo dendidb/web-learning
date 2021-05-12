@@ -1,0 +1,51 @@
+// Contact Us Area
+.block-section
+  .container
+    .row
+      .section-title
+        h2 Hubungi Kami
+      .col-6.col-md-6.col-sm
+        .contact-group
+          h3.contact-group__title Kontak Kami
+          ul.contact-group__list
+            li.contact-group__item
+              span.location.fa.fa-location-arrow
+              .contact-group__desc
+                h4.contact-group__heading Alamat
+                p.contact-group__detail
+                  | Jl. Otto Iskandardinata No.28, Pegagan Kec. Palimanan, Kabupaten Cirebon, Jawa Barat 45161
+            li.contact-group__item
+              span.email.fa.fa-envelope
+              .contact-group__desc
+                h4.contact-group__heading Email
+                p.contact-group__detail fasaseefa19@gmail.com
+            li.contact-group__item
+              span.phone.fa.fa-phone
+              .contact-group__desc
+                h4.contact-group__heading Telepon
+                p.contact-group__detail +6289518792244
+      .col-6.col-md-6.col-sm
+        .form-area
+          h3.contact-group__title Kirim Pesan
+          p.form-group__desc Silakan isi form di bawah jika ada pertanyaan, kritik maupun saran kepada kami
+          form(action='#' method='POST' autocomplete='off' required='required')
+            .form-group
+              label Nama:
+              input.form-control(type='text' autocomplete='off' name='name' id='name' required='required')
+            .form-group 
+              label Telepon:
+              input.form-control(type='text' autocomplete='off' name='address' id='address' required='required')
+            .form-group
+              label Email:
+              input.form-control(type='text' autocomplete='off' name='telp' id='telp' required='required')
+            .form-group
+              label Pesan Anda:
+              textarea(name='message' rows='4' cols='50' autocomplete='off' class='form-control'
+               required='required')
+            .form-group
+              button(type='submit' value='btn' class='btn btn__submit') Kirim
+      .col-12
+        .maps-area
+          h3.contact-group__title Lokasi Kami
+          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425435.9937293206!2d108.1478232006744!3d-6.876722314955528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6ee1ba6667508b%3A0x70f348d5736c9e53!2sfas%20cosmetics!5e0!3m2!1sid!2sid!4v1617250726695!5m2!1sid!2sid' class='maps-item' width='100%' height='480' allowfullscreen='true', aria-hidden='false', tabindex='0')
+// end Contact Us
