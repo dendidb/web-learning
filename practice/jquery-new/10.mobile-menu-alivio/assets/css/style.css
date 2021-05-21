@@ -13,6 +13,8 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 1.2;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -83,14 +85,12 @@ img {
 
 .header__logo {
   margin: 0;
-  float: left;
-  width: auto;
   height: 20px;
+  float: left;
 }
 
 .header__nav-menu {
   float: right;
-  margin-top: 4px;
 }
 
 .header__nav-list {
@@ -114,14 +114,29 @@ img {
   color: #1f1534;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
+  position: relative;
 }
 
-.header__nav-link:hover {
-  color: green;
+.header__nav-link::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #01996d;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: all 250ms ease-in;
+  
+}
+
+.header__nav-link:hover::after {
+  color: #01996d;
+  transform: scaleX(1);
+  -webkit-transform: scaleX(1);
 }
 
 .active {
-  color: green;
+  color: #01996d;
 }
 
 .burger-menu {
@@ -146,7 +161,7 @@ img {
   height: 2px;
   display: inline-block;
   margin-bottom: 6px;
-  background-color: green;
+  background-color: #01996d;
   border-radius: 1px;
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
@@ -157,7 +172,7 @@ img {
 }
 
 .menu-bar:nth-child(2) {
-  width: 20px;
+  width: 24px;
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1)
@@ -205,7 +220,7 @@ img {
     border-radius: 50%;
     -webkit-transform: scale(0);
     transform: scale(0);
-    background-color: green;
+    background-color: #01996d;
     -webkit-transition: all 600ms ease;
     transition: all 600ms ease;
   }
@@ -231,7 +246,7 @@ img {
     visibility: hidden;
     opacity: 0;
     float: none;
-    margin: 0;
+    margin-top: 4px;
     z-index: 8;
     top: 70px;
     right: 0;
@@ -246,15 +261,15 @@ img {
   }
 
   .header__nav-list {
-    text-align: center;
+    text-align: left;
   }
 
   .header__nav-item {
     float: none;
     margin: 0 0 32px;
     opacity: 0;
-    -webkit-transform: translateY(16px);
-    transform: translateY(16px);
+    -webkit-transform: translateX(16px);
+    transform: translateX(16px);
     -webkit-transition: all 400ms ease;
     transition: all 400ms ease;
   }
@@ -300,10 +315,40 @@ img {
 
   .header__nav-link:hover {
     color: #fff;
-    font-weight: bold;
   }
 
   .header__nav-link.active {
     font-weight: bold;
   }
 }
+
+/* banner area */
+.banner {
+  background-color: 0 0 0 0 rgba(0,0,0,0.1);
+  background-image: url(../img/hero-banner/hero-banner.png);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  padding: 260px 0;
+}
+
+.banner.container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.banner__text {
+  /*float: left;*/
+}
+
+.banner__text h3 {
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+
+.banner__text p {
+  margin: 0;
+}
+
+/* /banner area */
