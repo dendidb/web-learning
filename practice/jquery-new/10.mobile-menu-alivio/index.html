@@ -2,54 +2,41 @@
 <html lang="id">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
-  <title>Mobile Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge"/>
+  <title>Mobile Menu | jQuery</title>
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
+<body class="hold-transition">
+  <!-- header area -->
   <div class="header">
-    <div class="header__top">
-      <div class="container">
-        <div class="header__top_contact">
-          <ul>
-            <li data-aos="fade-down" data-aos-duration="400"><a href="tel:089518792244"><i class="fa fa-phone"></i><span>+6289518792244</span></a></li>
-            <li data-aos="fade-down" data-aos-duration="500"><a href="mailto:fasaseefa19@gmail.com"><i class="fa fa-envelope"> </i><span>fasaseefa19@gmail.com</span></a></li>
+    <div class="container">
+      <div class="header__nav">
+        <div class="header__logo">
+          <a href="#">
+            <img src="assets/img/logo.svg" alt="logo"/>
+          </a>
+        </div>
+        <div class="header__nav-menu">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a class="header__nav-link active" href="#">Home</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Produk</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Contact</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Testimonials</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">About us</a></li>
           </ul>
         </div>
-        <div class="header__top_sosmed">
-          <ul>
-            <li>
-              <p data-aos="fade-down" data-aos-duration="500" data-aos-delay="200">Follow Kami :</p>
-            </li>
-            <li data-aos="fade-down" data-aos-duration="600" data-aos-delay="200"><a href="https://www.instagram.com/fasaseefa19/"><i class="fa fa-instagram"></i></a></li>
-            <li data-aos="fade-down" data-aos-duration="700" data-aos-delay="200"><a href="https://www.facebook.com/fas.mode.5"><i class="fa fa-facebook"></i></a></li>
-            <li data-aos="fade-down" data-aos-duration="800" data-aos-delay="200"><a href="https://api.whatsapp.com/send?phone=089518792244&amp;text=Saya%20tertarik%20untuk%20membeli%20produk%20ini%20segera."><i class="fa fa-whatsapp"></i></a></li>
-            <li data-aos="fade-down" data-aos-duration="900" data-aos-delay="200"><a href="https://shopee.co.id/fas_mode"><img class="sosmed-icon" src="assets/images/icon/shopee.png" alt="Logo Shoppee"></a></li>
-          </ul>
-        </div>
+        <button type="button" class="burger-menu js-burger-menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </button>
       </div>
     </div>
-    <div class="header__nav">
-      <div class="container">
-        <div class="nav"><a class="header__nav_logo" href="index.html"><img src="assets/images/logo/logo.png" alt="logo" /></a>
-          <ul class="header__nav_menu">
-            <li class="header__nav_item"><a class="header__nav_link active" href="index.html">Beranda</a></li>
-            <li class="header__nav_item"><a class="header__nav_link" href="gamis.html">Gamis</a></li>
-            <li class="header__nav_item"><a class="header__nav_link" href="hijab.html">Hijab</a></li>
-            <li class="header__nav_item"><a class="header__nav_link" href="kosmetik.html">Cosmetics</a></li>
-            <li class="header__nav_item"><a class="header__nav_link" href="promo.html">Promo</a></li>
-            <li class="header__nav_item"><a class="header__nav_link" href="hubungi-kami.html">Hubungi Kami</a></li>
-          </ul>
-          <div class="header__nav_right"><span class="header__nav_search icon-search js-show-button"></span></div><a class="mobile-menu"><span></span></a>
-          <div class="search js-search-show">
-            <form action="#" method="POST" autocomplete="off"><button class="search__left" type="submit"><i class="icon-search_left"></i></button><input class="search__input" type="text" placeholder="Cari apa sist?" name="produk"><button class="js-close search__right" type="button"><i class="icon-close"></i></button></form>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="circle-menu"></div>
   </div>
-  <div class="overlay"></div>
+  <!-- /header area -->
+
   <script src="../jquery-3.6.0.min.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
