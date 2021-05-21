@@ -29,6 +29,19 @@ img {
   margin: 0 auto;
 }
 
+.btn {
+  display: inline-block;
+  outline: 0;
+  min-width: 160px;
+  text-align: center;
+  border: solid 1px transparent;
+  border-radius: 8px;
+  padding: 12px 24px;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+}
+
 @media (max-width: 1199.98px) { 
   .container {
     padding: 0 32px;
@@ -324,12 +337,11 @@ img {
 
 /* banner area */
 .banner {
-  background-color: 0 0 0 0 rgba(0,0,0,0.1);
   background-image: url(../img/hero-banner/hero-banner.png);
   background-size: cover;
-  background-position: bottom center;
+  background-position: top center;
   background-repeat: no-repeat;
-  padding: 260px 0;
+  padding: 180px 0 360px 0;
 }
 
 .banner.container::after {
@@ -339,7 +351,8 @@ img {
 }
 
 .banner__text {
-  /*float: left;*/
+  float: left;
+  width: 50%;
 }
 
 .banner__text h3 {
@@ -348,7 +361,21 @@ img {
 }
 
 .banner__text p {
-  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0 0 32px;
+}
+
+.btn-primary {
+  background-color: #01996d;
+  color: #fff;
+  transition: all 150ms linear;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: #01996d;
+  border: solid 1px #01996d;
 }
 
 /* /banner area */
