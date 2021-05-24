@@ -1,4 +1,11 @@
-* {
-  box-sizing: border-box;
-  transition: all 300ms linear;
-}
+@import "vendors/normalize";
+@import "vendors/font-awesome";
+@import "project/init/variables";
+@import "project/init/mixin";
+@import "project/init/grid";
+@import "project/init/component";
+@import "project/component/header";
+@import "project/component/form-checkout";
+@import "project/component/success-order";
+@import "project/component/confirmation";
+@import "project/component/footer";

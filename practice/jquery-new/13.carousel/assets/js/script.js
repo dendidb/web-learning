@@ -77,3 +77,33 @@ var ShowPassword = {
   }
 }
 ShowPassword.init();
+
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:0,
+  nav:false,
+  rewindNav: false,
+  autoplay: true,
+  smartSpeed: 1500,
+  item: 1,
+  responsive:{
+    0:{ // breakpoint from 0 up - small smartphones
+      items:1,
+      nav:true
+    },
+    480:{  // breakpoint from 480 up - smartphones // landscape
+      items:2,
+      nav:false
+    },
+    768:{ // breakpoint from 768 up - tablets
+      items:3,
+      nav:true,
+      loop:false
+    },
+    992:{ // breakpoint from 992 up - desktop
+      items:1,
+      nav:true,
+      loop:true
+    }
+  }
+});

@@ -1,0 +1,96 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: solid 1px;
+  color: $white;
+  background-color: $white;
+  padding: 12px 32px;
+  @include border-radius(6px);
+  font-size: $font-size;
+  line-height: 1.3;
+  text-align: center;
+  @include transition(all .3s ease);
+  &:hover {
+    background-color: transparent;
+  }
+}
+.primary {
+  background-color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    color: $primary;
+  }
+}
+.outline{
+  border-color: $primary;
+  color: $primary;
+  &:hover {
+    background-color: $primary;
+    color: $white;
+  }
+}
+.row{
+  @include clearfix;
+}
+.card{
+  background-color: $white;
+  @include border-radius(4px);
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  overflow: hidden;
+}
+.form-input{
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.input-label{
+  position: absolute;
+  color: #333;
+  display: inline-block;
+  top: 4px;
+  left: 8px;
+  z-index: 1;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 500;
+  background-color: #fff;
+  padding: 0 4px;
+  opacity: 0;
+  visibility: hidden;
+  @include transition(all .4s ease);
+  @include transform(translateY(4px));
+}
+.input-text{
+  width: 100%;
+  height: 45px;
+  padding: 4px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  border: 1px solid $border_color;
+  @include shadow(0 2px 16px rgba(0,0,0,.1));
+  color: #6a6a66;
+  border-radius: 4px;
+  &:focus,
+  &:valid{
+    outline: 0;
+    color: #333;
+    border-color: $primary;
+  }
+  &:valid+label{
+    visibility: visible;
+    opacity: 1;
+    color: $primary;
+    @include transform(translateY(-8px));
+  }
+}
+.d-block{
+  display: block;
+  width: 100%;
+}

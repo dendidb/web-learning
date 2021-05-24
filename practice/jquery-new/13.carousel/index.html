@@ -2,8 +2,10 @@
 <html lang="id">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=transitiontransitiontransition1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
   <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <title>Carousel OCBC by jQuery</title>
@@ -30,15 +32,32 @@
 
   <!-- banner -->
   <div class="banner">
-    <div class="banner__img">
+    <div class="owl-carousel js-banner-slider">
+      <div class="item_img"><img src="assets/img/hero-banner/banner1.png" alt="Kambing"></div>
+      <div class="item_img"><img src="assets/img/hero-banner/banner2.png" alt="Katak"></div>
+      <div class="item_img"><img src="assets/img/hero-banner/banner3.png" alt="Macan"></div>
       <div class="container">
-        <img src="assets/img/hero-banner/hero-banner.png" alt="Hero Banner" />
       </div>
     </div>
   </div>
   <!-- /banner -->
 
-  <script src="../jquery-3.6.0.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <!-- product banner -->
+  <div class="product-banner">
+    <div class="container">
+      <div class="image_banner--list">
+        <img src="assets/img/product-banner/p-banner1.png" alt="">
+        <img src="assets/img/product-banner/p-banner2.png" alt="">
+        <img src="assets/img/product-banner/p-banner3.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- /product banner -->
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

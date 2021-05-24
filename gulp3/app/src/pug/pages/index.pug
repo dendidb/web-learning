@@ -1,0 +1,18 @@
+extends ../templates/default.pug
+
+block siteHead
+  -
+    menu = 'home'
+    titleWeb = 'Home'
+    descWeb = 'Home'
+    btnHeader = 'home';
+
+block siteContent
+  -
+    title = 'Stay Productive & <br> Work Remotely'
+    desc = 'The key to work-from-home success is to create an enviroment that allows you to focus on the tasks at hand. Whether you are working from home for the first time.'
+    image = 'assets/img/banner-1.png'
+    btnClass = 'home'
+    alt = 'banner home';
+  include ../layouts/header.pug
+  include ../components/banner.pug

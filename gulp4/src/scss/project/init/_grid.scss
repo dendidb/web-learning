@@ -1,0 +1,33 @@
+* {
+  @include grid;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $black_light;
+  color: $black;
+  font-weight: normal;
+  font-style: normal;
+  font-size: $font-size;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: $container;
+  padding: 0 16px;
+  margin: 0 auto;
+  @media (max-width: 1199.98px) { 
+    padding: 0 32px;
+  }
+  @media (max-width: 991.98px) { 
+    padding: 0 24px;
+  }
+  @media (max-width: 767.98px) { 
+    padding: 0 16px;
+  }
+}

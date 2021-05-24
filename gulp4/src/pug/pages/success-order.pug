@@ -1,0 +1,37 @@
+extends ../templates/default.pug
+
+block siteHead
+  -
+    menu = 'order-success'
+    titleWeb = 'Order Success'
+    descWeb = 'Order Success'
+
+block siteContent
+  -
+  include ../layouts/header.pug
+  .success-order
+    .container
+      .card
+        h2 Terimaksih sudah melakukan order aplikasi kami
+        p Untuk menyelesaikan order silahkan transfer sejulmlah
+        .button-price
+          p(style='display: none;')
+            | 1500000
+          h2.text-price#price Rp1.500.000
+          button.btn.outline(type='button' onclick="copyToClipboard('#price')")
+            i.fa.fa-pencil
+            | Salin Jumlah
+        p ke salah satu bank berikut  ini:
+        .bank-account
+          img(src="assets/images/logo/bank-bri.png" alt="Logo Bank BRI" class="img-el")/
+          p.no-rek
+            | No. Rek : 
+            span#bill 
+              | 427301006692531
+          p.account-name Yudhi Heriyadi
+          button.btn.outline(type='button' onclick="copyToClipboard('#bill')")
+            i.fa.fa-pencil
+            |Salin Rekening
+        p Konfirmasi pembayaran anda di:
+        a.btn.primary(href="confirmation.html" target="_blank") Konfirmasi Pembayaran
+  include ../layouts/footer.pug

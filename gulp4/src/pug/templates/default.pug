@@ -1,50 +1,138 @@
+include ../config/config.pug
+
 doctype html
-html(lang='id')
+html(lang='en')
+  block siteHead
   head
-    block siteHead
     meta(charset='utf-8')/
-    meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')/
-    head(profile='http://www.w3.org/1999/xhtml/vocab')/
-    meta(http-equiv='X-UA-Compatible' content='IE=Edge')/
-    meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no,minimal-ui')/
+    meta(http-equiv='refresh', content=timeRefresh)/
+    meta(http-equiv='X-UA-Compatible' content='IE=9')/
     meta(http-equiv='Content-Type' content='text/html; charset=utf-8')/
-    meta(property='og:locale' content='id_ID')/
-    meta(property='og:image:type' content='image/jpeg')/
-    meta(property='og:image:alt' content='Fas Cosmetics | Toko Pakaian dan Kosmetik Terlengkap')/
-    meta(property='og:type' content='website')/
-    meta(name='twitter:title' content='Fas Cosmetics | Toko Pakaian dan Kosmetik Terlengkap')/
-    meta(name='twitter:image:src' content='http://www.rzfsoftware.com/sites/all/themes/rzfsoftware/assets/images/default/share.jpg')
-    meta(name='twitter:description' content='Fas Cosmetics merupakan toko yang menjual berbagai pakaian wanita dan kosmetik terlengkap')/
-    meta(property='og:image' content='http://www.rzfsoftware.com/sites/all/themes/rzfsoftware/assets/images/default/share.jpg')/
-    meta(property='article:section' content='Main')/
-    meta(name='description' content='Fas Cosmetics merupakan toko yang menjual berbagai pakaian wanita dan kosmetik terlengkap')/
-    meta(name='keywords' content='fascosmetics, toko online, toko kosmetik, fas, toko online, toko kosmetik ciayumajakuning, indonesia')/
-    meta(property='og:title' content='Fas Cosmetics | Toko Pakaian dan Kosmetik Terlengkap')/
-    meta(property='og:description' content='Fas Cosmetics merupakan toko yang menjual berbagai pakaian wanita dan kosmetik terlengkap')/
-    meta(property='article:tag' content='fascosmetics, toko online, toko kosmetik, fas, toko online, toko kosmetik ciayumajakuning, indonesia')/
-    //- FOR SEO 
-    // [1]
-    meta(name='robots' content='index,follow')
-    meta(name='googlebot' content='index,follow')
-    meta(name='webcrawlers' content='index,follow')
-    meta(name='rating' content='general')
-    // [2]
-    meta(name='author' content='rzfsoftware.com')
-    meta(name='copyright' content='RZF Software. All rights reserved')
-    title 
-      |!{titleWeb} | Fas Cosmetics
-    link(rel='shortcut icon' href='assets/images/logo/fas-cosmetics.svg')/
-    link(rel='stylesheet' href='assets/css/font-awesome.min.css')/
-    link(rel='stylesheet' href='assets/css/aos.css')/
-    link(rel='stylesheet' href='assets/css/owl.carousel.min.css')/
-    link(rel='stylesheet' href='assets/css/app.css')/
-    link(rel='shortcut icon' href='assets/images/logo/favicon.png')/
-  body
-    include ../layouts/header.pug
-    .main
+    meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no,minimal-ui')/
+    ='\n\n'
+
+    // primary information
+    title #{menu + ' '+ titleWeb}
+    meta(name='description', content=titleWeb + ' '+ suffixSiteDescription)/
+    meta(name='keywords', content=titleWeb + ', ' + descWeb)/
+
+    //- HTML5 IE
+    ='\n\n'
+    // ie fix for html5 tags
+    //[if lt IE 9]><script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script><![endif]
+    ='\n\n'
+
+    // author
+    meta(name='author' content=author)/
+    meta(name='copyright' content=copyright)/
+
+    ='\n\n'
+
+    //- user agent crawler
+    -
+      robotsContent = 'noindex, nofollow';
+    if seoFriendly
+      -
+        robotsContent = 'index, follow';
+
+    // user agent crawler
+    meta(name='robots', content=robotsContent)/
+    meta(name='googlebot', content=robotsContent)/
+    meta(name='googlebot-news', content=robotsContent)/
+    meta(name='msnbot', content=robotsContent)/
+    meta(name='webcrawlers', content=robotsContent)/
+    meta(name='spiders', content=robotsContent)/
+    ='\n\n'
+
+    //- canonical
+    if seoFriendly
+      // canonical
+      link(rel='canonical', href=cannonical)/
+
+    ='\n\n'
+
+    //- og facebook
+    if ogFacebook.enable
+      // og facebook general
+      meta(property='og:locale' content='en_US')/
+      meta(property='og:type', content=ogFacebook.type)/
+      meta(property='og:title', content=titleWeb + ' '+ titleWeb)/
+      meta(property='og:description', content=titleWeb + ' '+ descWeb)/
+      meta(property='og:url', content=siteURL)/
+      meta(property='og:site_name', content=siteDomain)/
+      meta(property='og:image', content=ogFacebook.image)/
+      meta(property='og:image:type', content=ogFacebook.imageType)/
+
+    ='\n\n'
+
+    //- Twitter Card
+    if twitterCard.enable
+      // twitter card
+      meta(name='twitter:card' content=twitterCard.sizeCard)/
+      meta(name='twitter:title', content=siteTitle + ' '+ suffixSiteTitle)/
+      meta(name='twitter:description', content=siteTitle + ' '+ suffixSiteDescription)/
+      meta(name='twitter:site', content=twitterCard.twitterId)/
+      meta(name='twitter:site:id', content=twitterCard.twitterId)/
+      meta(name='twitter:domain', content=siteDomain)/
+      meta(name='twitter:image:src', content=twitterCard.image)/
+      meta(name='twitter:creator', content=twitterCard.twitterId)/
+
+    ='\n\n'
+
+    // ============ icon ============
+    // web favicon
+    link(rel='shortcut icon' href=icons.webFavicon)/
+
+    ='\n\n'
+
+    // android add to home screen
+    link(rel='manifest' href=manifest)/
+    meta(name='mobile-web-app-capable' content='yes')/
+    meta(name='theme-color' content=siteTheme)/
+    link(rel='icon' type='image/png' sizes='16x16' href=icons.homescreen.android.s16)/
+    link(rel='icon' type='image/png' sizes='32x32' href=icons.homescreen.android.s32)/
+    link(rel='icon' type='image/png' sizes='96x96' href=icons.homescreen.android.s96)/
+    link(rel='icon' type='image/png' sizes='144x144' href=icons.homescreen.android.s144)/
+    link(rel='icon' type='image/png' sizes='192x192' href=icons.homescreen.android.s192)/
+
+    ='\n\n'
+
+    // windows microsoft
+    meta(name='msapplication-TileColor' content=siteTheme)/
+    meta(name='msapplication-TileImage' content=icons.homescreen.microsoft.s144)/
+
+    ='\n\n'
+
+    // apple add to home screen
+    meta(name='apple-mobile-web-app-capable' content='yes')/
+    meta(name='apple-mobile-web-app-status-bar-style' content=siteTheme)/
+    link(rel='apple-touch-icon' href=icons.homescreen.iOS.default)/
+    link(rel='apple-touch-icon' sizes='57x57' href=icons.homescreen.iOS.s57)/
+    link(rel='apple-touch-icon' sizes='60x60' href=icons.homescreen.iOS.s60)/
+    link(rel='apple-touch-icon' sizes='72x72' href=icons.homescreen.iOS.s72)/
+    link(rel='apple-touch-icon' sizes='76x76' href=icons.homescreen.iOS.s76)/
+    link(rel='apple-touch-icon' sizes='114x114' href=icons.homescreen.iOS.s114)/
+    link(rel='apple-touch-icon' sizes='120x120' href=icons.homescreen.iOS.s120)/
+    link(rel='apple-touch-icon' sizes='144x144' href=icons.homescreen.iOS.s144)/
+    link(rel='apple-touch-icon' sizes='152x152' href=icons.homescreen.iOS.s152)/
+    link(rel='apple-touch-icon' sizes='180x180' href=icons.homescreen.iOS.s180)/
+    link(rel='apple-touch-startup-image' href=icons.homescreen.iOS.default)/
+    ='\n\n'
+
+    // style
+    link(rel='stylesheet', href=cssMain)/
+    ='\n\n'
+
+  body(class=holdTransitionClass)
+
+    .main-site
+      //- content
       block siteContent
-    include ../layouts/footer.pug
-  script(src="assets/js/jquery.min.js")
-  script(src="assets/js/aos.js")
-  script(src="assets/js/owl.carousel.min.js")
-  script(src="assets/js/main.js")
+
+    .header
+
+    ='\n\n'
+    // script
+    script(src=jsVendor)
+    script(src=jsMain)
+    ='\n\n'
