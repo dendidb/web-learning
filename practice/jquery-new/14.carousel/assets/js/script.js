@@ -64,6 +64,7 @@ var runProductSlider = {
         dots: false,
         smartSpeed: 500,
         autoWidth:true,
+        mouseDrag: false,
       });
     }
   },
