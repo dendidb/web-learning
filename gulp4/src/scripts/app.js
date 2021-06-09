@@ -1,37 +1,39 @@
-import {Accordion, Popup} from 'components';
+import { Header, Popup, Carousel, Tabs, Accordion } from 'components';
 
 
-// App
+// - App
 const App = (() => {
-
-  // run transition
+  // -- Run Transition
   const runTransition = () => {
-    $('body').removeClass('.hold-transition');
+    $('body').removeClass('hold-transition');
   }
 
-  // ready 
+  // - ready
   const ready = () => {
     (($) => {
-      // --- Global
+      // -- Global
+
+      // -- Project
       runTransition();
-
-      // --- Project
-      Accordion.init();
+      Header.init();
       Popup.init();
-
-    })(jQuery);
+      Carousel.init();
+      Tabs.init();
+      Accordion.init();
+    })(jQuery)
   }
 
-  // -- load
+  // - load
   const load = () => {
     (($) => {
       $(window).on('load', () => {
-        // run function on load finished
+        // run function finished
+        
       });
-    })(jQuery);
+    })(jQuery)
   }
 
-  // Init
+  // - init
   const init = () => {
     ready();
     load();
@@ -40,9 +42,7 @@ const App = (() => {
   return {
     init
   }
-
 })();
 
-// App
-
-App.init()
+// - Run
+App.init();

@@ -1,10 +1,25 @@
+@font-face {
+  font-family: ramaraja;
+  src: url('../fonts/ramaraja-regular.ttf2') format("ttf2"), url('../fonts/ramaraja-regular.ttf') format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.4.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.4.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.4.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.4.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.4.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
-  @include grid;
+  box-sizing: border-box;
 }
 
 body {
   font-family: $font-main;
-  background-color: $black_light;
+  background-color: $white;
   color: $black;
   font-weight: normal;
   font-style: normal;
@@ -18,16 +33,16 @@ img {
 
 .container {
   width: 100%;
-  max-width: $container;
+  max-width: 1120px;
   padding: 0 16px;
   margin: 0 auto;
-  @media (max-width: 1199.98px) { 
+  @include large { 
     padding: 0 32px;
   }
-  @media (max-width: 991.98px) { 
+  @include medium { 
     padding: 0 24px;
   }
-  @media (max-width: 767.98px) { 
+  @include small { 
     padding: 0 16px;
   }
 }

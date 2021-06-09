@@ -1,30 +1,20 @@
-import {Accordion} from 'components';
-
 const Popup = (() => {
 
-// handleClick
+  // handleClick
+  const handleClick = () => {
+    $('.js-popup').on('click', (e) => {
+      console.log($(e.currentTarget).attr('data-value'));
+    });
+  }
 
-const handleClick = () => {
-  $('.js-popup').on('click', (e) => {
-    console.log($(e.currentTarget).attr('data-value'));
-  });
-}
+  // init
+  const init = () => {
+    handleClick();
+  }
 
-// handleKeyUp 
-const handleKeyUp = () => {
-  console.log('keyup berhasil')
-}
-
-
-// init 
-const init = () => {
-  handleClick();
-}
-
-return {
-  init
-}
-
+  return {
+    init
+  }
 })();
 
 export default Popup

@@ -1,11 +1,11 @@
 @import "vendors/normalize";
-@import "vendors/font-awesome";
+@import "vendors/owl-carousel";
 @import "project/init/variables";
 @import "project/init/mixin";
 @import "project/init/grid";
 @import "project/init/component";
-@import "project/component/header";
-@import "project/component/form-checkout";
-@import "project/component/success-order";
-@import "project/component/confirmation";
-@import "project/component/footer";
+@import "project/components/header";
+@import "project/components/banner";
+@import "project/components/tabs";
+@import "project/components/accordion";
+@import "project/components/features";

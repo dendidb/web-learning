@@ -1,0 +1,11 @@
+.features
+  .container
+    .features__wrapper
+      .features__row
+        .features__content
+          h2.section-title Lorem ipsum dolor sit amet.
+          .features__item.owl-carousel.js-features
+            each val in data
+              -
+                data = val
+              include ../components/features.pug

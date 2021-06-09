@@ -1,6 +1,24 @@
-// Header Area
-.header-area
+<!-- Header -->
+.header
   .container
-      h1.header-title Aplikasi Toko Retail
-      p.header-desc Software aplikasi yang didesain khusus untuk toko dengan penjualan langsung pada konsumen atau eceran
-// end Header area
+    .header__nav
+      .header__logo
+        a(href='index.html')
+          img(src='assets/img/icon/logo.svg' alt='Trafalgar Logo')
+      ul.header__menu
+        li.header__item
+          a.header__link(href='#') Home
+        li.header__item
+          a.header__link(href='#') Find a Doctor
+        li.header__item
+          a.header__link(href='#') Apps
+        li.header__item
+          a.header__link(href='#') Testimonial
+        li.header__item
+          a.header__link(href='#') About us
+      button.burger-menu.js-mobile-menu
+        span.burger-menu__bar
+        span.burger-menu__bar
+        span.burger-menu__bar
+  .header__overlay-menu
+<!-- End Header -->

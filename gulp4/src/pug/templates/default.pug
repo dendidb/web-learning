@@ -12,9 +12,9 @@ html(lang='en')
     ='\n\n'
 
     // primary information
-    title #{menu + ' '+ titleWeb}
-    meta(name='description', content=titleWeb + ' '+ suffixSiteDescription)/
-    meta(name='keywords', content=titleWeb + ', ' + descWeb)/
+    title #{siteTitle + ' '+ suffixSiteTitle}
+    meta(name='description', content=siteTitle + ' '+ suffixSiteDescription)/
+    meta(name='keywords', content=siteTitle + ', ' + suffixSiteKeywords)/
 
     //- HTML5 IE
     ='\n\n'
@@ -56,8 +56,8 @@ html(lang='en')
       // og facebook general
       meta(property='og:locale' content='en_US')/
       meta(property='og:type', content=ogFacebook.type)/
-      meta(property='og:title', content=titleWeb + ' '+ titleWeb)/
-      meta(property='og:description', content=titleWeb + ' '+ descWeb)/
+      meta(property='og:title', content=siteTitle + ' '+ suffixSiteTitle)/
+      meta(property='og:description', content=siteTitle + ' '+ suffixSiteDescription)/
       meta(property='og:url', content=siteURL)/
       meta(property='og:site_name', content=siteDomain)/
       meta(property='og:image', content=ogFacebook.image)/
@@ -124,12 +124,11 @@ html(lang='en')
     ='\n\n'
 
   body(class=holdTransitionClass)
-
-    .main-site
+    - signClass = btnHeader
+    include ../layouts/header.pug
+    .main-site.main-site--hide.js-main-site
       //- content
       block siteContent
-
-    .header
 
     ='\n\n'
     // script

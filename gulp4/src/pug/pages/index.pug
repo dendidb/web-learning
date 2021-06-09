@@ -2,12 +2,9 @@ extends ../templates/default.pug
 
 block siteHead
   -
-    menu = 'RZF Software | Profesional Application Developer'
-    titleWeb = '| adalah'
-    descWeb = 'Order'
+    menu = 'home'
+    siteTitle = 'Home'
 
 block siteContent
-  -
-  include ../layouts/header.pug
-  include ../components/form-checkout.pug
-  include ../layouts/footer.pug
+  include home/banner.pug
+  include home/features.pug
